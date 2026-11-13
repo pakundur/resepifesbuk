@@ -237,6 +237,21 @@ CF_ANALYTICS = (
     "data-cf-beacon='{\"token\": \"fee36023b04d44c1812b25ad01f3787d\"}'></script>"
 )
 
+# Google Analytics 4 — standard (free) property.
+# SET THIS to your Measurement ID from GA4 > Admin > Data Streams > your web stream.
+# Format: G-XXXXXXXXXX. Left empty = no GA4 tag emitted (build stays green).
+GA4_ID = os.environ.get("GA4_ID", "").strip()
+
+GA4_HTML = ""
+if GA4_ID:
+    GA4_HTML = (
+        f"<script async src='https://www.googletagmanager.com/gtag/js?id={GA4_ID}'></script>"
+        "<script>window.dataLayer=window.dataLayer||[];"
+        "function gtag(){dataLayer.push(arguments);}"
+        "gtag('js',new Date());"
+        f"gtag('config','{GA4_ID}');</script>"
+    )
+
 # slug -> R2 object key (SEO filename). Produced by mk_imgmap.py.
 IMG_KEY_OF = {}
 _img_map_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "img_map.json")
@@ -466,6 +481,7 @@ def footer_html():
   </div>
 </footer>
 {CF_ANALYTICS}
+{GA4_HTML}
 """
 
 
@@ -1001,6 +1017,7 @@ if (params.get('q')) {{ inp.value = params.get('q'); }}
 inp.addEventListener('input', run); run();
 </script>
 {CF_ANALYTICS}
+{GA4_HTML}
 </body>
 </html>
 """

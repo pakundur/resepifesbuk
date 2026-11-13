@@ -210,6 +210,20 @@ for rel, p in pages.items():
 chk(20, "web analytics beacon on all pages", len(noanalytics) == 0,
     f"{len(pages)}/{len(pages)}" if not noanalytics else f"{len(noanalytics)} missing")
 
+# 21. GA4 tag present and consistent on every page (all-or-nothing)
+#     Reads the ID from env so the gate enforces whatever was configured at build time.
+_ga4 = os.environ.get("GA4_ID", "").strip()
+if _ga4:
+    bad_ga4 = []
+    for rel, p in pages.items():
+        s = read(p)
+        if f"googletagmanager.com/gtag/js?id={_ga4}" not in s or f"gtag('config','{_ga4}')" not in s:
+            bad_ga4.append(rel)
+    chk(21, "GA4 tag on all pages", len(bad_ga4) == 0,
+        f"{len(pages)}/{len(pages)}" if not bad_ga4 else f"{len(bad_ga4)} missing")
+else:
+    chk(21, "GA4 tag (not configured — set GA4_ID)", True, "skipped, GA4_ID empty")
+
 # 16. aggregate
 ok = all(r[2] for r in res)
 print(f"{'#':>3}  {'CHECK':<42} RESULT")
