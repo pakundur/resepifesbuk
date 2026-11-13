@@ -173,6 +173,27 @@ if "/penulis/" not in sm:
 gate(45, "Author pages in sitemap with Person schema",
      not bad45, "; ".join(bad45[:4]))
 
+# ---------------------------------------------------------------- gate 46
+# Avatar assets must actually exist in the build. A 404 avatar is the exact
+# bug this gate exists for: the files were copied to dist/img/penulis/, which
+# the Pages Function proxies to R2, so every byline image 404'd in production
+# while the build reported success.
+bad46 = []
+for key, p in AUTH.PERSONAS.items():
+    ap = p["avatar"].lstrip("/")
+    fp = DIST / ap
+    if not fp.exists():
+        bad46.append(f"{key}: {p['avatar']} missing from dist")
+    elif fp.stat().st_size < 200:
+        bad46.append(f"{key}: {p['avatar']} suspiciously small")
+# and the path must NOT sit under /img/, which is R2-proxied
+for key, p in AUTH.PERSONAS.items():
+    if p["avatar"].startswith("/img/"):
+        bad46.append(f"{key}: avatar under /img/ is R2-proxied")
+
+gate(46, "Author avatar assets exist and are not R2-proxied",
+     not bad46, "; ".join(bad46[:4]))
+
 # ---------------------------------------------------------------- report
 if __name__ == "__main__":
     print("=" * 68)

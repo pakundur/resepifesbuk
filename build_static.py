@@ -1597,11 +1597,13 @@ for _name, _dest in (("llms.txt", "llms.txt"),
         print(f"essentials: {_dest}")
 
 # ---- author avatars ----
-# Tiny flat SVGs, same-origin under /img/penulis/. Copied rather than inlined
+# Tiny flat SVGs, same-origin under /penulis-avatar/. NOT under /img/
+# because functions/img/[[path]].js proxies that whole prefix to R2, which
+# would 404 every avatar. Copied rather than inlined
 # so the browser can cache them across all 748 recipe bylines.
-_pa_src = os.path.join(STATIC, "img", "penulis")
+_pa_src = os.path.join(STATIC, "penulis-avatar")
 if os.path.isdir(_pa_src):
-    _pa_dst = os.path.join(DIST, "img", "penulis")
+    _pa_dst = os.path.join(DIST, "penulis-avatar")
     os.makedirs(_pa_dst, exist_ok=True)
     _n = 0
     for _f in os.listdir(_pa_src):

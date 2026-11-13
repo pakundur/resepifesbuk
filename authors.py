@@ -42,7 +42,7 @@ PERSONAS = {
         "name": "Nurul",
         "role": "Kuih, kek dan biskut",
         "short": "Kuih tradisional, kek rumahan dan biskut",
-        "avatar": "/img/penulis/nurul.svg",
+        "avatar": "/penulis-avatar/nurul.svg",
         # Categories this persona owns. Matched case-insensitively against
         # the recipe's category name, which comes from src/cats.json — use the
         # EXACT strings the classifier emits, not the Blogger label guess.
@@ -72,7 +72,7 @@ PERSONAS = {
         "name": "Hafizah",
         "role": "Lauk, daging dan makanan harian",
         "short": "Masakan harian keluarga dan lauk kampung",
-        "avatar": "/img/penulis/hafizah.svg",
+        "avatar": "/penulis-avatar/hafizah.svg",
         "cats": ["Daging", "Ayam", "Ikan", "Sayur",
                  "Kerang & Siput", "Udang", "Ketam", "Sotong",
                  "Perut & Organ", "Nasi"],
@@ -96,7 +96,7 @@ PERSONAS = {
         "name": "Limah",
         "role": "Minuman, bubur, sup dan mee",
         "short": "Minuman sejuk, bubur warisan, sup dan mee berkuah",
-        "avatar": "/img/penulis/limah.svg",
+        "avatar": "/penulis-avatar/limah.svg",
         "cats": ["Minuman", "Bubur", "Sambal & Sos", "Sup & Bening",
                  "Mee & Bihun", "Western", "Aneka"],
         "bio": [
