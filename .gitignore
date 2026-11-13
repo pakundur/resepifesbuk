@@ -3,3 +3,10 @@ node_modules/
 .DS_Store
 .env
 .env.*
+
+# scratch
+*.json.tmp
+ghi.json
+ghr.json
+ghb.json
+sm.xml
