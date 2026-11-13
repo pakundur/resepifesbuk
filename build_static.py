@@ -18,6 +18,7 @@ import json, os, re, html, shutil, hashlib, datetime, sys
 from urllib.parse import quote
 
 from share import share_html
+from fab import fab_html, FAB_JS
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, "src", "recipes_clean.json")
@@ -445,7 +446,7 @@ def head(title, desc, canonical, og_type="website", og_img="", published=None,
 
 {ld}
 </head>
-<body>
+<body id="top">
 """
 
 
@@ -464,7 +465,11 @@ def header_html():
 """
 
 
-def footer_html():
+def footer_html(share_title=None, share_url=None):
+    # The floating share fan needs the page's own title + canonical URL.
+    # Non-recipe pages (index, kategori, about) fall back to site-level values
+    # so every page still gets a working share target instead of a bare link.
+    fab = fab_html(share_title or SITE_NAME, share_url or SITE_URL)
     return f"""<footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -495,6 +500,8 @@ def footer_html():
     </div>
   </div>
 </footer>
+{fab}
+{FAB_JS}
 {CF_ANALYTICS}
 {GA4_HTML}
 """
@@ -608,7 +615,7 @@ write("index.html", head(
     </div>
   </section>
 </main>
-""" + footer_html() + "<script>document.getElementById('q').addEventListener('keydown',function(e){if(e.key==='Enter'){var v=this.value.trim();if(v)location.href='/cari/?q='+encodeURIComponent(v);}});</script>\n</body>\n</html>\n")
+""" + footer_html(SITE_NAME + " — Resepi Malaysia Harian", SITE_URL + "/") + "<script>document.getElementById('q').addEventListener('keydown',function(e){if(e.key==='Enter'){var v=this.value.trim();if(v)location.href='/cari/?q='+encodeURIComponent(v);}});</script>\n</body>\n</html>\n")
 
 print("home ok")
 
@@ -816,7 +823,7 @@ for idx, r in enumerate(recipes):
 </article>
 </main>
 """
-    page += footer_html()
+    page += footer_html(headline, canon)
     page += "</body>\n</html>\n"
     write(f"resepi/{r['slug']}/index.html", page)
 
@@ -881,7 +888,7 @@ for p in range(1, total_pages + 1):
   </div>
 </section>
 </main>
-""" + footer_html() + "</body>\n</html>\n"
+""" + footer_html(f"Semua Resepi — Halaman {p}", f"{SITE_URL}/halaman/{p}/") + "</body>\n</html>\n"
 
     if p == 1:
         write("resepi/index.html", page)
@@ -977,7 +984,7 @@ for c, items in CATS.items():
   </div>
 </section>
 </main>
-""" + footer_html() + "</body>\n</html>\n"
+""" + footer_html(f"Resepi {c}", f"{SITE_URL}/kategori/{cs}/") + "</body>\n</html>\n"
     write(f"kategori/{cs}/index.html", page)
 
 print(f"category pages ok: {len(CATS)}")
@@ -1036,6 +1043,10 @@ for _r in recipes:
 if _seed_s:
     ad_s1 = ad_build.search_ad_html(_seed_s[0], _seed_s[1])
 
+# The search page builds its own tail (no site footer), so the floating
+# action stack is composed here explicitly.
+fab_search = fab_html(f"Cari Resepi — {SITE_NAME}", f"{SITE_URL}/cari/")
+
 page += header_html() + f"""<main>
 <section>
   <div class="wrap-narrow center">
@@ -1076,6 +1087,8 @@ const params = new URLSearchParams(location.search);
 if (params.get('q')) {{ inp.value = params.get('q'); }}
 inp.addEventListener('input', run); run();
 </script>
+{fab_search}
+{FAB_JS}
 {CF_ANALYTICS}
 {GA4_HTML}
 </body>

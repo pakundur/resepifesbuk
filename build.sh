@@ -45,4 +45,7 @@ python3 verify_google.py
 # 6. Assert all 16 audit requirements before the artifact is considered shippable
 python3 verify_all.py
 
+# 7. Floating share fan + back-to-top gates (structure, ARIA, icon-only copy)
+python3 verify_fab.py
+
 echo "== build complete: $(find dist -name '*.html' | wc -l) pages =="

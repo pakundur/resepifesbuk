@@ -69,15 +69,19 @@ def share_html(title: str, url: str, compact: bool = False) -> str:
     btns.append(
         '<button class="share-btn share-copy" type="button" '
         'onclick="(function(b){var t=location.href;'
-        "var f=function(){b.querySelector('span').textContent='Disalin';"
-        "setTimeout(function(){b.querySelector('span').textContent='Salin pautan';},2000);};"
+        "var f=function(){b.classList.add('is-copied');"
+        "setTimeout(function(){b.classList.remove('is-copied');},2000);};"
         "if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(f);}"
         "else{var i=document.createElement('input');i.value=t;document.body.appendChild(i);"
         "i.select();document.execCommand('copy');i.remove();f();}})(this)\" "
-        'aria-label="Salin pautan">'
-        '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor">'
+        'aria-label="Salin pautan" title="Salin pautan">'
+        '<svg class="sc-copy" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor">'
         '<path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/>'
-        '</svg><span>Salin pautan</span></button>'
+        '</svg>'
+        '<svg class="sc-done" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor">'
+        '<path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/>'
+        '</svg>'
+        '</button>'
     )
 
     cls = "share-bar compact" if compact else "share-bar"

@@ -369,7 +369,6 @@ section { padding: 72px 0; }
 /* ---------- Empty state ---------- */
 .empty { text-align: center; padding: 60px 20px; color: var(--ink-mute); }
 
-/* ---------- Reduced motion ---------- */
 /* ---------- Share bar ---------- */
 .share-bar {
   display: flex;
@@ -417,11 +416,18 @@ section { padding: 72px 0; }
 .share-linkedin:hover { color: #0A66C2; border-color: #0A66C2; }
 .share-email:hover { color: var(--accent, #C25E3A); border-color: var(--accent, #C25E3A); }
 .share-copy:hover { color: var(--accent, #C25E3A); border-color: var(--accent, #C25E3A); }
+/* Copy button is icon-only: square target, checkmark swaps in on success.
+   The two SVGs are stacked in the same grid cell so the button never resizes. */
+.share-copy { display: inline-grid; place-items: center; padding: 7px 11px; }
+.share-copy svg { grid-area: 1 / 1; }
+.share-copy .sc-done { display: none; }
+.share-copy.is-copied .sc-copy { display: none; }
+.share-copy.is-copied .sc-done { display: block; color: var(--pandan, #4a6b4a); }
+.share-copy.is-copied { border-color: var(--pandan, #4a6b4a); }
 
 @media (max-width: 560px) {
   .share-btn span { display: none; }
   .share-btn { padding: 9px; }
-  .share-copy span { display: inline; }
 }
 
 /* ---------- Related recipes ---------- */
@@ -452,6 +458,167 @@ section { padding: 72px 0; }
   transition: background .18s ease, color .18s ease;
 }
 .related-list a:hover { background: var(--accent, #C25E3A); color: #fff; }
+
+/* ---------- Floating action stack (share fan + back to top) ----------
+   Bottom-right. Two 48px buttons stacked with a 10px gap.
+   The fan is a vertical list of 44px items that slides up out of the
+   trigger. Collapsed by default: the fan has visibility:hidden and its
+   children are at opacity 0 / scale .8 until .is-open is set, so nothing
+   is clickable or focusable before the first tap (JS also sets tabindex).
+   z-index 90 keeps it under the sticky header (100) but above content. */
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+}
+.fab__btn {
+  pointer-events: auto;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--line, #e3d9c9);
+  background: #fff;
+  color: var(--ink, #1a1815);
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  box-shadow: 0 2px 10px rgba(26, 24, 21, .10), 0 1px 3px rgba(26, 24, 21, .06);
+  transition: background .18s ease, color .18s ease, border-color .18s ease,
+              transform .18s ease, box-shadow .18s ease;
+}
+.fab__btn:hover {
+  background: var(--terracotta, #c2542a);
+  border-color: var(--terracotta, #c2542a);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(194, 84, 42, .28);
+}
+.fab__btn:focus-visible {
+  outline: 2px solid var(--terracotta, #c2542a);
+  outline-offset: 3px;
+}
+.fab__btn svg { grid-area: 1 / 1; }
+
+/* Share / close icon swap on the trigger */
+.fab__ico-close { display: none; }
+.fab.is-open .fab__ico-share { display: none; }
+.fab.is-open .fab__ico-close { display: block; }
+.fab.is-open .fab__btn--share {
+  background: var(--ink, #1a1815);
+  border-color: var(--ink, #1a1815);
+  color: var(--cream, #faf7f2);
+}
+
+/* Fan container sits ABOVE the share button, growing upward. */
+.fab__fan {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 8px;
+  pointer-events: none;
+  visibility: hidden;
+  transition: visibility 0s linear .22s;
+}
+.fab.is-open .fab__fan {
+  pointer-events: auto;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.fab__item {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--line, #e3d9c9);
+  background: #fff;
+  color: var(--ink, #1a1815);
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(26, 24, 21, .12);
+  opacity: 0;
+  transform: translateY(14px) scale(.8);
+  transition: opacity .18s ease, transform .18s ease, background .18s ease,
+              color .18s ease, border-color .18s ease;
+}
+.fab.is-open .fab__item {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+/* Stagger: bottom item (nearest the trigger) leads, top item lags. */
+.fab.is-open .fab__item:nth-child(1) { transition-delay: .09s; }
+.fab.is-open .fab__item:nth-child(2) { transition-delay: .08s; }
+.fab.is-open .fab__item:nth-child(3) { transition-delay: .07s; }
+.fab.is-open .fab__item:nth-child(4) { transition-delay: .06s; }
+.fab.is-open .fab__item:nth-child(5) { transition-delay: .05s; }
+.fab.is-open .fab__item:nth-child(6) { transition-delay: .04s; }
+.fab.is-open .fab__item:nth-child(7) { transition-delay: .03s; }
+.fab.is-open .fab__item:nth-child(8) { transition-delay: .02s; }
+
+.fab__item:hover { background: var(--cream-deep, #f3ede2); }
+.fab__item:focus-visible {
+  outline: 2px solid var(--terracotta, #c2542a);
+  outline-offset: 3px;
+}
+.fab__item--whatsapp:hover { color: #128C7E; border-color: #25D366; }
+.fab__item--telegram:hover { color: #229ED9; border-color: #229ED9; }
+.fab__item--facebook:hover { color: #1877F2; border-color: #1877F2; }
+.fab__item--x:hover { color: #000; border-color: #000; }
+.fab__item--pinterest:hover { color: #E60023; border-color: #E60023; }
+.fab__item--threads:hover { color: #000; border-color: #000; }
+.fab__item--email:hover { color: var(--terracotta, #c2542a); border-color: var(--terracotta, #c2542a); }
+.fab__item--copy:hover { color: var(--terracotta, #c2542a); border-color: var(--terracotta, #c2542a); }
+.fab__item--copy.is-copied { color: var(--pandan, #4a6b4a); border-color: var(--pandan, #4a6b4a); }
+
+/* Tooltip label: appears to the LEFT of each fan item on pointer devices
+   only. Never on touch, where it would overlap the thumb. */
+.fab__tip {
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  background: var(--ink, #1a1815);
+  color: var(--cream, #faf7f2);
+  font-size: .74rem;
+  letter-spacing: .02em;
+  padding: 5px 9px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .15s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .fab__item:hover .fab__tip { opacity: 1; }
+}
+@media (hover: none) { .fab__tip { display: none; } }
+
+/* Small screens: keep the stack clear of the thumb zone edges. */
+@media (max-width: 560px) {
+  .fab { right: 12px; bottom: 12px; gap: 8px; }
+  .fab__btn { width: 44px; height: 44px; }
+  .fab__item { width: 42px; height: 42px; }
+}
+
+/* Landscape phones are short: 8 stacked items can outrun the viewport.
+   Shrink the fan and let it sit closer to the bottom edge. */
+@media (max-height: 520px) {
+  .fab__btn { width: 40px; height: 40px; }
+  .fab__item { width: 36px; height: 36px; }
+  .fab__fan { gap: 5px; }
+  .fab__item svg { width: 16px; height: 16px; }
+}
 
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {

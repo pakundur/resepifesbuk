@@ -134,17 +134,18 @@ gate(30, "Every rendered link is a supplied link; all 48 used",
      f"orphan={len(orphan)} unused={sorted(unused)[:3]}")
 
 # ---------------------------------------------------------------- gate 31
-# DITAJA disclosure present on every rendered card.
+# IKLAN disclosure present on every rendered card. (Renamed from DITAJA —
+# see the CPETTR commercial-intent disclosure requirement.)
 g31 = []
 cards = 0
 for slug, rec in REC.items():
     for slot, h in AR.render_page(rec, slug, SLOTS):
         cards += 1
-        if "Ditaja" not in h:
+        if ">Iklan<" not in h:
             g31.append(f"{slug}/{slot}")
         if "Pautan rakan kongsi" not in h:
             g31.append(f"{slug}/{slot} missing disclosure note")
-gate(31, f"DITAJA chip + disclosure note on every card ({cards} cards)",
+gate(31, f"IKLAN chip + disclosure note on every card ({cards} cards)",
      not g31, "; ".join(g31[:4]))
 
 # ---------------------------------------------------------------- report
