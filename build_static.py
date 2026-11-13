@@ -504,6 +504,11 @@ def footer_html(share_title=None, share_url=None):
           <li><a href="/tentang/">Tentang Kami</a></li>
           <li><a href="/penulis/">Penulis</a></li>
           <li><a href="/hubungi/">Hubungi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Polisi</h4>
+        <ul>
           <li><a href="/pendedahan-affiliate/">Pendedahan Affiliate</a></li>
           <li><a href="/polisi-privasi/">Polisi Privasi</a></li>
           <li><a href="/feed.xml">RSS Feed</a></li>
