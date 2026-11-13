@@ -1,29 +1,5 @@
 {
-"bubur-cha-cha-sagu-lazat": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"aiskrim-asam-boi-merah-aiskrim-malaysia": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"daging-masak-kicap-black-pepper-panas": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "ayam-kukus-goreng-berempah-asli": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"chicken-butter-milk-kak-shakinah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -35,13 +11,31 @@
 "broken": [],
 "ok": true
 },
-"ikan-merah-masak-ceylon-sri-lanka": {
+"bubur-cha-cha-sagu-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"mini-pizza-fries-cheese-ohsem": {
+"chicken-butter-milk-kak-shakinah": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"daging-masak-kicap-black-pepper-panas": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"aiskrim-asam-boi-merah-aiskrim-malaysia": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"ikan-merah-masak-ceylon-sri-lanka": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -53,7 +47,7 @@
 "broken": [],
 "ok": true
 },
-"jus-kunyit-asam-homemade-berkhasiat": {
+"mini-pizza-fries-cheese-ohsem": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -65,13 +59,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-acar-buah-simple": {
+"jus-kunyit-asam-homemade-berkhasiat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-air-jagung-vanila-viral": {
+"resepi-acar-buah-simple": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -95,7 +89,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-air-sirap-bandung-cincau-soda": {
+"resepi-air-katira-memikat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -107,37 +101,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-air-sirap-bandung-paling-sedap": {
+"resepi-air-sirap-bandung-cincau-soda": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-air-katira-memikat": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-aiskrim-goreng-viral": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-aiskrim-choki-choki-aiskrim": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-aiskrim-homemade-viral": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-aiskrim-jelly-sumi-aiskrim": {
+"resepi-air-jagung-vanila-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -149,7 +119,31 @@
 "broken": [],
 "ok": true
 },
-"resepi-aiskrim-sangkaya-lemak-manis": {
+"resepi-air-sirap-bandung-paling-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-aiskrim-choki-choki-aiskrim": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-aiskrim-jelly-sumi-aiskrim": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-aiskrim-goreng-viral": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-aiskrim-homemade-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -161,7 +155,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-asam-pedas-ikan-bersama-nenas": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-asam-pedas-daging-original-melaka": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-aiskrim-sangkaya-lemak-manis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -173,19 +179,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-asam-pedas-ikan-bersama-nenas": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-asam-pedas-ikan-versi-muar": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ayam-belanda-panggang-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -203,7 +197,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-ayam-buttermilk-terangkat": {
+"resepi-ayam-belanda-panggang-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -215,7 +209,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-ayam-buttermilk-terangkat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-ayam-butter-bakar-rangup-biskut-masin": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ayam-goreng-berempah-special": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -233,19 +239,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-ayam-goreng-berempah-special": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-ayam-goreng-black-pepper-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ayam-goreng-nenas-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -263,13 +257,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-ayam-kam-heong-kak-zon": {
+"resepi-ayam-goreng-ranggup-buttermilk": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-ayam-goreng-ranggup-buttermilk": {
+"resepi-ayam-goreng-nenas-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -293,25 +287,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-ayam-masak-kicap-kak-azzu": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-ayam-masak-black-pepper": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ayam-madu-lazat": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ayam-masak-merah-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -323,7 +299,31 @@
 "broken": [],
 "ok": true
 },
+"resepi-ayam-madu-lazat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ayam-kam-heong-kak-zon": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ayam-masak-kicap-kak-azzu": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-ayam-masak-kicap-pedas-daun-kari-berapi": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ayam-masak-lemak-cili-padi": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -341,13 +341,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-ayam-masak-lemak-cili-padi": {
+"resepi-ayam-masak-merah-terlajak-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-ayam-masak-merah-terlajak-sedap": {
+"resepi-ayam-masak-merah-tradisi": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ayam-masak-merah-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -365,19 +371,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-ayam-masak-ros-merah-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-ayam-masak-padang-terbaik": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ayam-masak-merah-tradisi": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -389,13 +383,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-ayam-panggang-ala-kenny-rogers": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ayam-panggang-black-pepper-yummy": {
+"resepi-ayam-masak-ros-merah-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -407,7 +395,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-ayam-panggang-black-pepper-yummy": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-ayam-panggang-drumstick-ala": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ayam-panggang-ala-kenny-rogers": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -419,25 +419,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-ayam-paprik-simple-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-ayam-percik-ganu-kite": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-ayam-perap-mayo": {
+"resepi-ayam-percik-mudah-kuali-leper": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-ayam-percik-mudah-kuali-leper": {
+"resepi-ayam-perap-mayo": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -450,6 +444,12 @@
 "ok": true
 },
 "resepi-ayam-rebus-asparagus-sos-krim-pesto-lazat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ayam-paprik-simple-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -479,18 +479,6 @@
 "broken": [],
 "ok": true
 },
-"resepi-bahulu-berinti-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-bebola-daging-dengan-keju-berkrim": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-bahulu-gulung-terbaik": {
 "indonesian": [],
 "shortform": [],
@@ -503,7 +491,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-bebola-daging-dengan-sos-gravy": {
+"resepi-bahulu-berinti-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -515,13 +503,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-beef-stew-mudah": {
+"resepi-bebola-daging-dengan-keju-berkrim": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-begedil-daging-66-biji-power": {
+"resepi-beef-stew-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -533,13 +521,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-belangkas-bakar-original": {
+"resepi-begedil-daging-66-biji-power": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-belangkas-goreng-bercili": {
+"resepi-bebola-daging-dengan-sos-gravy": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-belangkas-bakar-original": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -563,13 +557,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-bihun-goreng-seafood-cik-madihaa": {
+"resepi-belangkas-goreng-bercili": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-bihun-sup-utara-power": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-bihun-goreng-seafood-cik-madihaa": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -587,19 +587,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-biskut-arab-lazat": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-biskut-brownies-cookies-kedut": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-biskut-cheese-cadbury-terbaik": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-biskut-arab-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -611,13 +605,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-biskut-arab-salut-susu-memang": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-biskut-coklat-rice-homemade": {
+"resepi-biskut-brownies-cookies-kedut": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -629,19 +617,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-biskut-arab-salut-susu-memang": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-biskut-coklat-rice-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-biskut-cornflakes-terbaik": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-biskut-cornflake-coklat-memikat": {
+"resepi-biskut-coklat-rice-homemade": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -653,7 +641,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-biskut-florentine-homemade": {
+"resepi-biskut-cornflake-coklat-memikat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -665,13 +653,31 @@
 "broken": [],
 "ok": true
 },
-"resepi-biskut-jejari-oat-viral": {
+"resepi-biskut-cornflakes-terbaik": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-biskut-florentine-homemade": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-biskut-jejari-strawberry-mudah": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-biskut-jejari-oat-viral": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-biskut-kelapa-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -689,25 +695,31 @@
 "broken": [],
 "ok": true
 },
-"resepi-biskut-kelapa-warisan": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-biskut-lidah-kucing-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-biskut-kelapa-terbaik": {
+"resepi-biskut-kelapa-warisan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-biskut-makmor-gebu-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-biskut-makmur-milo": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-biskut-mama-carey-untuk-hari-raya": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -725,19 +737,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-biskut-mama-carey-untuk-hari-raya": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-biskut-makmur-milo": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-biskut-nescafe-badam-wangi": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-biskut-nutella-3-bahan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -755,13 +761,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-biskut-nutella-3-bahan": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-biskut-red-velvet-white": {
+"resepi-biskut-nescafe-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -773,7 +773,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-biskut-nescafe-terbaik": {
+"resepi-biskut-red-velvet-white": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -803,7 +803,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-biskut-suji-3-bahan": {
+"resepi-biskut-snow-almond-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -815,13 +815,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-biskut-snow-almond-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-biskut-tart-cadbury-terlajak": {
+"resepi-biskut-suji-3-bahan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -833,13 +827,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-biskut-telur-rebus-terbaik": {
+"resepi-biskut-tart-kurma-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-biskut-tart-kurma-sedap": {
+"resepi-biskut-tart-cadbury-terlajak": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-biskut-telur-rebus-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -851,13 +851,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-bomboloni-terbaik": {
+"resepi-biskut-tintan-kelapa-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-biskut-tintan-kelapa-lazat": {
+"resepi-bomboloni-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -869,13 +869,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-brownies-pod-viral": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-botok-botok-ikan-tenggiri-simple": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-brownies-pod-viral": {
+"resepi-brownie-cookies-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -887,7 +893,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-brownie-cookies-lazat": {
+"resepi-bubble-rice-choco-bar-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -911,25 +917,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-bubble-rice-choco-bar-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-bubur-biji-nangka-warna-warni": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-bubur-candil-keledek-ungu": {
+"resepi-bubur-delima-mangga-lemak-manis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-bubur-jagung-sagu-sedap": {
+"resepi-bubur-candil-keledek-ungu": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -947,25 +947,13 @@
 "broken": [],
 "ok": true
 },
+"resepi-bubur-jagung-sagu-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-bubur-kacang-durian-warisan-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-bubur-labu-ala-thai": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-bubur-delima-mangga-lemak-manis": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-bubur-pengat-labu": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -977,7 +965,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-bubur-oat-tomyam-viral": {
+"resepi-bubur-pengat-keledek-ungu-sagu": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -989,13 +977,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-bubur-pengat-keledek-ungu-sagu": {
+"resepi-bubur-oat-tomyam-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-bubur-pulut-hitam-sedap": {
+"resepi-bubur-labu-ala-thai": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-bubur-pengat-labu": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1007,13 +1001,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-butter-cake-gebu-goyang": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-bubur-wadai-kepeng-warisan-banjar": {
+"resepi-bubur-pulut-hitam-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1025,7 +1013,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-cakoi-lazat-kak-jez": {
+"resepi-butter-cookies-lazat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-bubur-wadai-kepeng-warisan-banjar": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-butter-cake-gebu-goyang": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1037,7 +1037,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-butter-cookies-lazat": {
+"resepi-cakoi-lazat-kak-jez": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1049,7 +1049,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-cara-buat-kimchi-di-rumah": {
+"resepi-cheesy-boat-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1061,7 +1061,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-cheesy-boat-sedap": {
+"resepi-cara-buat-kimchi-di-rumah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1073,13 +1073,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-chicken-grill-kak-nor": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-chicken-pie-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-chicken-grill-kak-nor": {
+"resepi-churros-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1103,7 +1109,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-churros-lazat": {
+"resepi-cornflakes-almond-rocher-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1115,7 +1121,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-congo-bars-viral": {
+"resepi-cornflake-madu-tradisi": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1127,19 +1133,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-congo-bars-viral": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-cornflakes-crunchy-cookies-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-cornflakes-almond-rocher-lazat": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-cornflake-madu-tradisi": {
+"resepi-creamy-pasta-meatballs": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1157,7 +1163,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-creamy-chicken-thai-bread-terbaik": {
+"resepi-creme-brulee-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1169,31 +1175,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-creamy-pasta-meatballs": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-cucur-bawang-paling-ringkas": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-cucur-ikan-bilis-paling-mantap-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-creme-brulee-terbaik": {
+"resepi-creamy-chicken-thai-bread-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-crispy-ball-nestum": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-cucur-ikan-bilis-paling-mantap-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1211,25 +1205,13 @@
 "broken": [],
 "ok": true
 },
+"resepi-cucur-bawang-paling-ringkas": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-cucur-isi-roti": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-cucur-jagung-manis": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-cucur-kembung-bulat-manis": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-cucur-jagung-lemak-vanila": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1241,7 +1223,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-cucur-nasi-kudapan-ringkas-sedap": {
+"resepi-cucur-kentang-paling-sedap-dan-mudah": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-cucur-kembung-bulat-manis": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-cucur-jagung-manis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1253,7 +1247,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-cucur-kentang-paling-sedap-dan-mudah": {
+"resepi-cucur-jagung-lemak-vanila": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1271,7 +1265,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-daging-bakar-harimau-menangis": {
+"resepi-cucur-nasi-kudapan-ringkas-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1289,7 +1283,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-daging-bakar-harimau-menangis": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-daging-bakar-perap-cecah-sos-pedas-thai": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-daging-goreng-kicap-pedas-manis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1313,7 +1319,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-daging-goreng-kicap-pedas-manis": {
+"resepi-daging-goreng-kunyit": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1331,19 +1337,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-daging-goreng-kunyit": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-daging-kaprau-terbaik": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-daging-masak-asam-kunyit": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1355,13 +1349,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-daging-masak-halia-black-pepper": {
+"resepi-daging-masak-asam-kunyit": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-daging-masak-hitam-5kg": {
+"resepi-daging-masak-halia-black-pepper": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1373,7 +1367,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-daging-masak-merah-klasik": {
+"resepi-daging-masak-hitam-5kg": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1385,7 +1379,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-daging-rebus-air-asam": {
+"resepi-daging-masak-merah-klasik": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-daging-merah-tradisional": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1397,7 +1397,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-daging-merah-tradisional": {
+"resepi-daging-rebus-air-asam": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1415,37 +1415,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-danish-butter-cookies-lazat": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-dhal-kambing-dalca-pekat-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-german-cookies-deutshe-kekse": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-fettucine-alfredo-berkrim-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-garlic-bread-simple-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-dim-sum-halal-homemade-yang-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-danish-butter-cookies-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1463,19 +1439,25 @@
 "broken": [],
 "ok": true
 },
-"resepi-ikan-bakar-portugis-simple": {
+"resepi-dhal-kambing-dalca-pekat-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-grilled-sandwich-lazat": {
+"resepi-fettucine-alfredo-berkrim-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-honey-nestum-almond-cookies-rangup": {
+"resepi-garlic-bread-simple-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-german-cookies-deutshe-kekse": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1487,7 +1469,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-honey-nestum-almond-cookies-rangup": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-hokkaido-cupcake-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-grilled-sandwich-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1499,7 +1493,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-ikan-kembung-kukus-mandi-air-asam": {
+"resepi-ikan-bakar-portugis-simple": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1511,43 +1505,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-ikan-jenahak-masak-sos-cili-thai": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-ikan-cencaru-goreng-sumbat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-ikan-kerisi-masak-kicap-pedas": {
+"resepi-ikan-jenahak-masak-sos-cili-thai": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-ikan-masak-asam-rebus-nenas": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ikan-kerisi-masak-taucu-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ikan-kerisi-masak-sos-tiram": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ikan-merah-masak-kari": {
+"resepi-ikan-kembung-kukus-mandi-air-asam": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1559,31 +1529,31 @@
 "broken": [],
 "ok": true
 },
+"resepi-ikan-masak-asam-rebus-nenas": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ikan-kerisi-masak-kicap-pedas": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ikan-kerisi-masak-sos-tiram": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ikan-kerisi-masak-taucu-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-ikan-merah-masak-gulai-kunyit": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ikan-pari-masam-asam-pedas": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ikan-pari-bakar-air-asam-meleleh": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ikan-pari-panggang": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-ikan-siakap-stim-limau-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1601,7 +1571,31 @@
 "broken": [],
 "ok": true
 },
-"resepi-ikan-talapia-percik-putih": {
+"resepi-ikan-pari-bakar-air-asam-meleleh": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ikan-pari-masam-asam-pedas": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ikan-merah-masak-kari": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ikan-pari-panggang": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ikan-siakap-stim-limau-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1613,13 +1607,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-ikan-tenggiri-asam-pedas-mantap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-japanese-cotton-cheese-cake-mudah": {
+"resepi-ikan-talapia-percik-putih": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1631,7 +1619,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-jus-limau-kasturi-masam-manis": {
+"resepi-ikan-tenggiri-asam-pedas-mantap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1643,7 +1631,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-jus-durian-belanda-ice-blended": {
+"resepi-japanese-cotton-cheese-cake-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1655,7 +1643,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-jus-pegaga-madu": {
+"resepi-jus-durian-belanda-ice-blended": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-jus-limau-kasturi-masam-manis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1667,13 +1661,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-jus-nenas-detox": {
+"resepi-jus-pegaga-madu": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kambing-masak-kurma-viral": {
+"resepi-jus-nenas-detox": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1685,13 +1679,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kari-daging-dengan-kerisik-lazat": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-batik-coklat-istimewa": {
+"resepi-kambing-masak-kurma-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1709,7 +1697,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-kari-daging-dengan-kerisik-lazat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kek-asam-manis-terbaik": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-batik-coklat-istimewa": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1721,19 +1721,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-butter-asli-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-kek-batik-viral": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-belacan-kukus-sarawak": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1751,13 +1739,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-chocolate-moist-chocolate": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-carrot-badam-lazat": {
+"resepi-kek-belacan-kukus-sarawak": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1769,13 +1751,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-cheese-viral": {
+"resepi-kek-butter-asli-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kek-coklat-berhantu-lazat": {
+"resepi-kek-carrot-badam-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1787,13 +1769,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-coklat-cheese-kukus-terbaik": {
+"resepi-kek-cheese-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kek-coklat-brulee-menawan": {
+"resepi-kek-chocolate-moist-chocolate": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-coklat-berhantu-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1801,11 +1789,31 @@
 },
 "resepi-kek-coklat-indulgence-homemade": {
 "indonesian": [],
+"shortform": [
+"1sb"
+],
+"broken": [],
+"ok": false
+},
+"resepi-kek-coklat-brulee-menawan": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-coklat-cheese-kukus-terbaik": {
+"indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-kek-coklat-moist-berkeju": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-coklat-moist-berkrim": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1823,19 +1831,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-coklat-moist-berkrim": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-kek-coklat-moist-versi-bakar-simple": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-gulung-dam-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1847,19 +1843,13 @@
 "broken": [],
 "ok": true
 },
+"resepi-kek-gulung-dam-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kek-hati-parek-hati-pari-sarawak": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-gulung-keladi-lazat": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-kismis-padu-mampat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1877,6 +1867,12 @@
 "broken": [],
 "ok": true
 },
+"resepi-kek-gulung-keladi-lazat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kek-kurma-coklat": {
 "indonesian": [],
 "shortform": [],
@@ -1884,6 +1880,18 @@
 "ok": true
 },
 "resepi-kek-kelapa-mudah": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-kismis-padu-mampat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-kukus-buah-versi-cik-ammar": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1901,31 +1909,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-kukus-buah-versi-cik-ammar": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-lapis-evergreen-cheese": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-lapis-jagung-terbaik": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-lapis-red-velvet-cheese": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-lapis-pelangi-horlicks-cheese": {
+"resepi-kek-lapis-masam-manis-legend": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1937,13 +1921,31 @@
 "broken": [],
 "ok": true
 },
+"resepi-kek-lapis-jagung-terbaik": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-lapis-evergreen-cheese": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-lapis-pelangi-horlicks-cheese": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kek-lapis-que-puteh-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kek-lapis-masam-manis-legend": {
+"resepi-kek-lapis-red-velvet-cheese": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1955,25 +1957,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-marble-coklat-viral": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-lumut-mantap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-kek-lapis-susu-dua-rasa-menarik": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-mangga-viral-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1985,7 +1969,25 @@
 "broken": [],
 "ok": true
 },
+"resepi-kek-marble-coklat-viral": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-mangga-viral-lazat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kek-marble-minyak": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-lumut-mantap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -1997,13 +1999,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-marble-terbaik": {
+"resepi-kek-milo-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kek-oren-wangi-sedap": {
+"resepi-kek-marble-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2015,13 +2017,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-milo-mudah": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-pink-ombre-kukus-viral": {
+"resepi-kek-oren-wangi-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2033,25 +2029,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-pink-ombre-dari-seberang": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-kek-pilih-kasih-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kek-pisang-gebu-sedap": {
+"resepi-kek-pink-ombre-kukus-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kek-pisang-kukus-mudah": {
+"resepi-kek-pink-ombre-dari-seberang": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2063,19 +2053,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-span-hitam-lazat": {
+"resepi-kek-pisang-kukus-mudah": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-pisang-gebu-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-kek-sandwich-lapis-jem-mudah": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-span-ogura-gebu-dan-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2099,7 +2089,25 @@
 "broken": [],
 "ok": true
 },
+"resepi-kek-span-hitam-lazat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-span-ogura-gebu-dan-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kek-tapak-kuda-lazat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kek-velvet-7-warna-pelangi": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2111,13 +2119,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kek-tembikai-kukus-mudah": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kek-velvet-7-warna-pelangi": {
+"resepi-kepak-paha-ayam-bakar-menggoda": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2135,13 +2137,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kepak-paha-ayam-bakar-menggoda": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kerabu-kerang-pucuk-paku-simple": {
+"resepi-kek-tembikai-kukus-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2153,7 +2149,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kerabu-perut-paling-sedap": {
+"resepi-kerabu-maggi-thai-pedas": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2165,19 +2161,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-kerabu-perut-paling-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kerabu-kerang-pucuk-paku-simple": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kerang-air-asam-mengiurkan": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kerabu-maggi-thai-pedas": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kerang-bakar-berempah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2189,7 +2185,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kerang-masak-black-pepper": {
+"resepi-kerang-bakar-berempah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2201,7 +2197,25 @@
 "broken": [],
 "ok": true
 },
+"resepi-kerang-masak-black-pepper": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kerang-masak-cili-padi": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kerang-masak-kari-kentang": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kerang-masak-lemak-kacang-buncis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2219,43 +2233,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-kerang-masak-cili-padi": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-kerang-masak-lemak-serai-pedas": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kerang-masak-lemak-kacang-buncis": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kerang-masak-sweet-sour": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kerang-masak-rendang-hijau": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-kerang-rebus-kuah-air-asam-power": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kerepek-crab-stick-kudapan-rangup-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2273,7 +2257,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-ketam-berlada-simple-lazat": {
+"resepi-kerang-masak-rendang-hijau": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kerang-masak-sweet-sour": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kerepek-crab-stick-kudapan-rangup-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2291,25 +2287,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-ketam-goreng-bersalut-sos-manis": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-ketam-masak-campak-campak-je": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-ketam-masak-cili-ala-singapore": {
+"resepi-ketam-berlada-simple-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-ketam-masak-nenas-kuah-kuning": {
+"resepi-ketam-goreng-bersalut-sos-manis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2327,19 +2317,43 @@
 "broken": [],
 "ok": true
 },
-"resepi-ketam-masak-lemak-cili-padi": {
+"resepi-ketam-masak-cili-ala-singapore": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-ketam-telur-masin-viral": {
+"resepi-ketam-masak-nenas-kuah-kuning": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-ketam-masak-pedas-ala-thai": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ketam-masak-lemak-cili-padi": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ketupat-sotong-kelantan": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kuah-sambal-kacang-original-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-ketam-telur-masin-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2357,19 +2371,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-ketupat-sotong-kelantan": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-kuah-yong-tau-fu-sedap-mantap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kuah-sambal-kacang-original-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2387,19 +2389,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kuey-teow-kung-fu-rahsia-kak-ana": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-kuih-agar-agar-warna-warni": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kuih-akok-original-kelantan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2411,19 +2401,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-kuih-apam-polkadot-comel": {
+"resepi-kuih-akok-original-kelantan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kuih-apam-solo-inti-kelapa": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kuih-bahulu-paling-asas": {
+"resepi-kuey-teow-kung-fu-rahsia-kak-ana": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2435,7 +2419,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-kuih-apam-solo-inti-kelapa": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kuih-apam-susu-simple-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kuih-apam-polkadot-comel": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2447,19 +2443,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-kuih-cakar-ayam-tradisi": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-kuih-bingka-labu": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kuih-bunga-pudaq-pudar": {
+"resepi-kuih-bahulu-paling-asas": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2471,19 +2461,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-kuih-bunga-pudaq-pudar": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kuih-cara-berlauk-awesome": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kuih-dangai-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kuih-getas-tradisional": {
+"resepi-kuih-cakar-ayam-tradisi": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2501,19 +2491,13 @@
 "broken": [],
 "ok": true
 },
+"resepi-kuih-dangai-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kuih-donut-gebu-lembut": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kuih-karas-rangup-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kuih-kaswi-gula-melaka-kenyal-gedik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2531,19 +2515,25 @@
 "broken": [],
 "ok": true
 },
+"resepi-kuih-karas-rangup-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kuih-kaswi-gula-melaka-kenyal-gedik": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kuih-getas-tradisional": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kuih-kuba-guling-biru": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kuih-lapis-kukus-viral": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kuih-manja-princess-larra": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2555,13 +2545,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kuih-nikbat-tradisi-terengganu": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kuih-lepat-labu-inti-kelapa-parut": {
+"resepi-kuih-lapis-kukus-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2573,7 +2557,25 @@
 "broken": [],
 "ok": true
 },
+"resepi-kuih-lepat-labu-inti-kelapa-parut": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-kuih-peneram-rengup-manis": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kuih-manja-princess-larra": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kuih-nikbat-tradisi-terengganu": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2582,10 +2584,8 @@
 "resepi-kuih-peria-warna-warni": {
 "indonesian": [],
 "shortform": [],
-"broken": [
-"Doough tepung pulut campur gandum buat teksturnya lembut tapi tetap kenyal."
-],
-"ok": false
+"broken": [],
+"ok": true
 },
 "resepi-kuih-sago-lapis-indah": {
 "indonesian": [],
@@ -2599,7 +2599,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kuih-sagu-merah-kelapa-parut": {
+"resepi-kuih-seri-ayu-coklat-cheese": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2611,13 +2611,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-kuih-seri-muka-durian": {
+"resepi-kuih-talam-lapis-sagu-lemak-manis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kuih-seri-ayu-coklat-cheese": {
+"resepi-kuih-sagu-merah-kelapa-parut": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2629,13 +2629,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kuih-talam-pisang": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kuih-talam-lapis-sagu-lemak-manis": {
+"resepi-kuih-seri-muka-durian": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2647,13 +2641,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-kuih-tauhu-rambutan-telur-puyuh": {
+"resepi-kuih-tepung-bungkus-warisan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-kuih-tepung-bungkus-warisan": {
+"resepi-kuih-talam-pisang": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2665,19 +2659,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-kuih-vietnam-spring-roll-popia": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-kuih-ulat-bulu-sukatan-cawan": {
+"resepi-kuih-tauhu-rambutan-telur-puyuh": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-kuih-ubi-ketuk-goreng-sedap-manis": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-kuih-ulat-bulu-sukatan-cawan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2695,11 +2689,23 @@
 "broken": [],
 "ok": true
 },
-"resepi-kupang-masak-sos-cili-thai": {
+"resepi-kupang-masak-lemak-cili-api": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
+},
+"resepi-kuih-vietnam-spring-roll-popia": {
+"indonesian": [
+"lembaran",
+"mentega",
+"cincang",
+"kacau",
+"gurih"
+],
+"shortform": [],
+"broken": [],
+"ok": false
 },
 "resepi-kupang-masak-sambal-merah": {
 "indonesian": [],
@@ -2707,7 +2713,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-kupang-masak-lemak-cili-api": {
+"resepi-kupang-masak-sos-cili-thai": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2731,7 +2737,16 @@
 "broken": [],
 "ok": true
 },
-"resepi-lala-masak-masam-manis-viral": {
+"resepi-lala-masak-halia-sos-tiram": {
+"indonesian": [
+"karot",
+"carrots"
+],
+"shortform": [],
+"broken": [],
+"ok": false
+},
+"resepi-lala-masak-kam-heong-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2743,19 +2758,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-lala-masak-halia-sos-tiram": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-lala-masak-kam-heong-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-lala-masak-serai-simple": {
+"resepi-lala-masak-masam-manis-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2773,13 +2776,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-lala-masak-tumis-mudah": {
+"resepi-lala-masak-serai-simple": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-lasagna-viral-ketagih": {
+"resepi-lala-masak-tumis-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2791,19 +2794,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-lava-chocolate-cake-mudah": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-lemang-golek-inti-kelapa": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-lempeng-kelapa-parut-sedap": {
+"resepi-lasagna-viral-ketagih": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-lava-chocolate-cake-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2815,7 +2818,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-lengkap-daging-grill-kentang-putar-coslow": {
+"resepi-lempeng-kelapa-parut-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2827,13 +2830,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-loaf-daging-bungkus-pastri-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-lontong-kuah-lodeh-tradisional": {
+"resepi-lengkap-daging-grill-kentang-putar-coslow": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2845,19 +2842,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-maggi-ketam-masam-manis-viral": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-macaroon-mudah": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-marble-cake-el-nino-pantas": {
+"resepi-loaf-daging-bungkus-pastri-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2869,19 +2854,37 @@
 "broken": [],
 "ok": true
 },
+"resepi-lontong-kuah-lodeh-tradisional": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-macaroon-mudah": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-maggi-ketam-masam-manis-viral": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-marble-cake-el-nino-pantas": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-meatball-homemade-kak-salmah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-mee-bandung-terangkat-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-mee-hailam-style-melayu": {
+"resepi-mee-hitam-korea-jjajangmyeon": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2893,7 +2896,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-mee-kolok-warisan-sarawak": {
+"resepi-mee-bandung-terangkat-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2905,7 +2908,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-mee-hitam-korea-jjajangmyeon": {
+"resepi-mee-hailam-style-melayu": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2923,31 +2926,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-mee-laksa-lemak-ketam-best": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-mini-cheese-cake-comel-lagi-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-mee-udang-special-kuah-banjir": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-mee-racun": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-murtabak-biskut-sardin-kak-noy": {
+"resepi-mee-kolok-warisan-sarawak": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2959,7 +2938,31 @@
 "broken": [],
 "ok": true
 },
-"resepi-murtabak-maggi-viral-sedap": {
+"resepi-mee-laksa-lemak-ketam-best": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-mee-racun": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-mee-udang-special-kuah-banjir": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-mini-cheese-cake-comel-lagi-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-murtabak-biskut-sardin-kak-noy": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2971,13 +2974,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-murtabak-daging-guna-kulit-popia": {
+"resepi-murtabak-daging-home-made": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-murtabak-daging-home-made": {
+"resepi-murtabak-daging-guna-kulit-popia": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -2989,13 +2992,31 @@
 "broken": [],
 "ok": true
 },
-"resepi-mushroom-soup-simple": {
+"resepi-murtabak-maggi-viral-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-nangka-masak-lemak-cili-api": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-nasi-arab-basmathi-mudah": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-mushroom-soup-simple": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-nasi-arab-simple-tapi-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3013,31 +3034,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-nasi-arab-simple-tapi-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-nasi-arab-basmathi-mudah": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-nasi-beriani-kurma-daging": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-nasi-daging-utara": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-nasi-daging-sedap-dari-utara": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3049,25 +3046,25 @@
 "broken": [],
 "ok": true
 },
-"resepi-nasi-burasak-wangi": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-nasi-beriani-lazat-nikmat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-nasi-ganja": {
+"resepi-nasi-burasak-wangi": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-nasi-goreng-bombay-telur-mata": {
+"resepi-nasi-daging-sedap-dari-utara": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-nasi-daging-utara": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3079,7 +3076,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-nasi-goreng-kerabu-simple-sedap": {
+"resepi-nasi-goreng-cornbeef-awesome": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-nasi-goreng-bombay-telur-mata": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-nasi-ganja": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3091,31 +3100,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-nasi-goreng-cornbeef-awesome": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-nasi-goreng-hijau": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-nasi-goreng-ketam-mr-crab": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-nasi-lemak-halba-kukus-enak": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-nasi-lemak-carrot-terbaik": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3127,7 +3112,31 @@
 "broken": [],
 "ok": true
 },
+"resepi-nasi-goreng-ketam-mr-crab": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-nasi-goreng-kerabu-simple-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-nasi-kerabu-sambal-tumis-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-nasi-lemak-carrot-terbaik": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-nasi-lemak-halba-kukus-enak": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3139,7 +3148,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-nasi-minyak-kuning-ayam-kurma": {
+"resepi-nugget-ayam-homemade-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3157,7 +3166,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-nugget-ayam-homemade-sedap": {
+"resepi-nasi-minyak-kuning-ayam-kurma": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3169,25 +3178,25 @@
 "broken": [],
 "ok": true
 },
-"resepi-nutella-swiss-tart-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-nutella-butter-cake-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-nutty-manggo-cheese-cake": {
+"resepi-nutella-swiss-tart-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-pajeri-terung-menambat-rasa": {
+"resepi-oreo-truffles-mudah-3-bahan": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-nutty-manggo-cheese-cake": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3205,25 +3214,13 @@
 "broken": [],
 "ok": true
 },
+"resepi-pajeri-terung-menambat-rasa": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-pancake-gebu-macam-mcdonald": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-pancake-coklat-nutella": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-oreo-truffles-mudah-3-bahan": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-paprik-ikan-kembung-awesome": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3235,19 +3232,13 @@
 "broken": [],
 "ok": true
 },
+"resepi-pancake-coklat-nutella": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-paru-goreng-berlado-warisan": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-paru-goreng-berempah": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-paru-masak-hitam-ringkas": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3259,7 +3250,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-pasta-macaroni-cheese-viral": {
+"resepi-paprik-ikan-kembung-awesome": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-paru-goreng-berempah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3271,13 +3268,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-pavlova-sedap": {
+"resepi-pasta-macaroni-cheese-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-pau-goreng-inti-kacang-merah": {
+"resepi-paru-masak-hitam-ringkas": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3289,13 +3286,31 @@
 "broken": [],
 "ok": true
 },
+"resepi-pecal-sayur-jawa": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-pavlova-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-peach-mochi-lembut-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-pecal-sayur-jawa": {
+"resepi-pau-goreng-inti-kacang-merah": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-peria-goreng-telur-hancur": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3313,7 +3328,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-peria-goreng-telur-hancur": {
+"resepi-perut-air-asam-hanie-zarin": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3331,7 +3346,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-perut-air-asam-hanie-zarin": {
+"resepi-perut-air-asam-sedap-versi-fatin": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3343,25 +3358,25 @@
 "broken": [],
 "ok": true
 },
-"resepi-perut-air-asam-sedap-versi-fatin": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-perut-lembu-masak-lemak-cili": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-perut-muda-masak-tumis-express": {
+"resepi-pizza-daging-turki-pide-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-pizza-daging-turki-pide-sedap": {
+"resepi-perut-masak-lemak-cili-padi-kak": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-perut-muda-masak-tumis-express": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3379,7 +3394,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-perut-masak-lemak-cili-padi-kak": {
+"resepi-pizza-kuali-sempoi-tapi-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-pizza-masak-dalam-kuali-jer": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3391,13 +3412,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-pizza-kuali-sempoi-tapi-sedap": {
+"resepi-popia-mini-udang-ranggup": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-pizza-masak-dalam-kuali-jer": {
+"resepi-pucuk-paku-goreng-tanpa-belacan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3415,25 +3436,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-popia-mini-udang-ranggup": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-puding-buih-white-orea": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-puding-buih-kuah-kastard": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-pucuk-paku-goreng-tanpa-belacan": {
+"resepi-puding-buih-white-orea": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3457,13 +3466,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-puding-pisang-kuah-kastard-versi-2": {
+"resepi-puding-oreo-simple": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-puding-oreo-simple": {
+"resepi-puding-pisang-kuah-kastard-versi-2": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3481,13 +3490,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-rempah-perapan-ayam-sosej-untuk": {
+"resepi-rempah-perap-satay-ayam-simple": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-rempah-perap-satay-ayam-simple": {
+"resepi-rempah-perapan-ayam-sosej-untuk": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3523,13 +3532,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-rendang-daging-viral-sedap": {
+"resepi-rendang-kerang-extra-pedas": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-rendang-kerang-extra-pedas": {
+"resepi-rendang-daging-viral-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3541,13 +3550,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-roti-arab-ringkas-homemade": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-roti-baghdad-roti-khurasan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-roti-arab-ringkas-homemade": {
+"resepi-roti-bakar-telur-mata-cheese": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3565,6 +3580,18 @@
 "broken": [],
 "ok": true
 },
+"resepi-roti-butter-golok-viral": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-roti-canai-lembut-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-roti-goreng-tempura-3-bahan": {
 "indonesian": [],
 "shortform": [],
@@ -3577,37 +3604,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-roti-butter-golok-viral": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-roti-bakar-telur-mata-cheese": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-roti-canai-lembut-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-roti-john-homemade-simple": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-roti-naik-manis-roti-gula": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-roti-loyang-roti-manis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3619,7 +3616,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-roti-puri-belon-kembang-bulat": {
+"resepi-roti-john-homemade-simple": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-roti-loyang-roti-manis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3631,13 +3634,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-roti-sosej-cheese-roll-enak": {
+"resepi-roti-sarang-lebah-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-roti-sosej-mixed-vege-mudah": {
+"resepi-roti-puri-belon-kembang-bulat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3649,21 +3652,25 @@
 "broken": [],
 "ok": true
 },
-"resepi-roti-sarang-lebah-mudah": {
-"indonesian": [],
-"shortform": [],
-"broken": [
-"Sos karamel yang lebih boleh disimpan dalam bekas kedap udara di dalam peti sejuk sehingga seminggu."
-],
-"ok": false
-},
 "resepi-roti-sosej-mini-comel-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
+"resepi-roti-sosej-cheese-roll-enak": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-roti-sosej-kukus-viral": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-roti-waffle-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3681,13 +3688,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-roti-waffle-mudah": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sambal-daging-pedas-enak": {
+"resepi-roti-sosej-mixed-vege-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3699,7 +3700,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-sambal-hitam-pahang-original": {
+"resepi-sambal-daging-pedas-enak": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3711,25 +3712,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-sambal-sotong-petai-sedap-meleleh": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-sambal-goreng-tempe": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-sambal-telur-viral": {
+"resepi-sambal-hitam-pahang-original": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-sambal-telur-goreng-pedas-tapi-nikmat": {
+"resepi-sambal-sotong-petai-sedap-meleleh": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3747,13 +3742,25 @@
 "broken": [],
 "ok": true
 },
+"resepi-sambal-udang-petai-tradisi": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sambal-telur-goreng-pedas-tapi-nikmat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-sambal-tempoyak-petai-ikan-bilis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-sambal-udang-petai-tradisi": {
+"resepi-sambal-telur-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3765,13 +3772,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-samosa-daging-mudah": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-sandwich-sedap-macam-subway": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-samosa-daging-mudah": {
+"resepi-sardin-roll-bakar-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3789,13 +3802,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-sayur-asparagus-cendawan-tumis": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sardin-roll-bakar-viral": {
+"resepi-satay-ayam-ala-kebab-pak-arab": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3807,7 +3814,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-satay-ayam-ala-kebab-pak-arab": {
+"resepi-sayur-asparagus-masak-pedas": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sayur-baby-kailan-masak-tumis": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3819,7 +3832,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-sayur-baby-kailan-masak-tumis": {
+"resepi-sayur-asparagus-cendawan-tumis": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sayur-bendi-udang-goreng-belacan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3837,25 +3856,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-sayur-asparagus-masak-pedas": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sayur-bayam-cendawan-masak-air": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sayur-bendi-udang-goreng-belacan": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sayur-kacang-panjang-masak-lemak": {
+"resepi-sayur-brokoli-candawan-butang": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3867,31 +3868,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-sayur-cendawan-goreng-simple": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sayur-brokoli-candawan-butang": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sayur-kacang-buncis-masak-sambal": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sayur-kangkung-goreng-belacan-versi-2": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sayur-kailan-ikan-masin-udang": {
+"resepi-sayur-bayam-cendawan-masak-air": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3903,7 +3880,25 @@
 "broken": [],
 "ok": true
 },
-"resepi-sayur-kangkung-goreng-belacan": {
+"resepi-sayur-cendawan-goreng-simple": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sayur-kacang-panjang-masak-lemak": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sayur-kacang-buncis-masak-sambal": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sayur-kailan-ikan-masin-udang": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3915,19 +3910,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-sayur-kangkung-goreng-belacan-versi-2": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sayur-kangkung-goreng-belacan": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-sayur-kobis-goreng-cencalok": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sayur-kobis-goreng-kuning-macam": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sayur-petola-masak-telur-sambal": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3945,6 +3940,24 @@
 "broken": [],
 "ok": true
 },
+"resepi-sayur-kobis-goreng-kuning-macam": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sayur-petola-masak-telur-sambal": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sayur-petola-masak-sup": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-sayur-pucuk-paku-masak-lemak": {
 "indonesian": [],
 "shortform": [],
@@ -3957,7 +3970,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-sayur-petola-masak-sup": {
+"resepi-sayur-pucuk-ubi-masak-lemak-cili": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3969,7 +3982,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-sayur-pucuk-ubi-masak-lemak-cili": {
+"resepi-sayur-terung-goreng-berlada": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -3981,25 +3994,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-sayur-terung-bakar-sambal-asam": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sayur-terung-goreng-berlada": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-sayur-taugeh-tumis-ikan-masin": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-semperit-pandan-viral": {
+"resepi-sayur-terung-bakar-sambal-asam": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4011,13 +4012,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-serunding-iklan-pantai-timur": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-serunding-kerang-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-serunding-iklan-pantai-timur": {
+"resepi-semperit-pandan-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4035,7 +4042,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-siput-sedut-masak-kicap-mudah": {
+"resepi-siput-sedut-masak-lemak-batang": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-snek-kacang-bersalut-tepung-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4053,31 +4066,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-siput-sedut-tumis-sambal-belacan": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-siput-sedut-masak-lemak-batang": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-snek-kacang-bersalut-tepung-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-soft-marble-cake-lazat": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sos-cili-thai-sedap": {
+"resepi-siput-sedut-masak-kicap-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4089,7 +4078,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-soto-ayam-champion": {
+"resepi-siput-sedut-tumis-sambal-belacan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4101,31 +4090,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-sotong-bakar-portugis-power": {
+"resepi-soto-ayam-champion": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-sotong-bakar-mandi-sambal": {
+"resepi-sos-cili-thai-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-sotong-kukus-limau-nyummy": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sotong-kangkung-sedap": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sotong-masak-pedas-sedap": {
+"resepi-soft-marble-cake-lazat": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4137,13 +4114,37 @@
 "broken": [],
 "ok": true
 },
-"resepi-sotong-masak-lemak-belimbing": {
+"resepi-sotong-bakar-mandi-sambal": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-sotong-sumbat-bakar-meleleh-sedap": {
+"resepi-sotong-bakar-portugis-power": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sotong-kangkung-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sotong-kukus-limau-nyummy": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sotong-masak-pedas-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sotong-masak-lemak-belimbing": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4155,7 +4156,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-sunquick-moist-cake-sedap": {
+"resepi-sotong-sumbat-bakar-meleleh-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4167,7 +4168,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-sup-ayam-kentang-kaw": {
+"resepi-sunquick-moist-cake-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4179,13 +4180,25 @@
 "broken": [],
 "ok": true
 },
-"resepi-sup-cendawan-shitake-crabstick": {
+"resepi-sup-brokoli-berkrim-hirisan-ayam": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-sup-brokoli-berkrim-hirisan-ayam": {
+"resepi-sup-daging-mables": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sup-ayam-kentang-kaw": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sup-cendawan-shitake-crabstick": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4197,7 +4210,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-sup-daging-mables": {
+"resepi-sup-ikan-tenggiri-soo-hoon": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4215,12 +4228,6 @@
 "broken": [],
 "ok": true
 },
-"resepi-sup-ikan-tenggiri-soo-hoon": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-sup-ketam-sedap": {
 "indonesian": [],
 "shortform": [],
@@ -4228,12 +4235,6 @@
 "ok": true
 },
 "resepi-sup-rempah-mamak-penang-original": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-sup-tulang-merah-singapura-istimewa": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4251,25 +4252,31 @@
 "broken": [],
 "ok": true
 },
-"resepi-sup-telur-crab-stick-mudah": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
 "resepi-sup-tepung-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-sup-tulang-thai-kaw": {
+"resepi-sup-telur-crab-stick-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-sup-udang-thai-mantap": {
+"resepi-sup-tulang-merah-singapura-istimewa": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-takoyaki-senang-nak-buat": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-sup-tulang-thai-kaw": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4287,13 +4294,19 @@
 "broken": [],
 "ok": true
 },
+"resepi-sup-udang-thai-mantap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-tart-nenas-cantik-berhias-mudah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-tauhu-bulat-berlauk-viral": {
+"resepi-telur-bistik-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4305,19 +4318,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-takoyaki-senang-nak-buat": {
+"resepi-tauhu-bulat-berlauk-viral": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-telur-belangkas-pedas": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-telur-bistik-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4335,7 +4342,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-telur-matahari-di-atas-awan-yang-tembam-dan-sedap": {
+"resepi-telur-hancur-bawang-karamel": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4347,19 +4354,7 @@
 "broken": [],
 "ok": true
 },
-"resepi-telur-hancur-bawang-karamel": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-tempoyak-ikan-patin-versi-asli-temerloh": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-tepung-bungkus-tradisional": {
+"resepi-telur-matahari-di-atas-awan-yang-tembam-dan-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4371,13 +4366,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-tomyam-ala-thai-kaw-kaw": {
+"resepi-tepung-bungkus-tradisional": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-tomyam-putih-original-padu": {
+"resepi-tempoyak-ikan-patin-versi-asli-temerloh": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4389,25 +4384,25 @@
 "broken": [],
 "ok": true
 },
+"resepi-tomyam-ala-thai-kaw-kaw": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
 "resepi-tomyam-campur-thai-kak-aisha": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-udang-bakar-berempah": {
+"resepi-tomyam-putih-original-padu": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-udang-bakar-cheese-lemak-berkrim": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-udang-buttermilk-sedap-rasanya": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4425,25 +4420,19 @@
 "broken": [],
 "ok": true
 },
-"resepi-udang-goreng-simply-crispy": {
+"resepi-udang-bakar-berempah": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resepi-udang-nestum-memang-rare": {
+"resepi-udang-buttermilk-sedap-rasanya": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "resepi-udang-masak-lemak-timun": {
-"indonesian": [],
-"shortform": [],
-"broken": [],
-"ok": true
-},
-"resepi-yee-mee-sizzling-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4461,13 +4450,13 @@
 "broken": [],
 "ok": true
 },
-"resepi-yee-mee-kantonis-sedap": {
+"resepi-udang-goreng-simply-crispy": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
-"resipi-kuih-puteri-ayu-raudhah": {
+"resepi-udang-nestum-memang-rare": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
@@ -4479,13 +4468,31 @@
 "broken": [],
 "ok": true
 },
-"roti-kaya-goreng-2-bahan": {
+"resepi-yee-mee-sizzling-sedap": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resipi-kuih-puteri-ayu-raudhah": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"resepi-yee-mee-kantonis-sedap": {
 "indonesian": [],
 "shortform": [],
 "broken": [],
 "ok": true
 },
 "roti-telur-sardin-goreng-menyelerakan": {
+"indonesian": [],
+"shortform": [],
+"broken": [],
+"ok": true
+},
+"roti-kaya-goreng-2-bahan": {
 "indonesian": [],
 "shortform": [],
 "broken": [],

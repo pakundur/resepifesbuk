@@ -10,3 +10,7 @@ ghi.json
 ghr.json
 ghb.json
 sm.xml
+
+# R2 image download cache (images live in R2, not git)
+imgdl/
+t_s0.jpg

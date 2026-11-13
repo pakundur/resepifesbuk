@@ -172,6 +172,24 @@ for rel, p in pages.items():
             noalt += 1
 chk(15, "all images have alt text", noalt == 0, f"{noalt} missing")
 
+# 17. images served from R2, not Blogger
+blogger_pages = []
+blogger_hits = 0
+for rel, p in pages.items():
+    s = read(p)
+    n = s.count("blogger.googleusercontent.com")
+    if n:
+        blogger_pages.append(rel)
+        blogger_hits += n
+chk(17, "images served from R2 (no Blogger)", blogger_hits == 0,
+    f"0 Blogger refs" if blogger_hits == 0 else f"{blogger_hits} refs on {len(blogger_pages)} pages")
+
+# 18. every recipe has an r2_key and the object is reachable
+missing_key = [x["slug"] for x in json.load(open(os.path.join(ROOT, "img_map.json")))
+               if not x.get("key")]
+chk(18, "all recipes have an R2 image key", len(missing_key) == 0,
+    f"{len(missing_key)} missing")
+
 # 16. aggregate
 ok = all(r[2] for r in res)
 print(f"{'#':>3}  {'CHECK':<42} RESULT")

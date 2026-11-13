@@ -228,8 +228,18 @@ def alt_text(r):
     return re.sub(r"\s+", " ", alt).strip()[:125]
 
 
+IMG_BASE = "https://img.resepifesbuk.com"
+
+# slug -> R2 object key (SEO filename). Produced by mk_imgmap.py.
+IMG_KEY_OF = {}
+_img_map_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "img_map.json")
+if os.path.exists(_img_map_path):
+    for _e in json.load(open(_img_map_path)):
+        IMG_KEY_OF[_e["slug"]] = _e["key"]
+
+
 def thumb(url, w=600):
-    """Blogger CDN size param -> width variant for cards."""
+    """Blogger CDN size param -> width variant for cards (legacy path)."""
     if not url:
         return ""
     return re.sub(r"/s\d+(-c)?/", f"/w{w}-h{w*0.75:.0f}-c/", url)
@@ -241,6 +251,14 @@ def big(url):
     return re.sub(r"/s\d+(-c)?/", "/s1600/", url)
 
 
+def img_url(r):
+    """R2-hosted image URL for a recipe (fallback: original source URL)."""
+    key = r.get("r2_key") or IMG_KEY_OF.get(r.get("slug"))
+    if key:
+        return f"{IMG_BASE}/{key}"
+    return big(r.get("img") or "")
+
+
 # normalise recipe fields
 for r in recipes:
     r["published_d"] = iso_date(r.get("published"))
@@ -249,6 +267,7 @@ for r in recipes:
     r["cat1"] = llm_cat or (r["cats"][0] if r["cats"] else "Lain-lain")
     r["cats"] = [r["cat1"]]          # single category, everywhere
     r["cat_slug"] = cat_slug(r["cat1"])
+    r["r2_key"] = IMG_KEY_OF.get(r["slug"]) or None
     if not r.get("intro"):
         r["intro"] = clean_meta(
             "Resepi " + re.sub(r"^Resepi\s+", "", r["title"], flags=re.I)
@@ -378,7 +397,8 @@ def head(title, desc, canonical, og_type="website", og_img="", published=None,
 <meta name="twitter:image" content="{esc(img)}">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://blogger.googleusercontent.com" crossorigin>
+<link rel="preconnect" href="{IMG_BASE}" crossorigin>
+<link rel="dns-prefetch" href="{IMG_BASE}">
 <link rel="stylesheet" href="/style.css?v={CSS_HASH}">
 <link rel="alternate" type="application/rss+xml" title="{SITE_NAME} RSS" href="{SITE_URL}/feed.xml">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -456,7 +476,7 @@ def card(r, eager=False):
     fetch = ' fetchpriority="high"' if eager else ""
     return f"""<a class="rcard" href="/resepi/{r['slug']}/">
   <div class="rcard-img">
-    <img src="{esc(thumb(r['img']))}" alt="{esc(alt_text(r))}" width="600" height="450"{loading}{fetch} decoding="async">
+    <img src="{esc(img_url(r))}" alt="{esc(alt_text(r))}" width="600" height="450"{loading}{fetch} decoding="async">
   </div>
   <div class="rcard-body">
     <span class="rcard-cat">{esc(r['cat1'])}</span>
@@ -511,7 +531,7 @@ write("index.html", head(
     f"{SITE_NAME}: {SITE_TAGLINE} | 748 Resepi Mudah & Sedap",
     f"Koleksi {len(recipes)} resepi Malaysia: nasi, mee, lauk, kuih, kek & minuman. "
     f"Bahan lengkap, langkah bergambar dan tips masakan untuk semua peringkat.",
-    SITE_URL + "/", og_img=big(recipes[0]["img"]), extra_ld=home_ld) + header_html() + f"""
+    SITE_URL + "/", og_img=img_url(recipes[0]), extra_ld=home_ld) + header_html() + f"""
 <main>
   <section class="hero sky-field">
     <div class="wrap">
@@ -635,7 +655,7 @@ for idx, r in enumerate(recipes):
         "headline": headline[:110],
         "description": meta_desc,
         "url": canon,
-        "image": [big(r["img"]), thumb(r["img"], 1200), thumb(r["img"], 800)],
+        "image": [img_url(r)],
         "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
         "publisher": {"@type": "Organization", "name": SITE_NAME,
                       "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/icon-512.png"}},
@@ -670,7 +690,7 @@ for idx, r in enumerate(recipes):
             "publisher": {"@type": "Organization", "name": SITE_NAME,
                           "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/icon-512.png"}},
             "mainEntityOfPage": {"@type": "WebPage", "@id": canon},
-            "image": [big(r["img"])],
+            "image": [img_url(r)],
         }
     else:
         agg = None
@@ -690,7 +710,7 @@ for idx, r in enumerate(recipes):
         meta_desc,
         canon,
         og_type="article",
-        og_img=big(r["img"]),
+        og_img=img_url(r),
         published=r["published_d"] + "T00:00:00+08:00",
         updated=r["updated_d"] + "T00:00:00+08:00",
         extra_ld=lds,
@@ -724,7 +744,7 @@ for idx, r in enumerate(recipes):
     <h1 class="display">{esc(headline)}</h1>
     <div class="recipe-facts">{facts_html}</div>
 
-    <img class="recipe-hero-img" src="{esc(big(r['img']))}" alt="{esc(alt_text(r))}" width="1200" height="800" fetchpriority="high" decoding="async">
+    <img class="recipe-hero-img" src="{esc(img_url(r))}" alt="{esc(alt_text(r))}" width="1200" height="800" fetchpriority="high" decoding="async">
   </div>
 
   <div class="wrap-narrow">
@@ -795,7 +815,7 @@ for p in range(1, total_pages + 1):
                 f"Halaman {p} daripada {total_pages} senarai lengkap {len(recipes)} resepi "
                 f"Malaysia, bahan penuh dan cara penyediaan langkah demi langkah. Halaman ini "
                 f"himpun resepi untuk semua selera, dari menu harian sampai juadah majlis.",
-                canon, og_img=big(chunk[0]["img"]) if chunk else "", extra_ld=ld)
+                canon, og_img=img_url(chunk[0]) if chunk else "", extra_ld=ld)
     page = page.replace("</head>", prev_link + next_link + "\n</head>") if (prev_link or next_link) else page
     page += header_html() + f"""<main>
 <section style="padding-bottom:30px">
@@ -869,7 +889,7 @@ for c, items in CATS.items():
     }]
     page = head(f"{cat_title} | {SITE_NAME}",
                 cat_desc,
-                canon, og_img=big(items[0]["img"]), extra_ld=ld)
+                canon, og_img=img_url(items[0]), extra_ld=ld)
     page += header_html() + f"""<main>
 <section style="padding-bottom:30px">
   <div class="wrap">
@@ -905,7 +925,7 @@ cat_tiles = "\n".join(
 page = head(f"Semua Kategori Resepi | {SITE_NAME}",
             f"{len(CATS)} kategori resepi Malaysia: nasi, mee, lauk, kuih, kek, minuman dan banyak lagi.",
             SITE_URL + "/kategori/",
-            og_img=big(recipes[0]["img"]),
+            og_img=img_url(recipes[0]),
             extra_ld={"@context": "https://schema.org", "@type": "CollectionPage",
                       "name": "Kategori Resepi", "url": SITE_URL + "/kategori/",
                       "inLanguage": "ms-MY"})
@@ -1130,7 +1150,7 @@ shutil.copy2(css_path, os.path.join(DIST, "style.css"))
 # Search index as a separate, long-cacheable asset.
 write("search-index.json", json.dumps(
     [{"t": headline_of(r), "s": r["slug"], "c": r["cat1"],
-      "i": thumb(r["img"]), "d": clean_meta(r["intro"], 110)} for r in recipes],
+      "i": img_url(r), "d": clean_meta(r["intro"], 110)} for r in recipes],
     ensure_ascii=False, separators=(",", ":")))
 print("search-index.json written")
 
