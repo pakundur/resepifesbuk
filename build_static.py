@@ -465,10 +465,6 @@ def header_html():
 
 
 def footer_html():
-    top_cats = list(CATS.items())[:8]
-    cat_links = "\n".join(
-        f'        <li><a href="/kategori/{cat_slug(c)}/">{esc(c)}</a> <span style="color:var(--ink-mute);font-size:.8em">({len(v)})</span></li>'
-        for c, v in top_cats)
     return f"""<footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -477,9 +473,11 @@ def footer_html():
         <p class="footer-about">{SITE_DESC}</p>
       </div>
       <div>
-        <h4>Kategori Popular</h4>
+        <h4>Maklumat</h4>
         <ul>
-{cat_links}
+          <li><a href="/tentang/">Tentang Kami</a></li>
+          <li><a href="/pendedahan-affiliate/">Pendedahan Affiliate</a></li>
+          <li><a href="/feed.xml">RSS Feed</a></li>
         </ul>
       </div>
       <div>
@@ -488,9 +486,6 @@ def footer_html():
           <li><a href="/resepi/">Semua Resepi</a></li>
           <li><a href="/kategori/">Semua Kategori</a></li>
           <li><a href="/cari/">Cari Resepi</a></li>
-          <li><a href="/tentang/">Tentang Kami</a></li>
-          <li><a href="/pendedahan-affiliate/">Pendedahan Affiliate</a></li>
-          <li><a href="/feed.xml">RSS Feed</a></li>
         </ul>
       </div>
     </div>
