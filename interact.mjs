@@ -17,7 +17,10 @@ window.requestAnimationFrame = (cb) => setTimeout(() => cb(Date.now()), 0);
 window.cancelAnimationFrame = (id) => clearTimeout(id);
 window.scrollTo = () => {};
 
-const jsFile = html.match(/src="([^"]+\.js)"/)[1].replace(/^\//, "");
+// Resolve the bundle relative to the deploy base baked into index.html.
+const rawSrc = html.match(/src="([^"]+\.js)"/)[1];
+const base = process.env.GITHUB_ACTIONS ? "/resepifesbuk/" : "/";
+const jsFile = rawSrc.startsWith(base) ? rawSrc.slice(base.length) : rawSrc.replace(/^\//, "");
 window.eval(fs.readFileSync(path.join(dist, jsFile), "utf8"));
 await new Promise(r => setTimeout(r, 900));
 

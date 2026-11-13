@@ -22,9 +22,26 @@ window.requestAnimationFrame = (cb) => setTimeout(() => cb(Date.now()), 0);
 window.cancelAnimationFrame = (id) => clearTimeout(id);
 window.scrollTo = () => {};
 
-// Load built bundle
-const jsFile = html.match(/src="([^"]+\.js)"/)[1].replace(/^\//, "");
-const bundle = fs.readFileSync(path.join(dist, jsFile), "utf8");
+// Load built bundle.
+// The HTML src carries the deploy base (e.g. "/resepifesbuk/assets/x.js" in CI,
+// "/assets/x.js" locally). Strip the base so the path resolves inside dist/.
+const rawSrc = html.match(/src="([^"]+\.js)"/)[1];
+const base = process.env.GITHUB_ACTIONS ? "/resepifesbuk/" : "/";
+const jsFile = rawSrc.startsWith(base) ? rawSrc.slice(base.length) : rawSrc.replace(/^\//, "");
+const bundlePath = path.join(dist, jsFile);
+if (!fs.existsSync(bundlePath)) {
+  console.log(`FATAL: bundle not found.\n  src=${rawSrc}\n  base=${base}\n  resolved=${bundlePath}`);
+  const listing = [];
+  (function walk(d) {
+    for (const f of fs.readdirSync(d, { withFileTypes: true })) {
+      const p = path.join(d, f.name);
+      if (f.isDirectory()) walk(p); else listing.push(path.relative(dist, p));
+    }
+  })(dist);
+  console.log("  dist contents:", listing.join(", "));
+  process.exit(1);
+}
+const bundle = fs.readFileSync(bundlePath, "utf8");
 
 let errors = [];
 window.addEventListener("error", (e) => errors.push("window.error: " + e.message));
