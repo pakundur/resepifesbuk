@@ -5,3 +5,10 @@
 name = "resepifesbuk-git"
 pages_build_output_dir = "dist"
 compatibility_date = "2026-11-01"
+
+# R2 binding for the /img/* Pages Function (functions/img/[[path]].js).
+# Lets images be served from resepifesbuk.com/img/... instead of a separate
+# img. subdomain, which some resolvers fail to resolve.
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "resepifesbuk"

@@ -228,7 +228,7 @@ def alt_text(r):
     return re.sub(r"\s+", " ", alt).strip()[:125]
 
 
-IMG_BASE = "https://img.resepifesbuk.com"
+IMG_BASE = "https://resepifesbuk.com/img"
 
 # slug -> R2 object key (SEO filename). Produced by mk_imgmap.py.
 IMG_KEY_OF = {}
@@ -397,8 +397,6 @@ def head(title, desc, canonical, og_type="website", og_img="", published=None,
 <meta name="twitter:image" content="{esc(img)}">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="{IMG_BASE}" crossorigin>
-<link rel="dns-prefetch" href="{IMG_BASE}">
 <link rel="stylesheet" href="/style.css?v={CSS_HASH}">
 <link rel="alternate" type="application/rss+xml" title="{SITE_NAME} RSS" href="{SITE_URL}/feed.xml">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">

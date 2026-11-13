@@ -190,6 +190,18 @@ missing_key = [x["slug"] for x in json.load(open(os.path.join(ROOT, "img_map.jso
 chk(18, "all recipes have an R2 image key", len(missing_key) == 0,
     f"{len(missing_key)} missing")
 
+# 19. images must be same-origin (no img. subdomain dependency)
+imgsub_pages = []
+imgsub_hits = 0
+for rel, p in pages.items():
+    s = read(p)
+    n = s.count("img.resepifesbuk.com")
+    if n:
+        imgsub_pages.append(rel)
+        imgsub_hits += n
+chk(19, "images served same-origin (no img. subdomain)", imgsub_hits == 0,
+    "0 subdomain refs" if imgsub_hits == 0 else f"{imgsub_hits} refs on {len(imgsub_pages)} pages")
+
 # 16. aggregate
 ok = all(r[2] for r in res)
 print(f"{'#':>3}  {'CHECK':<42} RESULT")
