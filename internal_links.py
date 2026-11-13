@@ -51,11 +51,13 @@ def anchor_of(r):
     h = (REWRITE.get(r["slug"]) or {}).get("headline") or ""
     t = h or r["title"]
     t = re.sub(r"\s*[-–—]\s*Resepi Mudah.*$", "", t, flags=re.I)
-    # for "Set Resepi Lengkap: A, B & C" prefer the concrete dishes after ':'
+    # Multi-dish posts ("Set Resepi Lengkap: A, B & C") need the concrete dishes
+    # after the colon, otherwise every such link reads "Set Resepi Lengkap".
+    # For ordinary recipes keep the full headline so the anchor text matches
+    # the page title exactly -- a short anchor drifts out of sync with the
+    # headline every time the headline is extended.
     if re.match(r"(?i)^(set|koleksi|pelbagai|macam-macam)\b", t) and ":" in t:
         t = t.split(":", 1)[1]
-    else:
-        t = t.split(":")[0]
     t = re.sub(r"^resepi\s+|^resipi\s+", "", t.strip(), flags=re.I)
     return t.strip()[:70]
 

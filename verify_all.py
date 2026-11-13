@@ -44,7 +44,17 @@ for rel, p in pages.items():
             shown = html.unescape(re.sub("<[^>]+>", "", h.group(1))).strip()
             if shown != rw[href]["headline"]:
                 bad += 1
-chk(1, "headlines synced to all listings", bad == 0, f"{bad} mismatched cards")
+    # related-post anchors must also carry the current headline
+    for blk in re.findall(r'<ul class="related-list">(.*?)</ul>', s, re.S):
+        for href, inner in re.findall(r'<a href="/resepi/([^/"]+)/">(.*?)</a>', blk, re.S):
+            if href not in rw:
+                continue
+            shown = html.unescape(re.sub(r"<[^>]+>", "", inner)).strip()
+            want = rw[href]["headline"]
+            # allow the intentional short form for multi-dish "Set ..." posts
+            if shown != want and shown != want.split(":", 1)[0].strip():
+                bad += 1
+chk(1, "headlines synced to all listings", bad == 0, f"{bad} mismatched cards/related links")
 
 # 2. no broken internal links
 disk = set(pages)
