@@ -94,7 +94,11 @@ for p in pages:
             warn(f"{rel}: image not on Google CDN: {src[:70]}")
 
     # 6. internal links
-    for href in re.findall(r'href="(/[^"#?]*)"', h):
+    # Strip <script> blocks first: the search page builds links with JS
+    # template literals (/resepi/${x.s}/) which are valid in the browser but
+    # would be reported as broken static paths.
+    h_static = re.sub(r"<script[^>]*>.*?</script>", "", h, flags=re.S)
+    for href in re.findall(r'href="(/[^"#?$]*)"', h_static):
         all_links[href] += 1
         link_targets.add(href)
 

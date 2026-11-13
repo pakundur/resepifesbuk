@@ -311,6 +311,10 @@ def write(path, content):
 
 
 # ---------------------------------------------------------------- pages
+# Wipe dist first: renamed/removed categories used to leave orphan page
+# directories behind, which then got deployed as duplicate thin pages.
+if os.path.isdir(DIST):
+    shutil.rmtree(DIST)
 os.makedirs(DIST, exist_ok=True)
 
 # ---- home ----
@@ -340,7 +344,7 @@ home_ld = {
 }
 
 write("index.html", head(
-    f"{SITE_NAME} — {SITE_TAGLINE} | 748 Resepi Mudah & Sedap",
+    f"{SITE_NAME}: {SITE_TAGLINE} | 748 Resepi Mudah & Sedap",
     f"Koleksi {len(recipes)} resepi Malaysia: nasi, mee, lauk, kuih, kek & minuman. "
     f"Bahan lengkap, langkah bergambar dan tips masakan untuk semua peringkat.",
     SITE_URL + "/", og_img=big(recipes[0]["img"]), extra_ld=home_ld) + header_html() + f"""
@@ -584,7 +588,7 @@ for p in range(1, total_pages + 1):
     chunk = recipes[(p - 1) * PER_PAGE: p * PER_PAGE]
     cards = "\n".join(card(r) for r in chunk)
     canon = f"{SITE_URL}/halaman/{p}/" if p > 1 else f"{SITE_URL}/resepi/"
-    title = f"Semua Resepi — Halaman {p}" if p > 1 else f"Semua Resepi ({len(recipes)})"
+    title = f"Semua Resepi, Halaman {p} daripada {total_pages}" if p > 1 else f"Semua Resepi ({len(recipes)})"
     ld = {"@context": "https://schema.org", "@type": "CollectionPage",
           "name": title, "url": canon, "inLanguage": "ms-MY",
           "isPartOf": {"@type": "WebSite", "url": SITE_URL}}
@@ -613,7 +617,9 @@ for p in range(1, total_pages + 1):
     pager = f'<nav class="pager" aria-label="Navigasi halaman">{"".join(pg)}</nav>'
 
     page = head(title + f" | {SITE_NAME}",
-                f"Halaman {p} daripada {total_pages} — senarai lengkap {len(recipes)} resepi Malaysia dengan bahan dan cara penyediaan.",
+                f"Halaman {p} daripada {total_pages} dalam senarai lengkap {len(recipes)} resepi "
+                f"Malaysia. Setiap satu dengan bahan penuh dan cara penyediaan langkah demi langkah, "
+                f"dari nasi dan mee sampai kuih dan kek.",
                 canon, og_img=big(chunk[0]["img"]) if chunk else "", extra_ld=ld)
     page = page.replace("</head>", prev_link + next_link + "\n</head>") if (prev_link or next_link) else page
     page += header_html() + f"""<main>
