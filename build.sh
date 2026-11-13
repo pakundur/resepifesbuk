@@ -48,4 +48,7 @@ python3 verify_all.py
 # 7. Floating share fan + back-to-top gates (structure, ARIA, icon-only copy)
 python3 verify_fab.py
 
+# 8. EEAT gates (person authors, contact route, no fabricated credentials)
+python3 verify_eeat.py
+
 echo "== build complete: $(find dist -name '*.html' | wc -l) pages =="

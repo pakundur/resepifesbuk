@@ -165,12 +165,23 @@ for rel, p in cats.items():
 chk(14, "category meta + description valid", cmeta == 0, f"{cmeta} bad")
 
 # 15. image alts
-noalt = 0
+# The rule is NOT "every img has non-empty alt". An empty alt="" is correct
+# for a decorative image (the byline avatar sits next to the author's name,
+# so describing it would make a screen reader read the name twice). What is
+# wrong is (a) no alt attribute at all, or (b) alt="" on an image that is
+# NOT marked decorative. This gate enforces that distinction instead of
+# forcing meaningless alt text onto decorative images.
+noalt, undecorated = 0, 0
 for rel, p in pages.items():
     for tag in re.findall(r"<img\b[^>]*>", read(p)):
-        if 'alt="' not in tag or re.search(r'alt="\s*"', tag):
+        if "alt=" not in tag:
             noalt += 1
-chk(15, "all images have alt text", noalt == 0, f"{noalt} missing")
+        elif re.search(r'alt="\s*"', tag):
+            if not re.search(r'aria-hidden="true"|role="presentation"', tag):
+                undecorated += 1
+chk(15, "all images have alt (empty alt only when decorative)",
+    noalt == 0 and undecorated == 0,
+    f"{noalt} missing alt, {undecorated} empty alt not marked decorative")
 
 # 17. images served from R2, not Blogger
 blogger_pages = []

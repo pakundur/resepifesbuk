@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Nurul Aisyah" width="96" height="96">
+<circle cx="48" cy="48" r="46" fill="#F6E0D8"/>
+<path d="M48 22a13 13 0 0 0-13 13v9a13 13 0 0 0 26 0v-9a13 13 0 0 0-13-13z" fill="#C25E3A"/>
+<path d="M35 32c6-4 20-4 26 0 0 0 2-14-13-14S35 32 35 32z" fill="#A34A2C"/>
+<path d="M22 84c2-15 13-22 26-22s24 7 26 22z" fill="#C25E3A"/>
+<path d="M40 62c3 4 13 4 16 0" stroke="#FDF6F0" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<circle cx="43" cy="42" r="2" fill="#FDF6F0"/>
+<circle cx="53" cy="42" r="2" fill="#FDF6F0"/>
+</svg>

@@ -19,6 +19,8 @@ from urllib.parse import quote
 
 from share import share_html
 from fab import fab_html, FAB_JS
+import authors as AUTH
+import authors_render as AR
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, "src", "recipes_clean.json")
@@ -190,6 +192,22 @@ def iso_date(s):
     return m.group(0) if m else TODAY
 
 
+_MONTHS_BM = ["Januari", "Februari", "Mac", "April", "Mei", "Jun",
+              "Julai", "Ogos", "September", "Oktober", "November", "Disember"]
+
+
+def _human_date(iso: str) -> str:
+    """2026-05-25 -> 25 Mei 2026. Malay month names, no leading zero.
+    Falls back to the raw string if it isn't an ISO date."""
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", iso or "")
+    if not m:
+        return iso or ""
+    y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    if not 1 <= mo <= 12:
+        return iso
+    return f"{d} {_MONTHS_BM[mo - 1]} {y}"
+
+
 def derive_time(steps):
     """Sum only durations the recipe actually states. Returns ISO-8601 or None.
 
@@ -290,6 +308,9 @@ for r in recipes:
     r["cat1"] = llm_cat or (r["cats"][0] if r["cats"] else "Lain-lain")
     r["cats"] = [r["cat1"]]          # single category, everywhere
     r["cat_slug"] = cat_slug(r["cat1"])
+    # Author persona: topical, derived from the single assigned category.
+    r["author_key"] = AUTH.persona_key_for_category(r["cat1"])
+    r["author"] = AUTH.PERSONAS[r["author_key"]]
     r["r2_key"] = IMG_KEY_OF.get(r["slug"]) or None
     if not r.get("intro"):
         r["intro"] = clean_meta(
@@ -481,7 +502,10 @@ def footer_html(share_title=None, share_url=None):
         <h4>Maklumat</h4>
         <ul>
           <li><a href="/tentang/">Tentang Kami</a></li>
+          <li><a href="/penulis/">Penulis</a></li>
+          <li><a href="/hubungi/">Hubungi</a></li>
           <li><a href="/pendedahan-affiliate/">Pendedahan Affiliate</a></li>
+          <li><a href="/polisi-privasi/">Polisi Privasi</a></li>
           <li><a href="/feed.xml">RSS Feed</a></li>
         </ul>
       </div>
@@ -699,7 +723,10 @@ for idx, r in enumerate(recipes):
         "description": meta_desc,
         "url": canon,
         "image": [img_url(r)],
-        "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
+        "author": {"@type": "Person",
+                   "@id": f"{SITE_URL}/penulis/{r['author_key']}/#person",
+                   "name": r["author"]["name"],
+                   "url": f"{SITE_URL}/penulis/{r['author_key']}/"},
         "publisher": {"@type": "Organization", "name": SITE_NAME,
                       "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/icon-512.png"}},
         "datePublished": r["published_d"],
@@ -729,7 +756,10 @@ for idx, r in enumerate(recipes):
             "description": meta_desc,
             "datePublished": r["published_d"],
             "dateModified": r["updated_d"],
-            "author": {"@type": "Organization", "name": SITE_NAME},
+            "author": {"@type": "Person",
+                       "@id": f"{SITE_URL}/penulis/{r['author_key']}/#person",
+                       "name": r["author"]["name"],
+                       "url": f"{SITE_URL}/penulis/{r['author_key']}/"},
             "publisher": {"@type": "Organization", "name": SITE_NAME,
                           "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/icon-512.png"}},
             "mainEntityOfPage": {"@type": "WebPage", "@id": canon},
@@ -792,6 +822,12 @@ for idx, r in enumerate(recipes):
     </nav>
 
     <h1 class="display">{esc(headline)}</h1>
+    <p class="byline">
+      <img src="{r['author']['avatar']}" width="32" height="32" alt="" aria-hidden="true" loading="lazy">
+      <span>Oleh <a href="/penulis/{r['author_key']}/">{esc(r['author']['name'])}</a></span>
+      <span class="byline-sep" aria-hidden="true">&middot;</span>
+      <span>Dikemas kini <time datetime="{r['updated_d']}">{esc(_human_date(r['updated_d']))}</time></span>
+    </p>
     <div class="recipe-facts">{facts_html}</div>
 
     <img class="recipe-hero-img" src="{esc(img_url(r))}" alt="{esc(alt_text(r))}" width="1200" height="800" fetchpriority="high" decoding="async">
@@ -1062,6 +1098,10 @@ page += header_html() + f"""<main>
     <h2 class="sr-only">Hasil carian</h2>
     {ad_s1}
     <div id="out" class="grid"></div>
+    <p class="search-trust">Resepi ditulis oleh pasukan dapur kami —
+    <a href="/penulis/">lihat penulis</a>. Ada cadangan atau jumpa kesilapan?
+    <a href="/hubungi/">Hubungi kami</a>. Kami tidak menyimpan data peribadi anda —
+    <a href="/polisi-privasi/">polisi privasi</a>.</p>
   </div>
 </section>
 </main>
@@ -1123,12 +1163,66 @@ page += header_html() + f"""<main>
   <h2>Untuk siapa</h2>
   <p>Sesiapa yang mahu memasak di rumah: pelajar, ibu bapa sibuk, atau sesiapa yang baru berjinak dengan dapur. Resepi kami ditulis dengan bahasa yang senang difahami, tanpa andaian bahawa anda sudah berpengalaman.</p>
   <h2>Hubungi</h2>
-  <p>Ada soalan atau cadangan? Kami amat menghargai maklum balas daripada pembaca.</p>
+  <p>Ada soalan atau cadangan? Hantar e-mel kepada kami di
+  <a href="mailto:hello@resepifesbuk.com">hello@resepifesbuk.com</a>, atau lihat
+  <a href="/hubungi/">halaman hubungi</a>. Kami amat menghargai maklum balas
+  daripada pembaca.</p>
 </article>
 </main>
 """ + footer_html() + "</body>\n</html>\n"
 write("tentang/index.html", page)
 print("about ok")
+
+
+# ---- author pages (/penulis/ hub + one per persona) ----
+# Every recipe links to its author here, and the author's Person schema is
+# referenced by @id from each recipe. This is the "who wrote this" answer the
+# site previously did not have at all.
+_cats_of = {r["slug"]: r["cat1"] for r in recipes}
+_author_counts = AR.counts_by_persona(_cats_of)
+
+# newest recipes per persona, for the "recent" list on each page
+_by_author = {}
+for _r in recipes:
+    _by_author.setdefault(_r["author_key"], []).append(_r)
+for _k in _by_author:
+    _by_author[_k].sort(key=lambda x: x.get("updated_d") or "", reverse=True)
+
+for _key, _p in AUTH.PERSONAS.items():
+    _mine = _by_author.get(_key, [])
+    _recent = [(x["headline"] if "headline" in x else x["title"],
+                f"/resepi/{x['slug']}/", x["cat1"]) for x in _mine[:12]]
+    _others = {k: v for k, v in AUTH.PERSONAS.items() if k != _key}
+    _body = AR.persona_page(_key, _p, SITE_URL, len(_mine), _recent, _others)
+    _ld = AR.person_schema(_key, _p, SITE_URL, len(_mine))
+    _title = f"{_p['name']} — {_p['role']} | {SITE_NAME}"
+    _desc = (f"{_p['name']} menulis tentang {_p['role'].lower()} di {SITE_NAME}. "
+             f"{len(_mine)} resepi Malaysia dengan bahan lengkap dan tips masakan.")
+    page = head(_title, _desc[:158], f"{SITE_URL}/penulis/{_key}/",
+                extra_ld=[_ld])
+    page += header_html() + _body
+    page += footer_html(f"{_p['name']} — {_p['role']}", f"{SITE_URL}/penulis/{_key}/")
+    page += "</body>\n</html>\n"
+    write(f"penulis/{_key}/index.html", page)
+
+# hub
+_hub_ld = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": f"Penulis {SITE_NAME}",
+    "url": f"{SITE_URL}/penulis/",
+    "hasPart": [AR.person_schema(k, v, SITE_URL, _author_counts.get(k, 0))
+                for k, v in AUTH.PERSONAS.items()],
+}
+page = head(f"Penulis {SITE_NAME} | Pasukan dapur kami",
+            "Tiga penulis dapur kami: Nurul untuk kuih dan kek, Hafizah untuk lauk "
+            "harian, Limah untuk minuman dan sup. Setiap resepi ada penulisnya."[:158],
+            f"{SITE_URL}/penulis/", extra_ld=[_hub_ld])
+page += header_html() + AR.hub_page(SITE_URL, _author_counts, len(recipes))
+page += footer_html(f"Penulis {SITE_NAME}", f"{SITE_URL}/penulis/")
+page += "</body>\n</html>\n"
+write("penulis/index.html", page)
+print(f"author pages ok: {len(AUTH.PERSONAS) + 1} pages")
 
 
 # ---- affiliate disclosure / terms page ----
@@ -1215,6 +1309,139 @@ write("pendedahan-affiliate/index.html", page)
 print("affiliate disclosure ok")
 
 
+# ---- contact page ----
+# The About page used to say "hubungi kami" without any way to do it. An
+# uncontactable site is a core trust failure, so this page is the real,
+# published contact route. Address matches .well-known/security.txt.
+CONTACT_EMAIL = "hello@resepifesbuk.com"
+page = head(f"Hubungi Kami | Soalan Resepi | {SITE_NAME}",
+            f"Cara menghubungi {SITE_NAME}: e-mel untuk soalan resepi, pembetulan, "
+            "atau laporan pautan rosak. Kami membaca setiap mesej."[:158],
+            f"{SITE_URL}/hubungi/")
+page += header_html() + f"""<main>
+<section>
+  <div class="wrap-narrow">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Utama</a> / Hubungi</nav>
+    <h1 class="display">Hubungi <em>kami</em></h1>
+    <p class="lede">Ada soalan tentang sesuatu resepi, jumpa kesilapan, atau pautan
+    yang tidak berfungsi? Kami memang membaca setiap mesej.</p>
+
+    <h2 class="pa-h2">E-mel</h2>
+    <p style="font-size:1.05rem"><a href="mailto:{CONTACT_EMAIL}" style="font-weight:600">{CONTACT_EMAIL}</a></p>
+    <p>Ini satu-satunya saluran rasmi kami. Tiada borang, tiada nombor telefon —
+    supaya jelas ke mana mesej anda pergi.</p>
+
+    <h2 class="pa-h2">Bila kami balas</h2>
+    <p>Laman ini diuruskan oleh pasukan kecil, jadi kami tidak menjanjikan masa
+    balasan tertentu. Pembetulan resepi dan pautan rosak kami dahulukan.</p>
+
+    <h2 class="pa-h2">Perkara yang membantu</h2>
+    <ul class="pa-focus">
+      <li><strong>Kesilapan resepi</strong> — sertakan pautan halaman dan bahagian
+      yang salah (bahan, sukatan atau langkah).</li>
+      <li><strong>Pautan rosak</strong> — pautan itu sendiri, atau halaman tempat
+      anda menjumpainya.</li>
+      <li><strong>Soalan memasak</strong> — nyatakan resepi mana yang anda cuba dan
+      apa yang berlaku di dapur.</li>
+      <li><strong>Isu keselamatan</strong> — sila ikut
+      <a href="/.well-known/security.txt">security.txt</a>.</li>
+    </ul>
+
+    <h2 class="pa-h2">Hak cipta</h2>
+    <p>Jika anda pemilik sesuatu bahan dan merasakan ia digunakan di sini tanpa
+    kebenaran, hubungi kami di alamat yang sama dengan butiran bahan tersebut.
+    Kami akan semak dan bertindak.</p>
+
+    <div class="source-note">
+      <p>Untuk makluman tentang pautan affiliate, lihat
+      <a href="/pendedahan-affiliate/">Pendedahan Affiliate</a>. Untuk siapa
+      menulis di laman ini, lihat <a href="/penulis/">Penulis</a>.</p>
+    </div>
+  </div>
+</section>
+</main>
+""" + footer_html(f"Hubungi {SITE_NAME}", f"{SITE_URL}/hubungi/") + "</body>\n</html>\n"
+write("hubungi/index.html", page)
+print("contact ok")
+
+
+# ---- privacy policy ----
+# The site runs Cloudflare Web Analytics + GA4 and carries affiliate links, so
+# a privacy policy is a genuine requirement, not an EEAT decoration. Written
+# to describe what the site ACTUALLY does — no boilerplate about data we don't
+# collect.
+page = head(f"Polisi Privasi | {SITE_NAME}",
+            f"Polisi privasi {SITE_NAME}: apa yang kami kumpul (analitik agregat), "
+            "apa yang kami tidak kumpul, dan pilihan anda."[:158],
+            f"{SITE_URL}/polisi-privasi/")
+page += header_html() + f"""<main>
+<section>
+  <div class="wrap-narrow">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Utama</a> / Polisi Privasi</nav>
+    <h1 class="display">Polisi <em>privasi</em></h1>
+    <p class="lede">Ringkasnya: kami tidak meminta nama, e-mel atau akaun untuk
+    membaca resepi. Yang kami kumpul hanya statistik agregat tentang cara laman
+    digunakan.</p>
+
+    <h2 class="pa-h2">1. Apa yang kami kumpul</h2>
+    <p>Apabila anda melawat laman ini, dua alat analitik merekod maklumat agregat:</p>
+    <ul class="pa-focus">
+      <li><strong>Cloudflare Web Analytics</strong> — halaman yang dilawati, masa
+      muat, jenis peranti. Ia tidak menggunakan kuki dan tidak menjejak anda
+      merentas laman lain.</li>
+      <li><strong>Google Analytics 4</strong> — halaman yang dilawati dan interaksi
+      asas. Ini menggunakan kuki.</li>
+    </ul>
+    <p>Kedua-duanya melaporkan angka agregat. Kami tidak melihat siapa anda.</p>
+
+    <h2 class="pa-h2">2. Apa yang kami TIDAK kumpul</h2>
+    <ul class="pa-focus">
+      <li>Tiada akaun, log masuk atau pendaftaran.</li>
+      <li>Tiada borang yang meminta nama atau e-mel.</li>
+      <li>Tiada nombor telefon, alamat atau maklumat pembayaran.</li>
+      <li>Kami tidak menjual atau berkongsi data pelawat.</li>
+    </ul>
+
+    <h2 class="pa-h2">3. Pautan affiliate</h2>
+    <p>Sesetengah pautan membawa anda ke Shopee dengan kod affiliate kami. Jika
+    anda membeli melalui pautan itu, kami mungkin menerima komisen — harga anda
+    tidak berubah. Apabila anda meninggalkan laman ini, polisi privasi Shopee
+    terpakai. Butiran penuh ada di
+    <a href="/pendedahan-affiliate/">Pendedahan Affiliate</a>.</p>
+
+    <h2 class="pa-h2">4. Kuki</h2>
+    <p>Kami tidak menyimpan kuki untuk iklan atau penjejakan merentas laman.
+    Kuki analitik Google Analytics boleh anda tolak melalui tetapan pelayar
+    atau sambungan penyekat. Laman ini tetap berfungsi sepenuhnya tanpa kuki.</p>
+
+    <h2 class="pa-h2">5. Pilihan anda</h2>
+    <ul class="pa-focus">
+      <li>Sekat kuki analitik dalam pelayar — kandungan tetap boleh dibaca.</li>
+      <li>Gunakan mod penyemak imbas peribadi.</li>
+      <li>Hantar e-mel kepada kami jika anda mempunyai soalan tentang data.</li>
+    </ul>
+
+    <h2 class="pa-h2">6. Kanak-kanak</h2>
+    <p>Laman ini tidak menyasarkan kanak-kanak di bawah 13 tahun dan tidak
+    mengumpul maklumat peribadi daripada sesiapa, termasuk kanak-kanak.</p>
+
+    <h2 class="pa-h2">7. Perubahan</h2>
+    <p>Jika cara kami mengendalikan data berubah, tarikh kemas kini di bawah akan
+    berubah. Perubahan besar akan dinyatakan di halaman ini.</p>
+
+    <h2 class="pa-h2">8. Hubungi</h2>
+    <p>Soalan tentang privasi: <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a>,
+    atau lihat <a href="/hubungi/">halaman hubungi</a>.</p>
+
+    <p class="source-note" style="margin-top:34px">Kemas kini terakhir: {_human_date(TODAY)}.</p>
+  </div>
+</section>
+</main>
+""" + footer_html(f"Polisi Privasi {SITE_NAME}", f"{SITE_URL}/polisi-privasi/") + "</body>\n</html>\n"
+write("polisi-privasi/index.html", page)
+print("privacy ok")
+
+
 # ---- 404 ----
 page = head(f"Halaman Tidak Dijumpai | Resepi Fesbuk",
             "Halaman yang anda cari tidak wujud atau telah dipindahkan. Kembali ke senarai "
@@ -1244,7 +1471,12 @@ urls = [(SITE_URL + "/", TODAY, "1.0", "daily"),
         (SITE_URL + "/kategori/", TODAY, "0.8", "weekly"),
         (SITE_URL + "/cari/", TODAY, "0.4", "monthly"),
         (SITE_URL + "/tentang/", TODAY, "0.4", "monthly"),
+        (SITE_URL + "/penulis/", TODAY, "0.6", "monthly"),
+        (SITE_URL + "/hubungi/", TODAY, "0.4", "yearly"),
+        (SITE_URL + "/polisi-privasi/", TODAY, "0.3", "yearly"),
         (SITE_URL + "/pendedahan-affiliate/", TODAY, "0.4", "yearly")]
+for _pk in AUTH.PERSONAS:
+    urls.append((f"{SITE_URL}/penulis/{_pk}/", TODAY, "0.6", "monthly"))
 for c in CATS:
     urls.append((f"{SITE_URL}/kategori/{cat_slug(c)}/", TODAY, "0.7", "weekly"))
 # NOTE: paginated /halaman/N/ pages are deliberately EXCLUDED from the sitemap.
@@ -1363,6 +1595,20 @@ for _name, _dest in (("llms.txt", "llms.txt"),
         os.makedirs(os.path.dirname(_d), exist_ok=True)
         shutil.copy2(_s, _d)
         print(f"essentials: {_dest}")
+
+# ---- author avatars ----
+# Tiny flat SVGs, same-origin under /img/penulis/. Copied rather than inlined
+# so the browser can cache them across all 748 recipe bylines.
+_pa_src = os.path.join(STATIC, "img", "penulis")
+if os.path.isdir(_pa_src):
+    _pa_dst = os.path.join(DIST, "img", "penulis")
+    os.makedirs(_pa_dst, exist_ok=True)
+    _n = 0
+    for _f in os.listdir(_pa_src):
+        if _f.endswith(".svg"):
+            shutil.copy2(os.path.join(_pa_src, _f), os.path.join(_pa_dst, _f))
+            _n += 1
+    print(f"author avatars: {_n}")
 
 # ---- 301 redirects: old dated URLs -> clean SEO URLs ----
 # Slugs used to carry the Blogger year-month prefix (2020-04-resepi-...). That
