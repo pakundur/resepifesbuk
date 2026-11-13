@@ -33,6 +33,11 @@ RULES = [
     # Puding/kastard/telur dishes must resolve BEFORE Minuman, else 'susu' in the
     # ingredient list files a plate of puding pisang as a drink.
     ("Puding", r"\b(puding|pudding|kastard|custard|karamel|caramel)\b"),
+    # Desserts that read like a rice dish but are sweet: pulut mangga, pulut
+    # durian, pulut panggang. Checked BEFORE Nasi so they do not get filed as
+    # a rice main and then linked to savoury dishes.
+    ("Puding", r"\b(pulut\s+(mangga|durian|serikaya|intan|kuning)|"
+               r"mangga\s+(pulut|ketan))\b"),
     ("Kuih", r"\b(cream horn|telur dadar|omelette|telur matahari|keledek ketuk|"
              r"chocolate rice bubble|cornflake madu|keju blueberry)\b"),
     # Bare 'air' is too greedy ('air asam', 'air fryer'); require a drink word around it.

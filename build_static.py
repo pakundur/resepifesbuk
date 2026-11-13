@@ -27,7 +27,7 @@ STATIC = os.path.join(ROOT, "static")
 SITE_URL = "https://resepifesbuk.com"
 SITE_NAME = "Resepi Fesbuk"
 SITE_TAGLINE = "Koleksi Resepi Malaysia"
-SITE_DESC = ("Koleksi 748 resepi Malaysia yang mudah diikuti — nasi, mee, lauk, kuih, "
+SITE_DESC = ("Koleksi 748 resepi Malaysia yang mudah diikuti. Ada nasi, mee, lauk, kuih, "
              "kek dan minuman. Langkah bergambar, bahan lengkap, tips masakan.")
 PER_PAGE = 24
 
@@ -43,6 +43,13 @@ RW_PATH = os.path.join(ROOT, "src", "rewrite.json")
 REWRITE = json.load(open(RW_PATH, encoding="utf-8")) if os.path.exists(RW_PATH) else {}
 REWRITE = {k: v for k, v in REWRITE.items() if "error" not in v}
 
+# ---- single-category assignment (LLM, from dish identity) ----
+# src/cats.json is produced by classify.py: {slug: {cat, dish, conf}}. Exactly
+# ONE category per recipe. It overrides the Blogger labels, which were dirty
+# (Pulut Mangga was filed under Nasi; Pizza Kuali under Daging).
+CATS_PATH = os.path.join(ROOT, "src", "cats.json")
+CAT_OF = json.load(open(CATS_PATH, encoding="utf-8")) if os.path.exists(CATS_PATH) else {}
+
 # ---- internal link graph ----
 LINKS_PATH = os.path.join(ROOT, "src", "links.json")
 LINKS = json.load(open(LINKS_PATH, encoding="utf-8")) if os.path.exists(LINKS_PATH) else {}
@@ -55,6 +62,8 @@ CAT_COPY = json.load(open(CAT_COPY_PATH, encoding="utf-8")) if os.path.exists(CA
 print(f"rewrites loaded: {len(REWRITE)}/{len(recipes)}")
 print(f"link graph loaded: {len(LINKS)} pages")
 print(f"category copy loaded: {len(CAT_COPY)}")
+_missing_cat = [r["slug"] for r in recipes if not (CAT_OF.get(r["slug"]) or {}).get("cat")]
+print(f"single-category assignments: {len(recipes)-len(_missing_cat)}/{len(recipes)}")
 
 
 # ---------------------------------------------------------------- helpers
@@ -94,6 +103,73 @@ def clean_meta(s, n=158):
     return " ".join(words).rstrip(",.;:") + "…"
 
 
+def fit_title(s, lo=30, hi=60, suffix=" | Resepi Fesbuk"):
+    """Clamp a <title> into Google's 30-60 char band.
+
+    Google truncates around 60 chars on desktop and rewrites longer titles,
+    losing the message we wrote. The brand suffix is the first thing to drop
+    because Google appends/recognises the site name anyway.
+    """
+    s = re.sub(r"\s+", " ", s or "").strip()
+    if len(s) <= hi and len(s) >= lo:
+        return s
+    if len(s) > hi:
+        # drop the brand suffix first
+        if s.endswith(suffix):
+            core = s[: -len(suffix)]
+            if lo <= len(core) <= hi:
+                return core
+            s = core
+        if len(s) > hi:
+            words = s.split(" ")
+            while words and len(" ".join(words)) > hi:
+                words.pop()
+            s = " ".join(words).rstrip(" ,.;:-")
+            if s.lower().endswith(" resid"):        # never end mid-word
+                s = s[: s.rfind(" ")].rstrip(" ,.;:-")
+    if len(s) < lo:
+        pad = " | Resepi Fesbuk"
+        if not s.endswith(pad) and len(s + pad) <= hi:
+            s = s + pad
+    return s
+
+
+def fit_desc(s, lo=120, hi=158):
+    """Clamp a meta description into 120-158 chars, ending on a full sentence."""
+    s = clean_meta(re.sub(r"#\w+", "", s or ""), hi).strip()
+    if len(s) < lo:
+        extra = (" Koleksi resepi Malaysia dengan bahan penuh, "
+                 "langkah penyediaan jelas dan tips berguna.")
+        while len(s) < lo and extra:
+            s = (s.rstrip() + extra).strip()
+            extra = extra[:-1] if len(s) > hi else ""
+            if len(s) > hi:
+                s = clean_meta(s, hi)
+                break
+    return s
+
+
+def scrub(s):
+    """Remove auto-blog boilerplate and AI tells from any body string.
+
+    The legacy Blogger posts ended with "Selamat mencuba..", "Jangan lupa
+    share..", hashtag strings and em dashes, and some of that landed inside
+    ingredient lists rather than the tips. Cleaning at render time catches
+    every field at once instead of patching each one separately.
+    """
+    s = str(s or "")
+    s = re.sub(r"#[\w\u00C0-\u024F]{2,}", " ", s)          # hashtags
+    s = re.sub(r"(?i)\bselamat\s+mencuba+\w*\b[!.]*", " ", s)
+    s = re.sub(r"(?i)\b(tak\s+rugi\s+tau+|janji\s+sodap+)\w*\b[.!]*", " ", s)
+    s = re.sub(r"(?i)\bjangan\s+lupa\s+(share|kongsi)\w*\b[.!]*", " ", s)
+    s = re.sub(r"(?i)\bpasti\s+menjadi\s+rebutan\b[^.]*\.?", " ", s)
+    s = re.sub(r"(?i)\bhashtags?\s*:.*$", " ", s)
+    s = re.sub(r"[—–]", ", ", s)
+    s = re.sub(r"\s*\.\s*\.+\s*$", "", s)                 # trailing dot runs
+    s = re.sub(r"\s+", " ", s).strip(" ,.;:-")
+    return s
+
+
 def iso_date(s):
     m = re.match(r"(\d{4})-(\d{2})-(\d{2})", s or "")
     return m.group(0) if m else TODAY
@@ -116,12 +192,14 @@ def big(url):
 for r in recipes:
     r["published_d"] = iso_date(r.get("published"))
     r["updated_d"] = iso_date(r.get("updated")) or r["published_d"]
-    r["cat1"] = r["cats"][0] if r["cats"] else "Lain-lain"
+    llm_cat = (CAT_OF.get(r["slug"]) or {}).get("cat")
+    r["cat1"] = llm_cat or (r["cats"][0] if r["cats"] else "Lain-lain")
+    r["cats"] = [r["cat1"]]          # single category, everywhere
     r["cat_slug"] = cat_slug(r["cat1"])
     if not r.get("intro"):
         r["intro"] = clean_meta(
             "Resepi " + re.sub(r"^Resepi\s+", "", r["title"], flags=re.I)
-            + " — bahan-bahan lengkap dan cara penyediaan langkah demi langkah.", 240)
+            + ". Bahan-bahan lengkap dan cara penyediaan langkah demi langkah.", 240)
     r["meta_desc"] = clean_meta(r["intro"], 158)
 
 recipes.sort(key=lambda x: (x["published_d"], x["title"]), reverse=True)
@@ -144,6 +222,8 @@ def head(title, desc, canonical, og_type="website", og_img="", published=None,
          updated=None, extra_ld=None, is_recipe=False, prev_url=None, next_url=None):
     """Complete <head> with canonical, OG, Twitter, geo, and JSON-LD."""
     img = og_img or f"{SITE_URL}/og-default.jpg"
+    title = fit_title(title)
+    desc = fit_desc(desc)
     ld = ""
 
     # WebSite (+ SearchAction) on every page
@@ -326,7 +406,7 @@ cat_tiles = "\n".join(
 home_ld = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": f"{SITE_NAME} — {SITE_TAGLINE}",
+    "name": f"{SITE_NAME}: {SITE_TAGLINE}",
     "url": SITE_URL + "/",
     "description": SITE_DESC,
     "inLanguage": "ms-MY",
@@ -353,7 +433,7 @@ write("index.html", head(
     <div class="wrap">
       <span class="eyebrow">{len(recipes)} Resepi &middot; {len(CATS)} Kategori</span>
       <h1 class="display">Masak <em>sedap</em><br>setiap hari.</h1>
-      <p class="lede">Resepi Malaysia yang sudah dicuba ramai — bahan senang cari, langkah jelas, dan tips yang benar-benar membantu.</p>
+      <p class="lede">Resepi Malaysia yang sudah dicuba ramai. Bahan senang cari, langkah jelas, dan tips yang benar-benar membantu.</p>
       <div class="search-box">
         <input type="search" id="q" placeholder="Cari resepi… (cth: nasi goreng, kuih, ayam)" aria-label="Cari resepi">
       </div>
@@ -404,7 +484,7 @@ for idx, r in enumerate(recipes):
     rw = REWRITE.get(r["slug"])
     headline = rw["headline"] if rw else r["title"]
     meta_desc = rw["meta_desc"] if rw else r["meta_desc"]
-    intro_txt = rw["intro"] if rw else r["intro"]
+    intro_txt = scrub(rw["intro"] if rw else r["intro"])
 
     # rewritten steps replace the parsed ones when the LLM produced a usable list
     page_steps = r["steps"]
@@ -413,7 +493,8 @@ for idx, r in enumerate(recipes):
 
     # ingredients
     if r["ingredients"]:
-        ing_html = "\n".join(f"<li>{esc(i)}</li>" for i in r["ingredients"])
+        _ings = [x for x in (scrub(i) for i in r["ingredients"]) if len(x) >= 2]
+        ing_html = "\n".join(f"<li>{esc(i)}</li>" for i in _ings)
         ing_block = f"""<aside class="ing-box">
   <h2>Bahan-bahan</h2>
   <ul>{ing_html}</ul>
@@ -426,15 +507,25 @@ for idx, r in enumerate(recipes):
     n = 0
     for s in page_steps:
         if "h" in s:
-            step_items.append(f'<li><span class="substep">{esc(s["h"])}</span></li>')
+            step_items.append(f'<li><span class="substep">{esc(scrub(s["h"]))}</span></li>')
         else:
             n += 1
-            step_items.append(f"<li>{esc(s['t'])}</li>")
+            _t = scrub(s["t"])
+            if _t:
+                step_items.append(f"<li>{esc(_t)}</li>")
     steps_html = "\n".join(step_items) if step_items else "<li>Lihat nota penyediaan di bawah.</li>"
 
     tips_html = ""
-    if r["tips"]:
-        tl = "\n".join(f"<li>{esc(t)}</li>" for t in r["tips"])
+    # Scrub Blogger boilerplate out of tips: hashtag strings, "Selamat mencuba",
+    # and the sign-off sentences that were pasted at the end of every post.
+    # These are AI/auto-blog tells and they were never cleaned in the base data.
+    _tips = []
+    for t in r["tips"]:
+        t = scrub(t)
+        if len(t) >= 25:
+            _tips.append(t)
+    if _tips:
+        tl = "\n".join(f"<li>{esc(t)}</li>" for t in _tips)
         tips_html = f"""<div class="tips-box">
   <h2>Tips Masakan</h2>
   <ul>{tl}</ul>
@@ -568,7 +659,7 @@ for idx, r in enumerate(recipes):
     </div>
 
     <div class="source-note">
-      <p>Resepi ini diterbitkan untuk pembaca {SITE_NAME}. Kongsi dengan keluarga dan rakan — selamat memasak!</p>
+      <p>Resepi ini diterbitkan untuk pembaca {SITE_NAME}. Kalau ia berhasil di dapur anda, kongsikan dengan keluarga dan rakan.</p>
     </div>
     {rel_html}
   </div>
@@ -617,9 +708,9 @@ for p in range(1, total_pages + 1):
     pager = f'<nav class="pager" aria-label="Navigasi halaman">{"".join(pg)}</nav>'
 
     page = head(title + f" | {SITE_NAME}",
-                f"Halaman {p} daripada {total_pages} dalam senarai lengkap {len(recipes)} resepi "
-                f"Malaysia. Setiap satu dengan bahan penuh dan cara penyediaan langkah demi langkah, "
-                f"dari nasi dan mee sampai kuih dan kek.",
+                f"Halaman {p} daripada {total_pages} senarai lengkap {len(recipes)} resepi "
+                f"Malaysia, bahan penuh dan cara penyediaan langkah demi langkah. Halaman ini "
+                f"himpun resepi untuk semua selera, dari menu harian sampai juadah majlis.",
                 canon, og_img=big(chunk[0]["img"]) if chunk else "", extra_ld=ld)
     page = page.replace("</head>", prev_link + next_link + "\n</head>") if (prev_link or next_link) else page
     page += header_html() + f"""<main>
@@ -632,6 +723,7 @@ for p in range(1, total_pages + 1):
 </section>
 <section style="padding-top:0">
   <div class="wrap">
+    <h2 class="sr-only">Senarai resepi halaman {p}</h2>
     <div class="grid">
 {cards}
     </div>
@@ -693,6 +785,7 @@ for c, items in CATS.items():
 </section>
 <section style="padding-top:0">
   <div class="wrap">
+    <h2 class="sr-only">Senarai resepi {esc(c)}</h2>
     <div class="grid">
 {cards}
     </div>
@@ -710,7 +803,7 @@ cat_tiles = "\n".join(
     f'<a class="cat-card" href="/kategori/{cat_slug(c)}/"><span>{esc(c)}</span><span class="n">{len(v)}</span></a>'
     for c, v in CATS.items())
 page = head(f"Semua Kategori Resepi | {SITE_NAME}",
-            f"{len(CATS)} kategori resepi Malaysia — nasi, mee, lauk, kuih, kek, minuman dan banyak lagi.",
+            f"{len(CATS)} kategori resepi Malaysia: nasi, mee, lauk, kuih, kek, minuman dan banyak lagi.",
             SITE_URL + "/kategori/",
             og_img=big(recipes[0]["img"]),
             extra_ld={"@context": "https://schema.org", "@type": "CollectionPage",
@@ -726,6 +819,7 @@ page += header_html() + f"""<main>
     <span class="eyebrow">{len(CATS)} Kategori</span>
     <h1 class="display">Semua <em>kategori</em></h1>
     <p class="lede" style="max-width:60ch">Pilih kategori untuk terus jumpa resepi yang anda cari.</p>
+    <h2 class="sr-only">Senarai kategori resepi</h2>
     <div class="cat-grid" style="margin-top:40px">
 {cat_tiles}
     </div>
@@ -738,14 +832,14 @@ print("category index ok")
 
 
 # ---- search page ----
-page = head(f"Cari Resepi | {SITE_NAME}",
+page = head(f"Cari Resepi Mengikut Bahan Atau Nama Hidangan | {SITE_NAME}",
             f"Cari dalam {len(recipes)} resepi Malaysia mengikut nama bahan atau hidangan.",
             SITE_URL + "/cari/", extra_ld={"@context": "https://schema.org", "@type": "SearchResultsPage"})
 page += header_html() + f"""<main>
 <section>
   <div class="wrap-narrow center">
     <h1 class="display">Cari <em>resepi</em></h1>
-    <p class="lede">Taip nama hidangan atau bahan — cth: nasi goreng, ayam, kuih.</p>
+    <p class="lede">Taip nama hidangan atau bahan, contohnya nasi goreng, ayam atau kuih.</p>
     <div class="search-box">
       <input type="search" id="q" placeholder="Cari resepi…" aria-label="Cari resepi" autofocus>
     </div>
@@ -753,6 +847,7 @@ page += header_html() + f"""<main>
 </section>
 <section style="padding-top:0">
   <div class="wrap">
+    <h2 class="sr-only">Hasil carian</h2>
     <div id="out" class="grid"></div>
   </div>
 </section>
@@ -764,7 +859,7 @@ function run() {{
   const q = (inp.value || '').toLowerCase().trim();
   if (!q) {{ out.innerHTML = ''; return; }}
   const hits = IDX.filter(x => x.t.toLowerCase().includes(q) || x.d.toLowerCase().includes(q) || x.c.toLowerCase().includes(q)).slice(0, 48);
-  out.innerHTML = hits.length ? hits.map(x => `<a class="rcard" href="/resepi/${{x.s}}/"><div class="rcard-img"><img src="${{x.i}}" alt="${{x.t.replace(/"/g,'&quot;')}}" loading="lazy" width="600" height="450"></div><div class="rcard-body"><span class="rcard-cat">${{x.c}}</span><h3>${{x.t}}</h3><p>${{x.d}}</p></div></a>`).join('') : '<p class="empty">Tiada resepi dijumpai. Cuba kata kunci lain.</p>';
+  out.innerHTML = hits.length ? hits.map(x => `<a class="rcard" href="` + '/resepi/' + x.s + '/' + `"><div class="rcard-img"><img src="${{x.i}}" alt="${{x.t.replace(/"/g,'&quot;')}}" loading="lazy" width="600" height="450"></div><div class="rcard-body"><span class="rcard-cat">${{x.c}}</span><h3>${{x.t}}</h3><p>${{x.d}}</p></div></a>`).join('') : '<p class="empty">Tiada resepi dijumpai. Cuba kata kunci lain.</p>';
 }}
 const params = new URLSearchParams(location.search);
 if (params.get('q')) {{ inp.value = params.get('q'); }}
@@ -779,7 +874,7 @@ print("search ok")
 
 # ---- about page ----
 page = head(f"Tentang {SITE_NAME} | Koleksi Resepi Malaysia",
-            f"Tentang {SITE_NAME} — koleksi {len(recipes)} resepi Malaysia yang dikongsikan untuk semua.",
+            f"Tentang {SITE_NAME}, koleksi {len(recipes)} resepi Malaysia yang dikongsikan untuk semua pembaca.",
             SITE_URL + "/tentang/",
             extra_ld={"@context": "https://schema.org", "@type": "AboutPage",
                       "name": f"Tentang {SITE_NAME}", "url": SITE_URL + "/tentang/",
@@ -791,16 +886,16 @@ page += header_html() + f"""<main>
     <span aria-current="page">Tentang</span>
   </nav>
   <h1 class="display">Tentang <em>{SITE_NAME}</em></h1>
-  <p class="recipe-intro">{SITE_NAME} ialah koleksi resepi Malaysia yang mudah diikuti — dari masakan harian keluarga hingga kuih tradisional. Setiap resepi disertakan senarai bahan yang jelas, langkah penyediaan demi langkah, dan tips yang membantu anda berjaya kali pertama.</p>
+  <p class="recipe-intro">{SITE_NAME} ialah koleksi resepi Malaysia yang mudah diikuti, dari masakan harian keluarga hingga kuih tradisional. Setiap resepi disertakan senarai bahan yang jelas, langkah penyediaan demi langkah, dan tips yang membantu anda berjaya kali pertama.</p>
   <h2>Apa yang kami kongsikan</h2>
   <ul>
-    <li><strong>{len(recipes)} resepi</strong> dalam {len(CATS)} kategori — nasi, mee, lauk, sayur, sup, kuih, kek, biskut dan minuman.</li>
+    <li><strong>{len(recipes)} resepi</strong> dalam {len(CATS)} kategori: nasi, mee, lauk, sayur, sup, kuih, kek, biskut dan minuman.</li>
     <li><strong>Bahan lengkap</strong> dengan sukatan yang jelas.</li>
     <li><strong>Langkah demi langkah</strong> untuk setiap hidangan.</li>
     <li><strong>Tips masakan</strong> daripada pengalaman sebenar.</li>
   </ul>
   <h2>Untuk siapa</h2>
-  <p>Sesiapa yang mahu memasak di rumah — pelajar, ibu bapa sibuk, atau sesiapa yang baru berjinak dengan dapur. Resepi kami ditulis dengan bahasa yang senang difahami, tanpa andaian bahawa anda sudah berpengalaman.</p>
+  <p>Sesiapa yang mahu memasak di rumah: pelajar, ibu bapa sibuk, atau sesiapa yang baru berjinak dengan dapur. Resepi kami ditulis dengan bahasa yang senang difahami, tanpa andaian bahawa anda sudah berpengalaman.</p>
   <h2>Hubungi</h2>
   <p>Ada soalan atau cadangan? Kami amat menghargai maklum balas daripada pembaca.</p>
 </article>
@@ -811,14 +906,20 @@ print("about ok")
 
 
 # ---- 404 ----
-page = head(f"Halaman tidak dijumpai | {SITE_NAME}", "Halaman yang anda cari tidak wujud.",
+page = head(f"Halaman Tidak Dijumpai | Resepi Fesbuk",
+            "Halaman yang anda cari tidak wujud atau telah dipindahkan. Kembali ke senarai "
+            "resepi Malaysia kami untuk bahan penuh, langkah penyediaan dan tips memasak "
+            "yang senang diikuti di rumah.",
             SITE_URL + "/404.html")
 page += header_html() + f"""<main>
 <section class="center" style="padding:110px 20px">
   <div class="wrap-narrow">
     <h1 class="display">404</h1>
     <p class="lede">Maaf, halaman ini tidak dijumpai.</p>
+    <h2 style="font-size:1.05rem;margin:26px 0 8px">Apa yang boleh anda buat</h2>
+    <p>Cuba cari hidangan yang anda mahu, atau terus ke kategori kegemaran.</p>
     <p><a href="/resepi/" style="font-weight:600">Lihat semua resepi &rarr;</a></p>
+    <p style="margin-top:10px"><a href="/cari/">Cari ikut nama atau bahan &rarr;</a></p>
     <p style="margin-top:24px"><a href="/">Kembali ke utama</a></p>
   </div>
 </section>
@@ -875,7 +976,7 @@ for r in recipes[:50]:
 write("feed.xml", f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{SITE_NAME} — {SITE_TAGLINE}</title>
+    <title>{SITE_NAME}: {SITE_TAGLINE}</title>
     <link>{SITE_URL}/</link>
     <description>{esc(SITE_DESC)}</description>
     <language>ms-MY</language>
@@ -894,6 +995,27 @@ for cf_file in ("_headers", "_redirects"):
     src_cf = os.path.join(ROOT, cf_file)
     if os.path.exists(src_cf):
         shutil.copy2(src_cf, os.path.join(DIST, cf_file))
+
+# ---- 301 redirects: old dated URLs -> clean SEO URLs ----
+# Slugs used to carry the Blogger year-month prefix (2020-04-resepi-...). That
+# prefix is now stripped for SEO. Every legacy URL must 301 to its clean
+# counterpart so the existing index and inbound links do not 404.
+SLUG_MAP_PATH = os.path.join(ROOT, "src", "slug_map.json")
+_redirect_lines = [
+    "# Auto-generated by build_static.py from src/slug_map.json",
+    "# Legacy Blogger-dated URLs -> clean canonical URLs (permanent).",
+]
+if os.path.exists(SLUG_MAP_PATH):
+    _smap = json.load(open(SLUG_MAP_PATH, encoding="utf-8"))
+    _n = 0
+    for _old, _new in sorted(_smap.items()):
+        if _old != _new:
+            _redirect_lines.append(f"/resepi/{_old}/ /resepi/{_new}/ 301")
+            _n += 1
+    print(f"301 redirects written: {_n}")
+# trailing-slash and uppercase .html legacy forms of the SAME clean slug are
+# handled by Pages' automatic slash normalisation; nothing else is needed.
+write("_redirects", "\n".join(_redirect_lines) + "\n")
 
 # favicon.svg
 write("favicon.svg", """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
