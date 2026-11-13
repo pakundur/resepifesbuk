@@ -224,6 +224,29 @@ if _ga4:
 else:
     chk(21, "GA4 tag (not configured — set GA4_ID)", True, "skipped, GA4_ID empty")
 
+# 22. Sitemap must not contain any URL disallowed by robots.txt.
+#     Submitting a disallowed URL creates Search Console errors and wastes crawl budget.
+_sm_path = os.path.join(DIST, "sitemap.xml")
+_rb_path = os.path.join(DIST, "robots.txt")
+_violations = []
+if os.path.exists(_sm_path) and os.path.exists(_rb_path):
+    _sm = read(_sm_path)
+    _rb = read(_rb_path)
+    _disallowed = [d.split(":", 1)[1].strip() for d in _rb.splitlines()
+                   if d.lower().startswith("disallow:") and d.split(":", 1)[1].strip() not in ("", "/")]
+    _locs = re.findall(r"<loc>([^<]+)</loc>", _sm)
+    for _u in _locs:
+        _p = _u.split("resepifesbuk.com", 1)[-1] or "/"
+        for _d in _disallowed:
+            if _p.startswith(_d):
+                _violations.append(_p)
+                break
+    chk(22, "sitemap has no robots-disallowed URLs", len(_violations) == 0,
+        f"{len(_locs)} urls, 0 conflicts" if not _violations
+        else f"{len(_violations)} conflicts e.g. {_violations[:3]}")
+else:
+    chk(22, "sitemap has no robots-disallowed URLs", False, "sitemap/robots missing")
+
 # 16. aggregate
 ok = all(r[2] for r in res)
 print(f"{'#':>3}  {'CHECK':<42} RESULT")

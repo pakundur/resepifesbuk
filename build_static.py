@@ -1089,8 +1089,10 @@ urls = [(SITE_URL + "/", TODAY, "1.0", "daily"),
         (SITE_URL + "/tentang/", TODAY, "0.4", "monthly")]
 for c in CATS:
     urls.append((f"{SITE_URL}/kategori/{cat_slug(c)}/", TODAY, "0.7", "weekly"))
-for i in range(2, total_pages + 1):
-    urls.append((f"{SITE_URL}/halaman/{i}/", TODAY, "0.6", "weekly"))
+# NOTE: paginated /halaman/N/ pages are deliberately EXCLUDED from the sitemap.
+# robots.txt Disallows /halaman/, and submitting a URL you also disallow produces
+# "Submitted URL blocked by robots.txt" errors in Search Console. They stay
+# crawlable for link equity but must never appear here. Gate #22 enforces this.
 for canon, mod, _t in RECIPE_URLS:
     urls.append((canon, mod, "0.8", "monthly"))
 
