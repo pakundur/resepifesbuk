@@ -1,0 +1,162 @@
+[
+ {
+  "suggested_appliance": "Oven Elektrik / Ketuhar",
+  "matching_recipes": 155,
+  "pct_of_corpus": 20.7,
+  "top_recipe_categories": "Kek (89), Puding & Pencuci Mulut (31), Biskut & Biskut Raya (8)",
+  "example_recipe_1": "Aiskrim Asam Boi",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/aiskrim-asam-boi-merah-aiskrim-malaysia/",
+  "example_recipe_2": "Aiskrim Choki-Choki",
+  "example_recipe_3": "Aiskrim Goreng"
+ },
+ {
+  "suggested_appliance": "Pengukus Elektrik (Steamer)",
+  "matching_recipes": 103,
+  "pct_of_corpus": 13.8,
+  "top_recipe_categories": "Kuih (69), Kek (23), Puding & Pencuci Mulut (3)",
+  "example_recipe_1": "Apam Gula Hangus",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-kuih-apam-gula-hangus-kukus/",
+  "example_recipe_2": "Apam Labu Santan",
+  "example_recipe_3": "Apam Polkadot"
+ },
+ {
+  "suggested_appliance": "Bread Maker / Mesin Roti",
+  "matching_recipes": 77,
+  "pct_of_corpus": 10.3,
+  "top_recipe_categories": "Roti & Pastri (63), Kuih (7), Ikan (3)",
+  "example_recipe_1": "Bingka Roti",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-bingka-roti-lazat/",
+  "example_recipe_2": "Biskut Mini Pizza",
+  "example_recipe_3": "Bomboloni Nutella"
+ },
+ {
+  "suggested_appliance": "Oven Elektrik + Mixer (Pengadun)",
+  "matching_recipes": 73,
+  "pct_of_corpus": 9.8,
+  "top_recipe_categories": "Biskut & Biskut Raya (69), Puding & Pencuci Mulut (2), Roti & Pastri (1)",
+  "example_recipe_1": "Ayam Butter Bakar",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-ayam-butter-bakar-rangup-biskut-masin/",
+  "example_recipe_2": "Banana Cookies",
+  "example_recipe_3": "Bebola Nestum Crunchy"
+ },
+ {
+  "suggested_appliance": "Air Fryer / Deep Fryer",
+  "matching_recipes": 68,
+  "pct_of_corpus": 9.1,
+  "top_recipe_categories": "Sayur (14), Ayam (10), Nasi (8)",
+  "example_recipe_1": "Aiskrim Goreng",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-aiskrim-goreng-viral/",
+  "example_recipe_2": "Ayam Goreng Berempah",
+  "example_recipe_3": "Ayam Goreng Berempah"
+ },
+ {
+  "suggested_appliance": "Rice Cooker (Periuk Nasi Elektrik)",
+  "matching_recipes": 59,
+  "pct_of_corpus": 7.9,
+  "top_recipe_categories": "Nasi (32), Kerang & Siput (7), Sayur (4)",
+  "example_recipe_1": "Aiskrim Sangkaya Kelapa",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-aiskrim-sangkaya-lemak-manis/",
+  "example_recipe_2": "Ayam Masak Lemak Cili Padi",
+  "example_recipe_3": "Ayam Masak Lemak Cili Padi"
+ },
+ {
+  "suggested_appliance": "Pressure Cooker / Slow Cooker",
+  "matching_recipes": 56,
+  "pct_of_corpus": 7.5,
+  "top_recipe_categories": "Daging (11), Ayam (8), Kerang & Siput (7)",
+  "example_recipe_1": "Ayam Goreng Lemon",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-ayam-goreng-lemon-super-sedap/",
+  "example_recipe_2": "Ayam Kari Ungkep Berempah",
+  "example_recipe_3": "Ayam Masak Kicap Pedas"
+ },
+ {
+  "suggested_appliance": "Blender / Pengisar",
+  "matching_recipes": 53,
+  "pct_of_corpus": 7.1,
+  "top_recipe_categories": "Sambal & Sos (13), Kerang & Siput (11), Sayur (6)",
+  "example_recipe_1": "Acar Buah",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-acar-buah-simple/",
+  "example_recipe_2": "Air Asam",
+  "example_recipe_3": "Ayam Bakar Sos Cili"
+ },
+ {
+  "suggested_appliance": "Grill Pan / Pemanggang Elektrik",
+  "matching_recipes": 40,
+  "pct_of_corpus": 5.3,
+  "top_recipe_categories": "Ayam (7), Kek (5), Daging (4)",
+  "example_recipe_1": "Air Jagung Vanila",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-air-jagung-vanila-viral/",
+  "example_recipe_2": "Ayam Bakar Sos Cili",
+  "example_recipe_3": "Ayam Bakar Sos Paprika"
+ },
+ {
+  "suggested_appliance": "Mesin Pembuat Mee / Pasta Maker",
+  "matching_recipes": 37,
+  "pct_of_corpus": 4.9,
+  "top_recipe_categories": "Mee & Bihun (35), Nasi (1), Puding & Pencuci Mulut (1)",
+  "example_recipe_1": "Aiskrim Jelly Sumi",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-aiskrim-jelly-sumi-aiskrim/",
+  "example_recipe_2": "Bakso Mee Hoon",
+  "example_recipe_3": "Bihun Goreng Seafood"
+ },
+ {
+  "suggested_appliance": "Blender + Ice Crusher",
+  "matching_recipes": 28,
+  "pct_of_corpus": 3.7,
+  "top_recipe_categories": "Minuman (16), Puding & Pencuci Mulut (9), Mee & Bihun (2)",
+  "example_recipe_1": "Air Buah Naga Laici Mangga",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-air-buah-naga-menyegarkan/",
+  "example_recipe_2": "Air Cendol Viral",
+  "example_recipe_3": "Air Jagung Vanila"
+ },
+ {
+  "suggested_appliance": "Oven Konveksi / Air Fryer Oven",
+  "matching_recipes": 25,
+  "pct_of_corpus": 3.3,
+  "top_recipe_categories": "Kek (4), Kerang & Siput (3), Sotong (3)",
+  "example_recipe_1": "Ayam Bakar Sos Cili",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-ayam-bakar-sos-cili-istimewa/",
+  "example_recipe_2": "Ayam Bakar Sos Paprika",
+  "example_recipe_3": "Ayam Butter Bakar"
+ },
+ {
+  "suggested_appliance": "Ice Cream Maker / Mesin Aiskrim",
+  "matching_recipes": 9,
+  "pct_of_corpus": 1.2,
+  "top_recipe_categories": "Puding & Pencuci Mulut (9)",
+  "example_recipe_1": "Aiskrim Asam Boi",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/aiskrim-asam-boi-merah-aiskrim-malaysia/",
+  "example_recipe_2": "Aiskrim Choki-Choki",
+  "example_recipe_3": "Aiskrim Goreng"
+ },
+ {
+  "suggested_appliance": "Waffle Maker",
+  "matching_recipes": 5,
+  "pct_of_corpus": 0.7,
+  "top_recipe_categories": "Roti & Pastri (3), Puding & Pencuci Mulut (1), Kuih (1)",
+  "example_recipe_1": "Dorayaki Pancake Jepun",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-dorayaki-mudah/",
+  "example_recipe_2": "Lempeng Kelapa",
+  "example_recipe_3": "Pancake Coklat Nutella"
+ },
+ {
+  "suggested_appliance": "Food Dehydrator",
+  "matching_recipes": 2,
+  "pct_of_corpus": 0.3,
+  "top_recipe_categories": "Daging (1), Biskut & Biskut Raya (1)",
+  "example_recipe_1": "Daging Jeruk",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-daging-jeruk-sedap-mesti-cuba/",
+  "example_recipe_2": "Kerepek Crab Stick",
+  "example_recipe_3": ""
+ },
+ {
+  "suggested_appliance": "Acuan Takoyaki",
+  "matching_recipes": 1,
+  "pct_of_corpus": 0.1,
+  "top_recipe_categories": "Sotong (1)",
+  "example_recipe_1": "Takoyaki Sotong",
+  "example_recipe_1_url": "https://resepifesbuk.com/resepi/resepi-takoyaki-senang-nak-buat/",
+  "example_recipe_2": "",
+  "example_recipe_3": ""
+ }
+]

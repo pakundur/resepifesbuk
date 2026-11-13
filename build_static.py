@@ -14,7 +14,7 @@ Output layout (Cloudflare Pages friendly):
   dist/sitemap.xml, robots.txt, feed.xml, 404.html
   dist/style.css, dist/fonts/*
 """
-import json, os, re, html, shutil, hashlib, datetime
+import json, os, re, html, shutil, hashlib, datetime, sys
 from urllib.parse import quote
 
 from share import share_html
@@ -318,8 +318,27 @@ CATS = dict(sorted(CATS.items(), key=lambda kv: -len(kv[1])))
 
 
 # ---------------------------------------------------------------- css hash
+# Ad CSS is appended to the stylesheet at build time so it ships in the same
+# hashed, 1-year-cached file — no extra request, no CSP change.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import ad_build
+
+# Ad trigger scanning needs plain-string steps/tips, which is what
+# content_fix.json holds (recipes_clean.json stores steps as dicts).
+_ADFIX = os.path.join(ROOT, "src", "content_fix.json")
+AD_RECIPES = json.load(open(_ADFIX, encoding="utf-8")) if os.path.exists(_ADFIX) else {}
+
+# Fail loudly rather than shipping a site with silently missing ads: both the
+# link file and the trigger corpus must exist in the build environment.
+if not AD_RECIPES:
+    raise SystemExit("ERROR: src/content_fix.json missing — ads would render empty.")
+if not os.path.exists(os.path.join(ROOT, "affiliate_links.json")):
+    raise SystemExit("ERROR: affiliate_links.json missing — no ad can render.")
+
 css_path = os.path.join(STATIC, "style.css")
 css = open(css_path, encoding="utf-8").read()
+if ".adw {" not in css:
+    css = css + ad_build.AD_CSS
 CSS_HASH = hashlib.sha256(css.encode()).hexdigest()[:10]
 
 
@@ -752,6 +771,14 @@ for idx, r in enumerate(recipes):
   <ul class="related-list">{items}</ul>
 </section>"""
 
+    # ---- sponsored slots ------------------------------------------------
+    # Scan runs against content_fix.json (plain-string steps/tips). If the
+    # slug is missing there, the page simply renders no ad.
+    _adrec = AD_RECIPES.get(r["slug"])
+    ad_r1 = ad_r2 = ad_r3 = ""
+    if _adrec:
+        ad_r1, ad_r2, ad_r3 = ad_build.article_ads_html(_adrec, r["slug"])
+
     page += f"""<main>
 <article>
   <div class="wrap-narrow recipe-head">
@@ -770,6 +797,7 @@ for idx, r in enumerate(recipes):
   <div class="wrap-narrow">
     <p class="recipe-intro">{esc(intro_txt)}</p>
     {share_html(headline, canon)}
+    {ad_r1}
 
     <div class="recipe-cols">
       {ing_block}
@@ -782,6 +810,8 @@ for idx, r in enumerate(recipes):
       </div>
     </div>
 
+    {ad_r2}
+    {ad_r3}
     <div class="source-note">
       <p>Resepi ini diterbitkan untuk pembaca {SITE_NAME}. Kalau ia berhasil di dapur anda, kongsikan dengan keluarga dan rakan.</p>
     </div>
@@ -878,6 +908,23 @@ for c, items in CATS.items():
     cat_intro = cc.get("intro") or (
         f"Semua resepi {c} dalam koleksi {SITE_NAME}, disusun supaya senang dicari.")
 
+    # ---- sponsored slots ------------------------------------------------
+    # A category page has no single recipe, so pick a seed: the first recipe
+    # in this category that triggers the most wired products. The ad then
+    # reflects what people actually cook in this category.
+    ad_k1 = ad_k2 = ""
+    _seed = None
+    _best = 0
+    for _r in items:
+        _rec = AD_RECIPES.get(_r["slug"])
+        if not _rec:
+            continue
+        _n = len(ad_build.AW.candidates(_rec))
+        if _n > _best:
+            _best, _seed = _n, (_rec, _r["slug"])
+    if _seed:
+        ad_k1, ad_k2 = ad_build.category_ads_html(_seed[0], _seed[1])
+
     # ItemList: tells Google this page is an ordered collection of recipes and
     # which URLs belong to it. Without it a category page is just a link dump.
     _items = [{
@@ -926,9 +973,11 @@ for c, items in CATS.items():
 <section style="padding-top:0">
   <div class="wrap">
     <h2 class="sr-only">Senarai resepi {esc(c)}</h2>
+    {ad_k1}
     <div class="grid">
 {cards}
     </div>
+    {ad_k2}
   </div>
 </section>
 </main>
@@ -975,6 +1024,22 @@ print("category index ok")
 page = head(f"Cari Resepi Mengikut Bahan Atau Nama Hidangan | {SITE_NAME}",
             f"Cari dalam {len(recipes)} resepi Malaysia mengikut nama bahan atau hidangan.",
             SITE_URL + "/cari/", extra_ld={"@context": "https://schema.org", "@type": "SearchResultsPage"})
+
+# Search page is not recipe-specific, so seed the slot from the busiest recipe
+# in the collection. The bar sits above results and never blocks the search box.
+ad_s1 = ""
+_seed_s = None
+_best_s = 0
+for _r in recipes:
+    _rec = AD_RECIPES.get(_r["slug"])
+    if not _rec:
+        continue
+    _n = len(ad_build.AW.candidates(_rec))
+    if _n > _best_s:
+        _best_s, _seed_s = _n, (_rec, _r["slug"])
+if _seed_s:
+    ad_s1 = ad_build.search_ad_html(_seed_s[0], _seed_s[1])
+
 page += header_html() + f"""<main>
 <section>
   <div class="wrap-narrow center">
@@ -988,6 +1053,7 @@ page += header_html() + f"""<main>
 <section style="padding-top:0">
   <div class="wrap">
     <h2 class="sr-only">Hasil carian</h2>
+    {ad_s1}
     <div id="out" class="grid"></div>
   </div>
 </section>
@@ -1169,7 +1235,12 @@ write("feed.xml", f"""<?xml version="1.0" encoding="UTF-8"?>
 """)
 
 # ---- assets ----
-shutil.copy2(css_path, os.path.join(DIST, "style.css"))
+# Write the AUGMENTED css (theme + ad rules), not the raw source file: the
+# build appends AD_CSS above and the ?v= hash is computed from this same
+# string, so copying the raw file would ship a stylesheet that lacks the ad
+# rules while claiming a hash that covers them.
+with open(os.path.join(DIST, "style.css"), "w", encoding="utf-8") as _f:
+    _f.write(css)
 
 # Search index as a separate, long-cacheable asset.
 write("search-index.json", json.dumps(

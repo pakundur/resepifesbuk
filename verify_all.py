@@ -247,6 +247,75 @@ if os.path.exists(_sm_path) and os.path.exists(_rb_path):
 else:
     chk(22, "sitemap has no robots-disallowed URLs", False, "sitemap/robots missing")
 
+# ---------------------------------------------------------------------------
+# Sponsored ad gates. These check dist/, i.e. what actually ships, not the
+# engine in isolation — a wiring regression must block the deploy.
+# ---------------------------------------------------------------------------
+_ad_links = set()
+try:
+    _al = json.load(open(os.path.join(ROOT, "affiliate_links.json"), encoding="utf-8"))
+    for _p in _al["products"].values():
+        _ad_links.update(_p["links"])
+except Exception:
+    _ad_links = set()
+
+_ad_pages = 0
+_ad_slots = 0
+_ad_rendered = set()
+_ad_bad = []
+_ad_dupe_pages = []
+for _rel, _p in pages.items():
+    _s = read(_p)
+    _slots = re.findall(r'data-slot="(\w+)"', _s)
+    if not _slots:
+        continue
+    _ad_pages += 1
+    _ad_slots += len(_slots)
+    _hrefs = re.findall(r"https://s\.shopee\.com\.my/[A-Za-z0-9]+", _s)
+    _ad_rendered.update(_hrefs)
+    # every link in the card must be sponsored + distinct + supplied
+    if _s.count('rel="sponsored nofollow noopener"') != len(_hrefs):
+        _ad_bad.append(f"{_rel}: rel mismatch")
+    if len(set(_hrefs)) != len(_hrefs):
+        _ad_bad.append(f"{_rel}: duplicate href")
+    if _ad_links and not set(_hrefs) <= _ad_links:
+        _ad_bad.append(f"{_rel}: unknown link")
+    # mandatory disclosure on every card
+    if _s.count("Ditaja") < len(_slots):
+        _ad_bad.append(f"{_rel}: missing Ditaja")
+    # hard-sell / exclamation check inside hooks
+    for _h in re.findall(r'adw__hook">([^<]*)', _s):
+        if "!" in _h:
+            _ad_bad.append(f"{_rel}: exclamation in hook")
+    # one product per page max
+    _prods = re.findall(r'data-product="(\w+)"', _s)
+    if len(_prods) != len(set(_prods)):
+        _ad_dupe_pages.append(_rel)
+
+chk(23, "ads render in built output", _ad_pages > 0 and _ad_slots > 0,
+    f"{_ad_pages} pages, {_ad_slots} slots")
+
+chk(24, "every ad link is a supplied affiliate link",
+    not any("unknown link" in b for b in _ad_bad),
+    f"{len(_ad_rendered)}/{len(_ad_links)} links in use" if _ad_links else "no link file")
+
+chk(25, "all ad links distinct + rel=sponsored",
+    not any("rel mismatch" in b or "duplicate href" in b for b in _ad_bad),
+    "; ".join(_ad_bad[:3]) if _ad_bad else "clean")
+
+chk(26, "DITAJA disclosure on every ad card",
+    not any("missing Ditaja" in b for b in _ad_bad),
+    "; ".join([b for b in _ad_bad if "Ditaja" in b][:3]) or "all cards disclosed")
+
+chk(27, "no exclamation marks in ad hooks",
+    not any("exclamation" in b for b in _ad_bad),
+    "0" if not any("exclamation" in b for b in _ad_bad) else "found")
+
+chk(28, "no page shows the same product twice",
+    not _ad_dupe_pages,
+    f"0 duplicate-product pages of {_ad_pages}" if not _ad_dupe_pages
+    else f"{len(_ad_dupe_pages)} e.g. {_ad_dupe_pages[:3]}")
+
 # 16. aggregate
 ok = all(r[2] for r in res)
 print(f"{'#':>3}  {'CHECK':<42} RESULT")

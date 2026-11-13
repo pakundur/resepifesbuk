@@ -1,0 +1,8893 @@
+{
+ "Daging": {
+  "mentions": 113,
+  "recipes": 89,
+  "subcategory": "protein",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 21,
+   "Bubur": 1,
+   "Nasi": 8,
+   "Perut & Organ": 1,
+   "Ketam": 1,
+   "Daging": 57,
+   "Ayam": 6,
+   "Roti & Pastri": 15,
+   "Kuih": 1,
+   "Sotong": 1,
+   "Sayur": 1
+  }
+ },
+ "Ayam": {
+  "mentions": 192,
+  "recipes": 145,
+  "subcategory": "protein",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 16,
+   "Nasi": 36,
+   "Ayam": 76,
+   "Kek": 3,
+   "Biskut & Biskut Raya": 2,
+   "Sayur": 8,
+   "Ketam": 1,
+   "Kerang & Siput": 2,
+   "Kuih": 7,
+   "Roti & Pastri": 20,
+   "Sambal & Sos": 1,
+   "Daging": 7,
+   "Puding & Pencuci Mulut": 1,
+   "Ikan": 3,
+   "Sup & Bening": 7,
+   "Sotong": 1,
+   "Udang": 1
+  }
+ },
+ "Serbuk Rempah Sup": {
+  "mentions": 7,
+  "recipes": 7,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1,
+   "Bubur": 1,
+   "Nasi": 3,
+   "Daging": 1,
+   "Ikan": 1
+  }
+ },
+ "Rempah Ratus": {
+  "mentions": 54,
+  "recipes": 43,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 5,
+   "Bubur": 1,
+   "Nasi": 17,
+   "Ketam": 2,
+   "Kerang & Siput": 2,
+   "Ayam": 9,
+   "Daging": 10,
+   "Roti & Pastri": 4,
+   "Sotong": 1,
+   "Ikan": 2,
+   "Sayur": 1
+  }
+ },
+ "sup bunjut": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1,
+   "Nasi": 1
+  }
+ },
+ "Kayu Manis": {
+  "mentions": 33,
+  "recipes": 33,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1,
+   "Ayam": 6,
+   "Nasi": 10,
+   "Perut & Organ": 1,
+   "Daging": 11,
+   "Ikan": 3,
+   "Kek": 1
+  }
+ },
+ "Bunga Cengkih": {
+  "mentions": 13,
+  "recipes": 13,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1,
+   "Nasi": 5,
+   "Ayam": 1,
+   "Ikan": 3,
+   "Daging": 3
+  }
+ },
+ "Bunga Lawang": {
+  "mentions": 30,
+  "recipes": 30,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1,
+   "Ayam": 5,
+   "Nasi": 11,
+   "Perut & Organ": 1,
+   "Daging": 9,
+   "Ikan": 3
+  }
+ },
+ "Buah Pelaga": {
+  "mentions": 30,
+  "recipes": 26,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1,
+   "Nasi": 14,
+   "Ayam": 4,
+   "Daging": 8,
+   "Ikan": 3
+  }
+ },
+ "Kentang": {
+  "mentions": 44,
+  "recipes": 41,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 4,
+   "Bubur": 1,
+   "Nasi": 5,
+   "Sayur": 1,
+   "Ketam": 1,
+   "Kerang & Siput": 1,
+   "Biskut & Biskut Raya": 1,
+   "Daging": 16,
+   "Ayam": 4,
+   "Ikan": 2,
+   "Roti & Pastri": 3,
+   "Udang": 2,
+   "Sup & Bening": 2,
+   "Kuih": 1
+  }
+ },
+ "Daun Sup": {
+  "mentions": 48,
+  "recipes": 47,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 7,
+   "Bubur": 1,
+   "Ketam": 2,
+   "Kuih": 5,
+   "Ayam": 5,
+   "Daging": 7,
+   "Ikan": 8,
+   "Nasi": 4,
+   "Roti & Pastri": 5,
+   "Udang": 2,
+   "Sotong": 1,
+   "Sup & Bening": 1
+  }
+ },
+ "Bawang": {
+  "mentions": 871,
+  "recipes": 414,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 73,
+   "Nasi": 100,
+   "Bubur": 4,
+   "Ayam": 118,
+   "Kuih": 30,
+   "Sayur": 80,
+   "Perut & Organ": 32,
+   "Ikan": 90,
+   "Ketam": 25,
+   "Kerang & Siput": 90,
+   "Roti & Pastri": 45,
+   "Udang": 26,
+   "Daging": 95,
+   "Sotong": 26,
+   "Sambal & Sos": 23,
+   "Sup & Bening": 14
+  }
+ },
+ "Daun Bawang": {
+  "mentions": 62,
+  "recipes": 62,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 5,
+   "Nasi": 8,
+   "Sayur": 3,
+   "Ketam": 2,
+   "Kerang & Siput": 3,
+   "Kuih": 10,
+   "Daging": 7,
+   "Ikan": 5,
+   "Ayam": 3,
+   "Roti & Pastri": 6,
+   "Udang": 4,
+   "Sotong": 3,
+   "Sup & Bening": 3
+  }
+ },
+ "Garam": {
+  "mentions": 560,
+  "recipes": 483,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 28,
+   "Kuih": 67,
+   "Nasi": 45,
+   "Bubur": 18,
+   "Ayam": 61,
+   "Kek": 17,
+   "Sayur": 43,
+   "Perut & Organ": 16,
+   "Ikan": 45,
+   "Ketam": 11,
+   "Kerang & Siput": 39,
+   "Biskut & Biskut Raya": 10,
+   "Roti & Pastri": 50,
+   "Puding & Pencuci Mulut": 10,
+   "Minuman": 4,
+   "Udang": 15,
+   "Daging": 46,
+   "Sotong": 15,
+   "Sambal & Sos": 13,
+   "Sup & Bening": 7
+  }
+ },
+ "Cili": {
+  "mentions": 467,
+  "recipes": 311,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 40,
+   "Nasi": 35,
+   "Ayam": 67,
+   "Kuih": 9,
+   "Sayur": 42,
+   "Perut & Organ": 24,
+   "Ketam": 20,
+   "Kerang & Siput": 57,
+   "Roti & Pastri": 21,
+   "Udang": 13,
+   "Ikan": 54,
+   "Daging": 46,
+   "Sambal & Sos": 18,
+   "Sotong": 13,
+   "Bubur": 1,
+   "Sup & Bening": 4,
+   "Biskut & Biskut Raya": 3
+  }
+ },
+ "Cili Api": {
+  "mentions": 151,
+  "recipes": 146,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 6,
+   "Nasi": 11,
+   "Sayur": 20,
+   "Perut & Organ": 16,
+   "Ketam": 6,
+   "Kerang & Siput": 21,
+   "Udang": 5,
+   "Ikan": 19,
+   "Ayam": 20,
+   "Sambal & Sos": 7,
+   "Daging": 8,
+   "Bubur": 1,
+   "Roti & Pastri": 4,
+   "Sup & Bening": 2,
+   "Sotong": 4,
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "Bawang Putih": {
+  "mentions": 351,
+  "recipes": 320,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 33,
+   "Nasi": 43,
+   "Bubur": 1,
+   "Kuih": 6,
+   "Sayur": 36,
+   "Perut & Organ": 12,
+   "Ketam": 12,
+   "Kerang & Siput": 40,
+   "Roti & Pastri": 13,
+   "Udang": 11,
+   "Ayam": 53,
+   "Daging": 33,
+   "Ikan": 34,
+   "Sotong": 10,
+   "Sambal & Sos": 10,
+   "Sup & Bening": 4
+  }
+ },
+ "Gula": {
+  "mentions": 574,
+  "recipes": 476,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 12,
+   "Kuih": 66,
+   "Nasi": 26,
+   "Ayam": 43,
+   "Kek": 103,
+   "Sayur": 22,
+   "Biskut & Biskut Raya": 67,
+   "Perut & Organ": 13,
+   "Ikan": 34,
+   "Ketam": 8,
+   "Kerang & Siput": 24,
+   "Roti & Pastri": 43,
+   "Minuman": 10,
+   "Puding & Pencuci Mulut": 25,
+   "Bubur": 25,
+   "Udang": 6,
+   "Daging": 25,
+   "Sotong": 9,
+   "Sambal & Sos": 12,
+   "Sup & Bening": 1
+  }
+ },
+ "Cuka": {
+  "mentions": 24,
+  "recipes": 24,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 2,
+   "Nasi": 7,
+   "Kuih": 2,
+   "Puding & Pencuci Mulut": 1,
+   "Biskut & Biskut Raya": 1,
+   "Roti & Pastri": 3,
+   "Sambal & Sos": 3,
+   "Ayam": 1,
+   "Udang": 1,
+   "Perut & Organ": 1,
+   "Sayur": 1,
+   "Sup & Bening": 1
+  }
+ },
+ "Kicap Manis": {
+  "mentions": 41,
+  "recipes": 39,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 5,
+   "Nasi": 6,
+   "Kuih": 1,
+   "Sayur": 2,
+   "Ketam": 2,
+   "Kerang & Siput": 2,
+   "Daging": 7,
+   "Ayam": 13,
+   "Ikan": 2,
+   "Sambal & Sos": 1
+  }
+ },
+ "Kicap": {
+  "mentions": 75,
+  "recipes": 63,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 12,
+   "Nasi": 12,
+   "Kuih": 1,
+   "Sayur": 2,
+   "Ketam": 3,
+   "Kerang & Siput": 6,
+   "Daging": 14,
+   "Ayam": 17,
+   "Ikan": 2,
+   "Udang": 2,
+   "Sotong": 1,
+   "Sambal & Sos": 2,
+   "Sup & Bening": 1
+  }
+ },
+ "Serbuk Kunyit": {
+  "mentions": 122,
+  "recipes": 100,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1,
+   "Ayam": 27,
+   "Nasi": 7,
+   "Sayur": 8,
+   "Perut & Organ": 8,
+   "Ketam": 6,
+   "Kerang & Siput": 18,
+   "Minuman": 1,
+   "Ikan": 19,
+   "Daging": 14,
+   "Udang": 5,
+   "Kuih": 1,
+   "Sambal & Sos": 2,
+   "Sotong": 5
+  }
+ },
+ "Bihun": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "mee",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 2,
+   "Ayam": 1
+  }
+ },
+ "Penapis / Strainer": {
+  "mentions": 6,
+  "recipes": 6,
+  "subcategory": "equipment",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Kuih": 3,
+   "Nasi": 1,
+   "Minuman": 1,
+   "Daging": 1
+  }
+ },
+ "Gula Pasir / Kastor": {
+  "mentions": 102,
+  "recipes": 96,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 22,
+   "Kek": 31,
+   "Sayur": 3,
+   "Biskut & Biskut Raya": 17,
+   "Roti & Pastri": 11,
+   "Puding & Pencuci Mulut": 6,
+   "Bubur": 7,
+   "Ayam": 3,
+   "Mee & Bihun": 1,
+   "Sambal & Sos": 1
+  }
+ },
+ "Air": {
+  "mentions": 621,
+  "recipes": 421,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 74,
+   "Nasi": 62,
+   "Ayam": 57,
+   "Kek": 53,
+   "Sayur": 38,
+   "Perut & Organ": 13,
+   "Ikan": 36,
+   "Ketam": 8,
+   "Kerang & Siput": 30,
+   "Roti & Pastri": 50,
+   "Minuman": 20,
+   "Puding & Pencuci Mulut": 39,
+   "Mee & Bihun": 42,
+   "Bubur": 22,
+   "Biskut & Biskut Raya": 5,
+   "Udang": 11,
+   "Daging": 30,
+   "Sotong": 11,
+   "Sambal & Sos": 9,
+   "Sup & Bening": 11
+  }
+ },
+ "Frying Pan": {
+  "mentions": 158,
+  "recipes": 136,
+  "subcategory": "kuali",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Kuih": 30,
+   "Nasi": 21,
+   "Kek": 21,
+   "Sayur": 10,
+   "Perut & Organ": 3,
+   "Kerang & Siput": 8,
+   "Minuman": 4,
+   "Bubur": 15,
+   "Biskut & Biskut Raya": 2,
+   "Roti & Pastri": 11,
+   "Ikan": 4,
+   "Puding & Pencuci Mulut": 11,
+   "Ayam": 8,
+   "Mee & Bihun": 7,
+   "Sotong": 1,
+   "Daging": 2
+  }
+ },
+ "Daun Pandan": {
+  "mentions": 76,
+  "recipes": 66,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 24,
+   "Nasi": 13,
+   "Kek": 6,
+   "Bubur": 15,
+   "Biskut & Biskut Raya": 1,
+   "Roti & Pastri": 1,
+   "Puding & Pencuci Mulut": 7,
+   "Ayam": 1,
+   "Ikan": 2,
+   "Sayur": 1,
+   "Sotong": 1,
+   "Minuman": 3,
+   "Daging": 1
+  }
+ },
+ "Tepung Beras": {
+  "mentions": 39,
+  "recipes": 34,
+  "subcategory": "tepung",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 25,
+   "Biskut & Biskut Raya": 3,
+   "Roti & Pastri": 1,
+   "Bubur": 2,
+   "Puding & Pencuci Mulut": 2,
+   "Ayam": 2,
+   "Mee & Bihun": 1,
+   "Minuman": 1,
+   "Sayur": 1,
+   "Udang": 1
+  }
+ },
+ "Tepung (Umum)": {
+  "mentions": 474,
+  "recipes": 330,
+  "subcategory": "tepung",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 94,
+   "Nasi": 4,
+   "Kek": 99,
+   "Biskut & Biskut Raya": 115,
+   "Sayur": 5,
+   "Ketam": 3,
+   "Kerang & Siput": 2,
+   "Roti & Pastri": 62,
+   "Puding & Pencuci Mulut": 16,
+   "Bubur": 10,
+   "Udang": 6,
+   "Mee & Bihun": 15,
+   "Daging": 8,
+   "Ayam": 14,
+   "Sambal & Sos": 6,
+   "Minuman": 3,
+   "Sotong": 4,
+   "Ikan": 3,
+   "Sup & Bening": 5
+  }
+ },
+ "Beras": {
+  "mentions": 69,
+  "recipes": 62,
+  "subcategory": "beras",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 29,
+   "Bubur": 3,
+   "Nasi": 21,
+   "Biskut & Biskut Raya": 3,
+   "Roti & Pastri": 1,
+   "Daging": 1,
+   "Puding & Pencuci Mulut": 3,
+   "Ayam": 2,
+   "Mee & Bihun": 2,
+   "Minuman": 1,
+   "Sayur": 1,
+   "Udang": 1,
+   "Kerang & Siput": 1
+  }
+ },
+ "Santan (Kelapa)": {
+  "mentions": 138,
+  "recipes": 121,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 33,
+   "Bubur": 17,
+   "Ayam": 14,
+   "Sayur": 7,
+   "Perut & Organ": 4,
+   "Ikan": 6,
+   "Kerang & Siput": 12,
+   "Kek": 10,
+   "Nasi": 6,
+   "Daging": 7,
+   "Udang": 2,
+   "Sotong": 3,
+   "Ketam": 3,
+   "Puding & Pencuci Mulut": 7,
+   "Minuman": 1,
+   "Mee & Bihun": 3,
+   "Roti & Pastri": 2,
+   "Sambal & Sos": 1
+  }
+ },
+ "Pewarna Makanan": {
+  "mentions": 99,
+  "recipes": 86,
+  "subcategory": "baking",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 23,
+   "Nasi": 8,
+   "Kek": 40,
+   "Biskut & Biskut Raya": 11,
+   "Bubur": 2,
+   "Roti & Pastri": 5,
+   "Puding & Pencuci Mulut": 6,
+   "Minuman": 2,
+   "Daging": 2
+  }
+ },
+ "Sos Tiram": {
+  "mentions": 83,
+  "recipes": 79,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 6,
+   "Sayur": 13,
+   "Perut & Organ": 2,
+   "Ketam": 3,
+   "Kerang & Siput": 13,
+   "Roti & Pastri": 3,
+   "Mee & Bihun": 8,
+   "Daging": 10,
+   "Sotong": 3,
+   "Ayam": 15,
+   "Ikan": 2,
+   "Sambal & Sos": 3,
+   "Udang": 1,
+   "Sup & Bening": 1
+  }
+ },
+ "Sos (Umum)": {
+  "mentions": 243,
+  "recipes": 155,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 17,
+   "Ayam": 36,
+   "Sayur": 15,
+   "Perut & Organ": 6,
+   "Ketam": 12,
+   "Kerang & Siput": 28,
+   "Roti & Pastri": 30,
+   "Mee & Bihun": 31,
+   "Ikan": 10,
+   "Daging": 35,
+   "Sotong": 7,
+   "Sambal & Sos": 5,
+   "Kuih": 2,
+   "Udang": 8,
+   "Sup & Bening": 1
+  }
+ },
+ "Lada Sulah": {
+  "mentions": 42,
+  "recipes": 39,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 4,
+   "Sayur": 5,
+   "Kuih": 2,
+   "Mee & Bihun": 7,
+   "Daging": 4,
+   "Ayam": 5,
+   "Udang": 4,
+   "Sotong": 4,
+   "Roti & Pastri": 3,
+   "Ikan": 2,
+   "Sup & Bening": 2
+  }
+ },
+ "perasa maggi cukup rasa": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1,
+   "Kerang & Siput": 1
+  }
+ },
+ "Sos Cili": {
+  "mentions": 64,
+  "recipes": 62,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 4,
+   "Ayam": 8,
+   "Sayur": 2,
+   "Ketam": 5,
+   "Kerang & Siput": 10,
+   "Daging": 8,
+   "Mee & Bihun": 10,
+   "Udang": 2,
+   "Roti & Pastri": 8,
+   "Perut & Organ": 1,
+   "Sotong": 1,
+   "Kuih": 1,
+   "Ikan": 4
+  }
+ },
+ "Tepung Ubi": {
+  "mentions": 14,
+  "recipes": 14,
+  "subcategory": "tepung",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1,
+   "Biskut & Biskut Raya": 2,
+   "Bubur": 3,
+   "Mee & Bihun": 2,
+   "Kuih": 3,
+   "Udang": 1,
+   "Roti & Pastri": 1,
+   "Ikan": 1
+  }
+ },
+ "Lada Hitam": {
+  "mentions": 106,
+  "recipes": 99,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1,
+   "Sayur": 10,
+   "Ikan": 5,
+   "Ketam": 2,
+   "Kerang & Siput": 5,
+   "Roti & Pastri": 12,
+   "Mee & Bihun": 10,
+   "Daging": 17,
+   "Perut & Organ": 2,
+   "Ayam": 24,
+   "Udang": 6,
+   "Nasi": 4,
+   "Sotong": 3,
+   "Sup & Bening": 3,
+   "Kuih": 1,
+   "Sambal & Sos": 1
+  }
+ },
+ "Bawang Merah": {
+  "mentions": 187,
+  "recipes": 169,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 2,
+   "Nasi": 20,
+   "Sayur": 23,
+   "Perut & Organ": 12,
+   "Ikan": 22,
+   "Ketam": 5,
+   "Kerang & Siput": 23,
+   "Mee & Bihun": 16,
+   "Daging": 19,
+   "Ayam": 20,
+   "Roti & Pastri": 7,
+   "Sambal & Sos": 6,
+   "Udang": 6,
+   "Sotong": 4,
+   "Kuih": 1,
+   "Sup & Bening": 1
+  }
+ },
+ "Halia": {
+  "mentions": 186,
+  "recipes": 174,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1,
+   "Ayam": 41,
+   "Nasi": 29,
+   "Sayur": 5,
+   "Perut & Organ": 5,
+   "Ketam": 6,
+   "Kerang & Siput": 20,
+   "Roti & Pastri": 4,
+   "Minuman": 2,
+   "Mee & Bihun": 12,
+   "Daging": 23,
+   "Ikan": 23,
+   "Sambal & Sos": 3,
+   "Udang": 3,
+   "Sotong": 6,
+   "Sup & Bening": 3
+  }
+ },
+ "Lobak Merah": {
+  "mentions": 39,
+  "recipes": 39,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1,
+   "Kuih": 2,
+   "Sayur": 6,
+   "Perut & Organ": 1,
+   "Ketam": 1,
+   "Daging": 6,
+   "Ayam": 3,
+   "Roti & Pastri": 3,
+   "Mee & Bihun": 5,
+   "Ikan": 1,
+   "Udang": 1,
+   "Nasi": 4,
+   "Sup & Bening": 3,
+   "Sotong": 1,
+   "Kek": 1
+  }
+ },
+ "Senduk": {
+  "mentions": 23,
+  "recipes": 21,
+  "subcategory": "equipment",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Ayam": 2,
+   "Perut & Organ": 3,
+   "Kerang & Siput": 1,
+   "Minuman": 1,
+   "Ikan": 3,
+   "Kuih": 1,
+   "Roti & Pastri": 2,
+   "Mee & Bihun": 3,
+   "Daging": 4,
+   "Nasi": 3
+  }
+ },
+ "Tomato": {
+  "mentions": 128,
+  "recipes": 110,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 27,
+   "Nasi": 14,
+   "Sayur": 4,
+   "Perut & Organ": 7,
+   "Ketam": 4,
+   "Kerang & Siput": 8,
+   "Roti & Pastri": 8,
+   "Daging": 18,
+   "Ikan": 18,
+   "Mee & Bihun": 12,
+   "Sambal & Sos": 2,
+   "Udang": 2,
+   "Sup & Bening": 2,
+   "Sotong": 2
+  }
+ },
+ "Serai": {
+  "mentions": 129,
+  "recipes": 125,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 29,
+   "Nasi": 12,
+   "Sayur": 6,
+   "Perut & Organ": 6,
+   "Ketam": 4,
+   "Kerang & Siput": 26,
+   "Ikan": 14,
+   "Mee & Bihun": 8,
+   "Sotong": 6,
+   "Daging": 10,
+   "Udang": 3,
+   "Sup & Bening": 1,
+   "Sambal & Sos": 3,
+   "Roti & Pastri": 1
+  }
+ },
+ "Cream Cheese": {
+  "mentions": 24,
+  "recipes": 24,
+  "subcategory": "dairy",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 19,
+   "Biskut & Biskut Raya": 1,
+   "Puding & Pencuci Mulut": 4
+  }
+ },
+ "Krim Putar (Whipping Cream)": {
+  "mentions": 86,
+  "recipes": 67,
+  "subcategory": "dairy",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 45,
+   "Kerang & Siput": 1,
+   "Roti & Pastri": 6,
+   "Puding & Pencuci Mulut": 16,
+   "Biskut & Biskut Raya": 3,
+   "Minuman": 3,
+   "Daging": 1,
+   "Udang": 1,
+   "Ayam": 1,
+   "Mee & Bihun": 4,
+   "Kuih": 2,
+   "Sup & Bening": 2,
+   "Sayur": 1
+  }
+ },
+ "Keju": {
+  "mentions": 68,
+  "recipes": 59,
+  "subcategory": "dairy",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 26,
+   "Kuih": 1,
+   "Mee & Bihun": 10,
+   "Biskut & Biskut Raya": 2,
+   "Roti & Pastri": 18,
+   "Puding & Pencuci Mulut": 4,
+   "Daging": 3,
+   "Udang": 2,
+   "Sotong": 1,
+   "Ayam": 1
+  }
+ },
+ "Tepung Gandum": {
+  "mentions": 208,
+  "recipes": 200,
+  "subcategory": "tepung",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 60,
+   "Kuih": 39,
+   "Biskut & Biskut Raya": 50,
+   "Kerang & Siput": 1,
+   "Roti & Pastri": 31,
+   "Puding & Pencuci Mulut": 2,
+   "Daging": 5,
+   "Sayur": 1,
+   "Ayam": 6,
+   "Mee & Bihun": 4,
+   "Nasi": 1,
+   "Udang": 2,
+   "Sotong": 2,
+   "Sambal & Sos": 2,
+   "Sup & Bening": 1,
+   "Ikan": 1
+  }
+ },
+ "Susu Sejat": {
+  "mentions": 73,
+  "recipes": 66,
+  "subcategory": "dairy",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 18,
+   "Nasi": 11,
+   "Puding & Pencuci Mulut": 11,
+   "Roti & Pastri": 6,
+   "Biskut & Biskut Raya": 1,
+   "Minuman": 5,
+   "Udang": 3,
+   "Ayam": 5,
+   "Ketam": 2,
+   "Kuih": 4,
+   "Mee & Bihun": 1,
+   "Daging": 1,
+   "Sup & Bening": 4,
+   "Sambal & Sos": 1
+  }
+ },
+ "Susu": {
+  "mentions": 232,
+  "recipes": 177,
+  "subcategory": "dairy",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 73,
+   "Nasi": 11,
+   "Biskut & Biskut Raya": 23,
+   "Roti & Pastri": 40,
+   "Minuman": 17,
+   "Puding & Pencuci Mulut": 29,
+   "Udang": 4,
+   "Daging": 4,
+   "Ayam": 5,
+   "Kuih": 11,
+   "Ketam": 2,
+   "Mee & Bihun": 5,
+   "Sayur": 2,
+   "Sup & Bening": 5,
+   "Sambal & Sos": 1
+  }
+ },
+ "Telur": {
+  "mentions": 320,
+  "recipes": 281,
+  "subcategory": "protein",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 97,
+   "Kuih": 31,
+   "Biskut & Biskut Raya": 48,
+   "Sayur": 8,
+   "Ketam": 7,
+   "Kerang & Siput": 3,
+   "Roti & Pastri": 54,
+   "Puding & Pencuci Mulut": 13,
+   "Mee & Bihun": 15,
+   "Daging": 8,
+   "Ayam": 10,
+   "Nasi": 11,
+   "Sambal & Sos": 2,
+   "Udang": 4,
+   "Sotong": 4,
+   "Sup & Bening": 4,
+   "Ikan": 1
+  }
+ },
+ "Jagung": {
+  "mentions": 134,
+  "recipes": 119,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 22,
+   "Kuih": 11,
+   "Biskut & Biskut Raya": 34,
+   "Sayur": 3,
+   "Ikan": 2,
+   "Ketam": 2,
+   "Kerang & Siput": 1,
+   "Puding & Pencuci Mulut": 9,
+   "Bubur": 5,
+   "Roti & Pastri": 5,
+   "Minuman": 5,
+   "Udang": 2,
+   "Mee & Bihun": 11,
+   "Ayam": 7,
+   "Nasi": 4,
+   "Sambal & Sos": 5,
+   "Sotong": 1,
+   "Daging": 2,
+   "Sup & Bening": 3
+  }
+ },
+ "Minyak Masak": {
+  "mentions": 315,
+  "recipes": 286,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 33,
+   "Nasi": 25,
+   "Kuih": 34,
+   "Sayur": 26,
+   "Perut & Organ": 5,
+   "Ketam": 1,
+   "Kerang & Siput": 17,
+   "Biskut & Biskut Raya": 19,
+   "Mee & Bihun": 17,
+   "Roti & Pastri": 29,
+   "Bubur": 1,
+   "Puding & Pencuci Mulut": 3,
+   "Ayam": 37,
+   "Daging": 25,
+   "Sotong": 8,
+   "Ikan": 18,
+   "Udang": 10,
+   "Sambal & Sos": 5,
+   "Sup & Bening": 2
+  }
+ },
+ "Serbuk Koko": {
+  "mentions": 39,
+  "recipes": 35,
+  "subcategory": "baking",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 26,
+   "Biskut & Biskut Raya": 12,
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "Soda Bikarbonat": {
+  "mentions": 21,
+  "recipes": 21,
+  "subcategory": "baking",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 13,
+   "Kuih": 4,
+   "Biskut & Biskut Raya": 2,
+   "Puding & Pencuci Mulut": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "penaik": {
+  "mentions": 28,
+  "recipes": 28,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 15,
+   "Biskut & Biskut Raya": 8,
+   "Kuih": 2,
+   "Roti & Pastri": 2,
+   "Sotong": 1
+  }
+ },
+ "cawan nenas dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "Marjerin": {
+  "mentions": 39,
+  "recipes": 36,
+  "subcategory": "dairy",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 5,
+   "Puding & Pencuci Mulut": 3,
+   "Kek": 7,
+   "Biskut & Biskut Raya": 4,
+   "Roti & Pastri": 11,
+   "Kuih": 4,
+   "Sambal & Sos": 1,
+   "Sup & Bening": 1,
+   "Mee & Bihun": 1,
+   "Sayur": 2
+  }
+ },
+ "Rempah Kurma": {
+  "mentions": 12,
+  "recipes": 10,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 3,
+   "Perut & Organ": 1,
+   "Biskut & Biskut Raya": 2,
+   "Daging": 4,
+   "Kek": 1,
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "Jintan Manis / Jintan Putih": {
+  "mentions": 57,
+  "recipes": 35,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 13,
+   "Perut & Organ": 2,
+   "Ketam": 2,
+   "Kerang & Siput": 1,
+   "Ikan": 8,
+   "Daging": 16,
+   "Ayam": 9,
+   "Mee & Bihun": 1,
+   "Roti & Pastri": 1,
+   "Kuih": 4
+  }
+ },
+ "belacan bakar": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1,
+   "Ayam": 1
+  }
+ },
+ "Pot Memasak": {
+  "mentions": 11,
+  "recipes": 9,
+  "subcategory": "periuk",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Nasi": 7,
+   "Bubur": 1,
+   "Ikan": 3
+  }
+ },
+ "Mentega": {
+  "mentions": 199,
+  "recipes": 179,
+  "subcategory": "dairy",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 5,
+   "Kek": 64,
+   "Biskut & Biskut Raya": 55,
+   "Kerang & Siput": 1,
+   "Roti & Pastri": 33,
+   "Puding & Pencuci Mulut": 4,
+   "Udang": 6,
+   "Ayam": 6,
+   "Kuih": 4,
+   "Ketam": 2,
+   "Sayur": 4,
+   "Daging": 7,
+   "Mee & Bihun": 4,
+   "Ikan": 1,
+   "Sup & Bening": 3
+  }
+ },
+ "Kismis": {
+  "mentions": 18,
+  "recipes": 17,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 3,
+   "Kek": 5,
+   "Biskut & Biskut Raya": 5,
+   "Puding & Pencuci Mulut": 3,
+   "Daging": 1,
+   "Kuih": 1
+  }
+ },
+ "Kerisik": {
+  "mentions": 19,
+  "recipes": 19,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 2,
+   "Kerang & Siput": 3,
+   "Perut & Organ": 3,
+   "Ayam": 2,
+   "Daging": 6,
+   "Sambal & Sos": 1,
+   "Mee & Bihun": 1,
+   "Sayur": 1
+  }
+ },
+ "timun kulit cakar dengan garfu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "nenas nipis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "Cili Merah": {
+  "mentions": 68,
+  "recipes": 66,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 7,
+   "Sayur": 12,
+   "Perut & Organ": 2,
+   "Kerang & Siput": 8,
+   "Ayam": 6,
+   "Mee & Bihun": 3,
+   "Ikan": 8,
+   "Sambal & Sos": 2,
+   "Ketam": 2,
+   "Daging": 6,
+   "Kuih": 5,
+   "Roti & Pastri": 3,
+   "Sotong": 2,
+   "Udang": 2
+  }
+ },
+ "Jam / Jelly": {
+  "mentions": 21,
+  "recipes": 20,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 3,
+   "Kek": 4,
+   "Roti & Pastri": 3,
+   "Biskut & Biskut Raya": 2,
+   "Puding & Pencuci Mulut": 4,
+   "Nasi": 1,
+   "Daging": 1,
+   "Sayur": 3
+  }
+ },
+ "Beras Pulut": {
+  "mentions": 31,
+  "recipes": 22,
+  "subcategory": "beras",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 22,
+   "Bubur": 6,
+   "Sotong": 1,
+   "Puding & Pencuci Mulut": 1,
+   "Nasi": 1
+  }
+ },
+ "cawan isi durian": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "Tepung Kastard": {
+  "mentions": 14,
+  "recipes": 14,
+  "subcategory": "tepung",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 3,
+   "Biskut & Biskut Raya": 8,
+   "Puding & Pencuci Mulut": 3
+  }
+ },
+ "Tepung Jagung": {
+  "mentions": 96,
+  "recipes": 92,
+  "subcategory": "tepung",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 8,
+   "Kuih": 7,
+   "Biskut & Biskut Raya": 33,
+   "Sayur": 2,
+   "Ketam": 2,
+   "Kerang & Siput": 1,
+   "Puding & Pencuci Mulut": 8,
+   "Roti & Pastri": 4,
+   "Udang": 2,
+   "Mee & Bihun": 9,
+   "Ayam": 6,
+   "Sambal & Sos": 4,
+   "Nasi": 2,
+   "Minuman": 2,
+   "Sotong": 1,
+   "Ikan": 1,
+   "Daging": 1,
+   "Sup & Bening": 2,
+   "Bubur": 1
+  }
+ },
+ "cawan jus oren": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "jus lemon": {
+  "mentions": 4,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 4
+  }
+ },
+ "Gula Aising": {
+  "mentions": 14,
+  "recipes": 14,
+  "subcategory": "baking",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 7,
+   "Biskut & Biskut Raya": 7
+  }
+ },
+ "mango filling": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "Badam": {
+  "mentions": 26,
+  "recipes": 20,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 5,
+   "Biskut & Biskut Raya": 17,
+   "Puding & Pencuci Mulut": 2,
+   "Minuman": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "Pemarut (Grater)": {
+  "mentions": 45,
+  "recipes": 43,
+  "subcategory": "equipment",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Kek": 7,
+   "Kuih": 18,
+   "Kerang & Siput": 1,
+   "Roti & Pastri": 4,
+   "Biskut & Biskut Raya": 1,
+   "Nasi": 4,
+   "Mee & Bihun": 4,
+   "Daging": 1,
+   "Ayam": 2,
+   "Ikan": 1,
+   "Udang": 1,
+   "Sayur": 1
+  }
+ },
+ "Penumbuk / Lesung": {
+  "mentions": 30,
+  "recipes": 22,
+  "subcategory": "equipment",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Kuih": 2,
+   "Sayur": 4,
+   "Ketam": 1,
+   "Kerang & Siput": 2,
+   "Roti & Pastri": 2,
+   "Perut & Organ": 3,
+   "Daging": 4,
+   "Nasi": 2,
+   "Mee & Bihun": 7,
+   "Ayam": 3
+  }
+ },
+ "Udang": {
+  "mentions": 70,
+  "recipes": 63,
+  "subcategory": "protein",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 6,
+   "Sayur": 16,
+   "Perut & Organ": 1,
+   "Ketam": 1,
+   "Udang": 17,
+   "Nasi": 4,
+   "Ayam": 3,
+   "Mee & Bihun": 18,
+   "Kerang & Siput": 1,
+   "Sup & Bening": 1,
+   "Sotong": 1,
+   "Daging": 1
+  }
+ },
+ "Serbuk Ketumbar": {
+  "mentions": 68,
+  "recipes": 57,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 10,
+   "Ketam": 1,
+   "Kerang & Siput": 6,
+   "Perut & Organ": 2,
+   "Ayam": 13,
+   "Daging": 20,
+   "Ikan": 5,
+   "Sotong": 1,
+   "Sambal & Sos": 1,
+   "Mee & Bihun": 5,
+   "Udang": 2,
+   "Roti & Pastri": 1,
+   "Kuih": 1
+  }
+ },
+ "Daun Ketumbar": {
+  "mentions": 34,
+  "recipes": 31,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 5,
+   "Ketam": 1,
+   "Kerang & Siput": 3,
+   "Perut & Organ": 1,
+   "Daging": 9,
+   "Ayam": 5,
+   "Sotong": 1,
+   "Sambal & Sos": 1,
+   "Mee & Bihun": 4,
+   "Udang": 2,
+   "Ikan": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "labu kuning anggaran berat 1kg": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "Kelapa Parut": {
+  "mentions": 50,
+  "recipes": 46,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 22,
+   "Kerang & Siput": 3,
+   "Biskut & Biskut Raya": 3,
+   "Roti & Pastri": 1,
+   "Kek": 1,
+   "Bubur": 4,
+   "Ayam": 2,
+   "Sayur": 2,
+   "Nasi": 3,
+   "Mee & Bihun": 2,
+   "Sambal & Sos": 1,
+   "Daging": 1,
+   "Ikan": 2,
+   "Sotong": 1,
+   "Puding & Pencuci Mulut": 2
+  }
+ },
+ "daun pisang dilayur ikut saiz": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "ovallette": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "Susu Pekat Manis": {
+  "mentions": 33,
+  "recipes": 33,
+  "subcategory": "dairy",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 21,
+   "Biskut & Biskut Raya": 2,
+   "Puding & Pencuci Mulut": 3,
+   "Roti & Pastri": 3,
+   "Minuman": 1,
+   "Kuih": 3
+  }
+ },
+ "Yogurt": {
+  "mentions": 5,
+  "recipes": 5,
+  "subcategory": "dairy",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 2,
+   "Roti & Pastri": 1,
+   "Daging": 1,
+   "Ayam": 1
+  }
+ },
+ "esen vanila -": {
+  "mentions": 11,
+  "recipes": 11,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 3,
+   "Biskut & Biskut Raya": 6,
+   "Puding & Pencuci Mulut": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "gm labu kuning - dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Kacang": {
+  "mentions": 70,
+  "recipes": 67,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 10,
+   "Perut & Organ": 3,
+   "Kerang & Siput": 1,
+   "Biskut & Biskut Raya": 12,
+   "Roti & Pastri": 4,
+   "Bubur": 1,
+   "Puding & Pencuci Mulut": 5,
+   "Kek": 1,
+   "Ikan": 1,
+   "Nasi": 4,
+   "Daging": 5,
+   "Ayam": 6,
+   "Kuih": 6,
+   "Mee & Bihun": 5,
+   "Sotong": 1,
+   "Sambal & Sos": 3,
+   "Minuman": 2
+  }
+ },
+ "tangkai daun selasih": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Ikan": {
+  "mentions": 131,
+  "recipes": 118,
+  "subcategory": "protein",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 17,
+   "Ikan": 47,
+   "Ketam": 3,
+   "Kerang & Siput": 6,
+   "Perut & Organ": 1,
+   "Nasi": 11,
+   "Mee & Bihun": 10,
+   "Daging": 6,
+   "Biskut & Biskut Raya": 1,
+   "Ayam": 3,
+   "Sambal & Sos": 9,
+   "Sotong": 3,
+   "Bubur": 1,
+   "Sup & Bening": 1,
+   "Udang": 1,
+   "Roti & Pastri": 2,
+   "Puding & Pencuci Mulut": 1,
+   "Kuih": 8
+  }
+ },
+ "pucuk ubi kayu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "perasa": {
+  "mentions": 26,
+  "recipes": 26,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 3,
+   "Perut & Organ": 2,
+   "Ketam": 2,
+   "Kerang & Siput": 3,
+   "Sambal & Sos": 1,
+   "Mee & Bihun": 1,
+   "Daging": 5,
+   "Sup & Bening": 1,
+   "Nasi": 2,
+   "Ayam": 2,
+   "Ikan": 3,
+   "Sotong": 1
+  }
+ },
+ "batang kailan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "daun kailan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Sos Ikan": {
+  "mentions": 27,
+  "recipes": 27,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 2,
+   "Kerang & Siput": 2,
+   "Perut & Organ": 1,
+   "Nasi": 3,
+   "Mee & Bihun": 2,
+   "Ikan": 3,
+   "Daging": 4,
+   "Ayam": 3,
+   "Sotong": 2,
+   "Sambal & Sos": 2,
+   "Ketam": 1,
+   "Udang": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "Limau": {
+  "mentions": 106,
+  "recipes": 90,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 6,
+   "Ketam": 1,
+   "Kerang & Siput": 9,
+   "Roti & Pastri": 3,
+   "Minuman": 4,
+   "Perut & Organ": 7,
+   "Ikan": 17,
+   "Daging": 11,
+   "Ayam": 18,
+   "Nasi": 9,
+   "Kuih": 1,
+   "Sotong": 5,
+   "Sambal & Sos": 5,
+   "Mee & Bihun": 5,
+   "Sup & Bening": 2,
+   "Udang": 3
+  }
+ },
+ "perasa -": {
+  "mentions": 16,
+  "recipes": 16,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 3,
+   "Kerang & Siput": 2,
+   "Sambal & Sos": 1,
+   "Udang": 1,
+   "Nasi": 1,
+   "Mee & Bihun": 1,
+   "Sotong": 1,
+   "Ikan": 1,
+   "Ayam": 1,
+   "Daging": 4
+  }
+ },
+ "cekur kencur -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "belacan - sebesar ibu jari": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Perut & Organ": 1
+  }
+ },
+ "Sayur Hijau": {
+  "mentions": 55,
+  "recipes": 51,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 14,
+   "Ikan": 4,
+   "Kerang & Siput": 1,
+   "Roti & Pastri": 4,
+   "Kek": 2,
+   "Biskut & Biskut Raya": 4,
+   "Mee & Bihun": 14,
+   "Nasi": 3,
+   "Ayam": 3,
+   "Daging": 4,
+   "Sotong": 1,
+   "Kuih": 1
+  }
+ },
+ "pucuk ubi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "taugeh": {
+  "mentions": 6,
+  "recipes": 6,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Mee & Bihun": 4,
+   "Nasi": 1
+  }
+ },
+ "sengkuang - memanjang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "timun -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Perut & Organ": 1
+  }
+ },
+ "tauhu - goreng dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Tempe": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "protein",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Nasi": 1,
+   "Sambal & Sos": 1
+  }
+ },
+ "Susu Tepung": {
+  "mentions": 28,
+  "recipes": 26,
+  "subcategory": "dairy",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 12,
+   "Kek": 4,
+   "Roti & Pastri": 12
+  }
+ },
+ "Kopi / Nescafe": {
+  "mentions": 12,
+  "recipes": 10,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 4,
+   "Kek": 6,
+   "Minuman": 1,
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "Coklat Masakan": {
+  "mentions": 61,
+  "recipes": 51,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 34,
+   "Kuih": 2,
+   "Kek": 14,
+   "Puding & Pencuci Mulut": 7,
+   "Roti & Pastri": 3,
+   "Sayur": 1
+  }
+ },
+ "tembikai - sebiji ambil kulit berwarna putih kira - kira di antara isi buah tembikai kulit hijau": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "belacan - secubit": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "kubis -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "pucuk manis -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "batang karot halus memanjang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Daun Kari": {
+  "mentions": 35,
+  "recipes": 35,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Ketam": 5,
+   "Kerang & Siput": 3,
+   "Roti & Pastri": 1,
+   "Udang": 3,
+   "Ayam": 9,
+   "Ikan": 3,
+   "Nasi": 3,
+   "Daging": 4,
+   "Biskut & Biskut Raya": 2,
+   "Sambal & Sos": 1
+  }
+ },
+ "Lengkuas": {
+  "mentions": 35,
+  "recipes": 35,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 2,
+   "Kerang & Siput": 4,
+   "Perut & Organ": 1,
+   "Ayam": 9,
+   "Mee & Bihun": 3,
+   "Ikan": 6,
+   "Nasi": 1,
+   "Daging": 5,
+   "Udang": 1,
+   "Sotong": 2,
+   "Sambal & Sos": 1
+  }
+ },
+ "bilis -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "perasa - suka": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "asparagus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Cendawan": {
+  "mentions": 29,
+  "recipes": 28,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 4,
+   "Roti & Pastri": 6,
+   "Perut & Organ": 1,
+   "Mee & Bihun": 6,
+   "Ayam": 4,
+   "Daging": 2,
+   "Sup & Bening": 3,
+   "Udang": 2,
+   "Ikan": 1
+  }
+ },
+ "kubis bulat bersaiz -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "cencaluk": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Kerang & Siput": 1
+  }
+ },
+ "terung": {
+  "mentions": 4,
+  "recipes": 4,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 2,
+   "Ikan": 1,
+   "Ayam": 1
+  }
+ },
+ "Cili Kisar / Cili Boh": {
+  "mentions": 17,
+  "recipes": 17,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Ketam": 2,
+   "Kerang & Siput": 1,
+   "Nasi": 1,
+   "Mee & Bihun": 5,
+   "Ayam": 2,
+   "Udang": 1,
+   "Sambal & Sos": 2,
+   "Sotong": 1,
+   "Daging": 1
+  }
+ },
+ "nangka muda -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Daun Kunyit": {
+  "mentions": 20,
+  "recipes": 19,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Kerang & Siput": 6,
+   "Perut & Organ": 1,
+   "Ayam": 4,
+   "Daging": 2,
+   "Udang": 1,
+   "Ketam": 2,
+   "Sotong": 2,
+   "Ikan": 1
+  }
+ },
+ "asam gelugor -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "kimcam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "g taugeh -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "belacan -": {
+  "mentions": 12,
+  "recipes": 12,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 2,
+   "Kerang & Siput": 3,
+   "Daging": 1,
+   "Sambal & Sos": 2,
+   "Ikan": 3,
+   "Ayam": 1
+  }
+ },
+ "aji -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Daging": 1
+  }
+ },
+ "peket suhun fucuk": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "peket fish ball": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Cawan Kertas / Cup": {
+  "mentions": 7,
+  "recipes": 7,
+  "subcategory": "packaging",
+  "kind": "packaging",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Kek": 2,
+   "Biskut & Biskut Raya": 2,
+   "Kuih": 2
+  }
+ },
+ "meatloaf": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "tangkai daun salad -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "mayones": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Mayonis": {
+  "mentions": 14,
+  "recipes": 14,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 2,
+   "Roti & Pastri": 9,
+   "Daging": 1,
+   "Sotong": 1,
+   "Ayam": 1
+  }
+ },
+ "Sos Salad / Thousand Island": {
+  "mentions": 4,
+  "recipes": 4,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Roti & Pastri": 3
+  }
+ },
+ "ikat pucuk paku": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Ketam": {
+  "mentions": 21,
+  "recipes": 20,
+  "subcategory": "protein",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Ketam": 12,
+   "Mee & Bihun": 3,
+   "Nasi": 3,
+   "Biskut & Biskut Raya": 1,
+   "Sup & Bening": 1
+  }
+ },
+ "Brokoli": {
+  "mentions": 6,
+  "recipes": 6,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Mee & Bihun": 2,
+   "Sup & Bening": 1,
+   "Sotong": 1,
+   "Sambal & Sos": 1
+  }
+ },
+ "lada benggala": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Daging": 1
+  }
+ },
+ "perut direbus - ikut suka": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "50g bunga kubis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "lada benggala - dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "lada -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 2
+  }
+ },
+ "lobak": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1,
+   "Bubur": 1,
+   "Daging": 1
+  }
+ },
+ "petola": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "Bawang Besar": {
+  "mentions": 27,
+  "recipes": 26,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 3,
+   "Kerang & Siput": 3,
+   "Ayam": 4,
+   "Daging": 5,
+   "Mee & Bihun": 6,
+   "Sup & Bening": 1,
+   "Sotong": 1,
+   "Roti & Pastri": 2,
+   "Ikan": 2
+  }
+ },
+ "Daun Limau Purut": {
+  "mentions": 41,
+  "recipes": 41,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 2,
+   "Ketam": 1,
+   "Kerang & Siput": 5,
+   "Perut & Organ": 1,
+   "Ikan": 8,
+   "Ayam": 12,
+   "Nasi": 1,
+   "Daging": 5,
+   "Sup & Bening": 1,
+   "Sotong": 3,
+   "Mee & Bihun": 1,
+   "Udang": 1
+  }
+ },
+ "Limau Purut": {
+  "mentions": 34,
+  "recipes": 34,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 2,
+   "Ketam": 1,
+   "Kerang & Siput": 3,
+   "Perut & Organ": 2,
+   "Ikan": 6,
+   "Ayam": 8,
+   "Nasi": 1,
+   "Daging": 5,
+   "Sup & Bening": 1,
+   "Sotong": 3,
+   "Mee & Bihun": 1,
+   "Udang": 1
+  }
+ },
+ "paru": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 2
+  }
+ },
+ "asam gelugor": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1,
+   "Ketam": 1,
+   "Ikan": 1
+  }
+ },
+ "paru - anggaran direbus nipis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "asam": {
+  "mentions": 20,
+  "recipes": 20,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 2,
+   "Ketam": 2,
+   "Ikan": 5,
+   "Daging": 1,
+   "Nasi": 2,
+   "Mee & Bihun": 2,
+   "Kerang & Siput": 3,
+   "Udang": 1,
+   "Ayam": 1,
+   "Sayur": 1
+  }
+ },
+ "perasa maggi cukup rasa - sesedap rasa": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ketam": 1
+  }
+ },
+ "Serbuk Kari": {
+  "mentions": 17,
+  "recipes": 17,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ketam": 2,
+   "Kerang & Siput": 2,
+   "Ayam": 1,
+   "Roti & Pastri": 3,
+   "Mee & Bihun": 3,
+   "Daging": 2,
+   "Sotong": 1,
+   "Ikan": 1,
+   "Nasi": 1,
+   "Sayur": 1
+  }
+ },
+ "kari": {
+  "mentions": 7,
+  "recipes": 7,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ketam": 1,
+   "Ayam": 3,
+   "Kerang & Siput": 1,
+   "Kuih": 1,
+   "Daging": 1
+  }
+ },
+ "Sos Tomato": {
+  "mentions": 26,
+  "recipes": 26,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ketam": 3,
+   "Kerang & Siput": 3,
+   "Nasi": 1,
+   "Daging": 5,
+   "Ayam": 6,
+   "Mee & Bihun": 4,
+   "Ikan": 1,
+   "Roti & Pastri": 2,
+   "Udang": 1
+  }
+ },
+ "siput sedut - belakangnya": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "kailan -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "Pes Makanan (Pes Cili / Pes Kari)": {
+  "mentions": 32,
+  "recipes": 29,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 4,
+   "Biskut & Biskut Raya": 3,
+   "Puding & Pencuci Mulut": 1,
+   "Kek": 3,
+   "Ayam": 7,
+   "Daging": 3,
+   "Ikan": 3,
+   "Nasi": 2,
+   "Mee & Bihun": 3,
+   "Sup & Bening": 2,
+   "Kuih": 1
+  }
+ },
+ "siput sedut - kilogram": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "siput sedut": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "batang isi keladi - direbus terlebih dahulu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "Blender": {
+  "mentions": 11,
+  "recipes": 7,
+  "subcategory": "appliance",
+  "kind": "appliance",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Kuih": 1,
+   "Daging": 1,
+   "Ayam": 2,
+   "Mee & Bihun": 2,
+   "Roti & Pastri": 4
+  }
+ },
+ "daun kesum": {
+  "mentions": 4,
+  "recipes": 4,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Perut & Organ": 3
+  }
+ },
+ "lala": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 3
+  }
+ },
+ "siput lala -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "siput sedut -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "perisa -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "lala - kilogram": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "Limau Nipis": {
+  "mentions": 33,
+  "recipes": 33,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 4,
+   "Minuman": 2,
+   "Perut & Organ": 3,
+   "Daging": 3,
+   "Nasi": 6,
+   "Sayur": 2,
+   "Sotong": 1,
+   "Sambal & Sos": 3,
+   "Mee & Bihun": 2,
+   "Ayam": 2,
+   "Ikan": 2,
+   "Udang": 2,
+   "Roti & Pastri": 1
+  }
+ },
+ "penyedap rasa": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "cukup rasa": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 2
+  }
+ },
+ "lala dibasuh": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "Sos Cili Thai": {
+  "mentions": 7,
+  "recipes": 7,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 2,
+   "Daging": 1,
+   "Ikan": 3,
+   "Ayam": 1
+  }
+ },
+ "nanas -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "lala -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 2
+  }
+ },
+ "karot": {
+  "mentions": 5,
+  "recipes": 5,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Ayam": 3,
+   "Sambal & Sos": 1
+  }
+ },
+ "baby corn": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Ayam": 1
+  }
+ },
+ "batang saderi": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Daging": 1
+  }
+ },
+ "bunga kantan - kuntum dibelah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "mascarpone -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "parmesan -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "mozzarella -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "cheddar -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "dry herbs oregano -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "bay leaf -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "Roti": {
+  "mentions": 50,
+  "recipes": 44,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Biskut & Biskut Raya": 2,
+   "Roti & Pastri": 31,
+   "Kek": 1,
+   "Daging": 2,
+   "Puding & Pencuci Mulut": 3,
+   "Udang": 2,
+   "Kuih": 5,
+   "Ayam": 2,
+   "Ikan": 1
+  }
+ },
+ "300gm kerang - direbus kopek kulit kulit sebelah sahaja": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "tangkai lada merah": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Ikan": 1
+  }
+ },
+ "belacan": {
+  "mentions": 20,
+  "recipes": 20,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 3,
+   "Perut & Organ": 3,
+   "Ikan": 4,
+   "Nasi": 3,
+   "Sayur": 2,
+   "Ketam": 1,
+   "Ayam": 2,
+   "Sambal & Sos": 2
+  }
+ },
+ "kilo kerang - dicuci": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "kerang segar - ditoskan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "isi kerang - kilo": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "kerang telah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "serikaya": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 3
+  }
+ },
+ "esen vanila": {
+  "mentions": 28,
+  "recipes": 28,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 14,
+   "Kuih": 4,
+   "Roti & Pastri": 2,
+   "Biskut & Biskut Raya": 7,
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "Berus Marjerin / Brush": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "equipment",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Kuih": 1,
+   "Kerang & Siput": 1
+  }
+ },
+ "kerang": {
+  "mentions": 8,
+  "recipes": 8,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 8
+  }
+ },
+ "asam saiz": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "Horlicks": {
+  "mentions": 14,
+  "recipes": 14,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 14
+  }
+ },
+ "browning sugar - 120ml": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "lada": {
+  "mentions": 5,
+  "recipes": 4,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 2,
+   "Daging": 1,
+   "Udang": 1,
+   "Sotong": 1
+  }
+ },
+ "browning sugar": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 2
+  }
+ },
+ "kerang direbus dikeluarkan isinya": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "asam gelugur": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Ayam": 2
+  }
+ },
+ "ajinamoto": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Mee & Bihun": 1
+  }
+ },
+ "halba campur": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Ikan": 2
+  }
+ },
+ "kerang - direbus kulit beli kerang sudah dikopek": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "kerisek - cawan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "perisa ikut selera masing - masing": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "tangkai daun saderi - 5cm": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "gm ovalet": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "Agar-Agar": {
+  "mentions": 8,
+  "recipes": 8,
+  "subcategory": "baking",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 2,
+   "Biskut & Biskut Raya": 1,
+   "Puding & Pencuci Mulut": 5
+  }
+ },
+ "kerang telah dicuci": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "pucuk paku": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "30gm ovalette": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "perisa vanila": {
+  "mentions": 2,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 2
+  }
+ },
+ "- kerang - direbus ambil isinya": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "maggi cukup rasa": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Sayur": 1
+  }
+ },
+ "lada benggala - ikut suka": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "kerang rebus - dikopek kulit sebelah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "penaik - ayak": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "ovellet": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "kaya": {
+  "mentions": 4,
+  "recipes": 4,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 4
+  }
+ },
+ "penaik -": {
+  "mentions": 16,
+  "recipes": 16,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 4,
+   "Kek": 10,
+   "Kuih": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "Esens Vanila": {
+  "mentions": 52,
+  "recipes": 50,
+  "subcategory": "baking",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 27,
+   "Puding & Pencuci Mulut": 8,
+   "Biskut & Biskut Raya": 12,
+   "Minuman": 1,
+   "Kuih": 3,
+   "Roti & Pastri": 1
+  }
+ },
+ "Biskut": {
+  "mentions": 23,
+  "recipes": 21,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 8,
+   "Puding & Pencuci Mulut": 5,
+   "Biskut & Biskut Raya": 8,
+   "Roti & Pastri": 1,
+   "Ayam": 1
+  }
+ },
+ "cawan nestum": {
+  "mentions": 4,
+  "recipes": 4,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 2,
+   "Biskut & Biskut Raya": 1,
+   "Udang": 1
+  }
+ },
+ "cawan serikaya": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "Teh": {
+  "mentions": 15,
+  "recipes": 8,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 4,
+   "Roti & Pastri": 2,
+   "Daging": 1,
+   "Ketam": 2,
+   "Ayam": 1,
+   "Kuih": 3,
+   "Ikan": 2
+  }
+ },
+ "perasa strawberi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "ceri merah hijau - sebagai hiasan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "ovelatte": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 2
+  }
+ },
+ "sodium bikarbonat": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "cawan pisang pisang emas pisang berangan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "serikaya - cawan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "Emulco Coklat": {
+  "mentions": 6,
+  "recipes": 6,
+  "subcategory": "baking",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 4,
+   "Biskut & Biskut Raya": 1,
+   "Kuih": 1
+  }
+ },
+ "esen rose": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "Acuan Kuih / Kek": {
+  "mentions": 9,
+  "recipes": 8,
+  "subcategory": "equipment",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Kek": 2,
+   "Roti & Pastri": 1,
+   "Kuih": 6
+  }
+ },
+ "ovelett -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "kulit pastry": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "ekor belangkas sudah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "tangkai lada kering": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Ikan": 1
+  }
+ },
+ "belacan sebesar duit sen": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1,
+   "Nasi": 1
+  }
+ },
+ "ekor belangkas telah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "belangkas": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "tauhu putih": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "Mee": {
+  "mentions": 17,
+  "recipes": 17,
+  "subcategory": "mee",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 2,
+   "Mee & Bihun": 14,
+   "Roti & Pastri": 1
+  }
+ },
+ "ajinomoto": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1,
+   "Perut & Organ": 1
+  }
+ },
+ "nasi sejuk - satu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "ais": {
+  "mentions": 6,
+  "recipes": 6,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 6
+  }
+ },
+ "ovalette -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1,
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "Milo": {
+  "mentions": 8,
+  "recipes": 8,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 6,
+   "Biskut & Biskut Raya": 2
+  }
+ },
+ "yis kering": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 2
+  }
+ },
+ "bread improver": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 2
+  }
+ },
+ "Nutella": {
+  "mentions": 7,
+  "recipes": 7,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 3,
+   "Kek": 3,
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "cawan majerin": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "camca penaik": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "buah - buahan kesukaan anda contoh strawberi kiwi lain - lain": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "penaik - diayak": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "cake emulsifier": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "perisa pisang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "esen vanila tak letak pun takpa": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "fresh milk": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 2
+  }
+ },
+ "tsp soda": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "tsp cinnamon": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "tsp nutmeg": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "tsp penaik": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "dark choc": {
+  "mentions": 3,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 3
+  }
+ },
+ "glucose": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "Gula Melaka": {
+  "mentions": 28,
+  "recipes": 26,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 7,
+   "Ayam": 2,
+   "Ikan": 2,
+   "Kuih": 8,
+   "Sayur": 1,
+   "Daging": 3,
+   "Sotong": 2,
+   "Kerang & Siput": 1,
+   "Minuman": 1,
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "sagu": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 2
+  }
+ },
+ "Pasta / Spaghetti": {
+  "mentions": 5,
+  "recipes": 5,
+  "subcategory": "mee",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 3,
+   "Roti & Pastri": 2
+  }
+ },
+ "Tepung Pulut": {
+  "mentions": 13,
+  "recipes": 13,
+  "subcategory": "tepung",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 4,
+   "Kuih": 9
+  }
+ },
+ "sagu mangkuk": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "mix vegetable": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "gm white button mushroom -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "olive oil": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1,
+   "Bubur": 1,
+   "Mee & Bihun": 1
+  }
+ },
+ "perencah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "parsley flake": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "Keledek": {
+  "mentions": 10,
+  "recipes": 8,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 3,
+   "Kuih": 2,
+   "Mee & Bihun": 5
+  }
+ },
+ "labu kuning - sebelah dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "keladi - gm kupas kulit dadu jangan terlalu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "sagu - dibasuh direndam minit": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "gm gandum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "bubur cha cha segera": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "segenggam sagu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "barli - gm": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "sagu - basuh toskan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "durian": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "cawan sagu": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1,
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "hirisan mangga ranum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "Gunting Dapur": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "pisau",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "Makanan Tin (Sardin / Susu / Jagung)": {
+  "mentions": 11,
+  "recipes": 9,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1,
+   "Kek": 4,
+   "Biskut & Biskut Raya": 1,
+   "Ikan": 3,
+   "Nasi": 1,
+   "Daging": 1
+  }
+ },
+ "gm keladi pontianak halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "gm keladi pontianak dikukus dilecek": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "ovalette": {
+  "mentions": 7,
+  "recipes": 7,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 4,
+   "Kuih": 2,
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "cawan sunquick perisa oren": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "Acuan Kek / Loyang": {
+  "mentions": 7,
+  "recipes": 6,
+  "subcategory": "equipment",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Kek": 6,
+   "Kuih": 1
+  }
+ },
+ "nestum - cawan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "dark beryls - 500g": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "milk beryls - 250g": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "st penaik": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "Tudung / Penutup Periuk": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "periuk",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Kek": 2,
+   "Minuman": 1
+  }
+ },
+ "serikaya -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "browning sugar -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "nestum -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 2
+  }
+ },
+ "capsicum hijau - dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "breadcrumb - bekas boleh guna warna oren natural": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "ceri merah hiasan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "cornflakes - cawan hancur": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "shortening -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "cornflakes": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "halwa kulit oren blueberry kering": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "filling strawberi -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "30gm shortening": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "majerin planta - cawan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "vanila -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "gm kepingan asam manis - halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "esen pisang": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1,
+   "Kuih": 1
+  }
+ },
+ "nestum salut": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "ceri merah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "ceri hijau": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "tspn ovellete": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "tspn penaik": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 2
+  }
+ },
+ "Biskut Oreo": {
+  "mentions": 8,
+  "recipes": 6,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 4,
+   "Puding & Pencuci Mulut": 4
+  }
+ },
+ "Madu": {
+  "mentions": 25,
+  "recipes": 24,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1,
+   "Biskut & Biskut Raya": 5,
+   "Minuman": 4,
+   "Ayam": 10,
+   "Ketam": 1,
+   "Roti & Pastri": 1,
+   "Nasi": 2,
+   "Udang": 1
+  }
+ },
+ "ovellete": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 2,
+   "Kuih": 1
+  }
+ },
+ "mulberry strawberry beri": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "jus oren -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "nestum - 50g": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "cawan cornflakes ramas kasar": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "cawan cornflakes ramas halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "bubble rice": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "nestle cornflakes": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "walnut": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "ovelet": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "300g strawberry -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "oat - cawan halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "puri mangga mangga telah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "Gelatin": {
+  "mentions": 4,
+  "recipes": 2,
+  "subcategory": "baking",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 4
+  }
+ },
+ "mangga dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "puri mangga": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "cornflakes - 500g sekotak": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "nestle cornflakes - 500g": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "emplex": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "pastry puff jenama kawan -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "sardin dalam - keluarkan isinya hancurkan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "labu hijau -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "kuaci putih -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "bijan hitam putih -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "qroquant cornflakes hancur -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "cornflakes -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "ceri merah - hiasan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "70gm margerine": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "seri kaya": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "browning": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "hingga bijan putih dibakar sekejap": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "segenggam pucuk pegaga": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "nenas - -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "pisang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "mangga": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "ais mahu ice blended": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "oren sunkits": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "epal hijau": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "asam boi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "buah avocado masak ranum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "isi durian belanda - 500g": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "sirap ros -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "sirap": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 2
+  }
+ },
+ "cincau": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 2
+  }
+ },
+ "soda": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "perut lembu direbus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "pucuk paku dicelur": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1,
+   "Kerang & Siput": 1
+  }
+ },
+ "taugeh dicelur": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1,
+   "Kerang & Siput": 1,
+   "Mee & Bihun": 1
+  }
+ },
+ "bunga kantan halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "daun kesum halus": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1,
+   "Mee & Bihun": 1
+  }
+ },
+ "perasa perlu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "lada hidup -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "perut muda - telah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "bahan perasa -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "perut bulat lembu - direbus sehingga masak": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "perut mentah - kilogram": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "asam gelugur -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "perut lembu - direbus sampai lembut": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "pak haji": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "perut lembu": {
+  "mentions": 5,
+  "recipes": 5,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 5
+  }
+ },
+ "asam jawa": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1,
+   "Nasi": 1,
+   "Kerang & Siput": 1
+  }
+ },
+ "ajinomoto tambahan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "aji": {
+  "mentions": 4,
+  "recipes": 4,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1,
+   "Ayam": 1,
+   "Nasi": 1,
+   "Ikan": 1
+  }
+ },
+ "perut - rebus hingga empuk": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "belacan goreng": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "planta -": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1,
+   "Roti & Pastri": 2
+  }
+ },
+ "cawan taugeh": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1,
+   "Kuih": 1
+  }
+ },
+ "batang bunga kantan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "yis": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 3
+  }
+ },
+ "Lada Putih": {
+  "mentions": 11,
+  "recipes": 10,
+  "subcategory": "rempah",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 2,
+   "Nasi": 1,
+   "Mee & Bihun": 3,
+   "Ayam": 2,
+   "Ikan": 2,
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "nestum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "kobis - halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "tauhu goreng": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 2
+  }
+ },
+ "capsicum": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1,
+   "Mee & Bihun": 1
+  }
+ },
+ "majerin -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "coffee mate": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "ovalet": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 2
+  }
+ },
+ "jari belacan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "halba": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1,
+   "Nasi": 1
+  }
+ },
+ "daun kesum segenggam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "bunga kantan batang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "bendi": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 2,
+   "Nasi": 1
+  }
+ },
+ "terung pipit suka": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "essen vanila": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "ovalett": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "buah hawflakes masam manis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "thai palm sugar namtan peep": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "daun saderi - hiasan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "bijan halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "esen ros": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "mix fruit - 500g": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "kubis": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1,
+   "Mee & Bihun": 1,
+   "Sotong": 1
+  }
+ },
+ "fucuk - rendam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "ikat soo hoon - rendam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "tauhu - goreng": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "Sotong": {
+  "mentions": 23,
+  "recipes": 23,
+  "subcategory": "protein",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 13,
+   "Ayam": 2,
+   "Mee & Bihun": 6,
+   "Sup & Bening": 1,
+   "Daging": 1
+  }
+ },
+ "lada kering - tangkai": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 1
+  }
+ },
+ "buah keras -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 1
+  }
+ },
+ "red date -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "ceri merah -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "ceri hijau -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "budu": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1,
+   "Nasi": 1
+  }
+ },
+ "ajinomoto perlu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "mangga muda": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1,
+   "Ayam": 1
+  }
+ },
+ "cawan pasli segar": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "camca halba": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "camca margerin": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "nenas - dikupas empulur dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "belacan - dibakar": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "sekawan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "lemon - dibelah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "tulang kambing - kilogram": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 2
+  }
+ },
+ "celeri - batang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "buah keras": {
+  "mentions": 7,
+  "recipes": 7,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 4,
+   "Udang": 1,
+   "Ketam": 1,
+   "Ikan": 1
+  }
+ },
+ "Mee Kuning": {
+  "mentions": 8,
+  "recipes": 8,
+  "subcategory": "mee",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 8
+  }
+ },
+ "fishcake - dicelur nipis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "gm taugeh - dicelur": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "tauhu - nipis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "lemon": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "daun rosemary": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "tauco - cuci dahulu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "knorr pasti sedap": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "lada hijau - kasar": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 2
+  }
+ },
+ "ibu jari belacan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "tangkai daun kesum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "g bendi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "kuntum bunga kantan dibelah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "cekak daun kesum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "penuh ovalette": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "timun cina dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "ikat daun kesum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "ikat bunga kantan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "Daun Salam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "sayur",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "isi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "Beras Basmati": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "beras",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 2
+  }
+ },
+ "tangkai daun pudina - dimayang kasar": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "cawan gajus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "mangkuk nasi sejuk": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "cornbeef": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "Sambal (Pes)": {
+  "mentions": 6,
+  "recipes": 3,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1,
+   "Sotong": 4,
+   "Mee & Bihun": 1
+  }
+ },
+ "batang daun kesum halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "cawan nasi sejuk - diperoi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "- tangkai lada kering - direndam hingga kembang dibasuh ditoskan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "secubit pak aji": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "marshmallow -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "Serbuk Jeli": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "baking",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 2
+  }
+ },
+ "horlick": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "kapur": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "- bijan hitam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "bunga kubis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "celery": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "Mihun": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "mee",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "daun salad": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1,
+   "Perut & Organ": 1
+  }
+ },
+ "daun pudina": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1,
+   "Sotong": 1
+  }
+ },
+ "Mentega Kacang": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "ingredient",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 2,
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "daun kaduk": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "belacan - ibu jari": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "2kg tulang kambing gearbox telah direbus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "petai": {
+  "mentions": 4,
+  "recipes": 4,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sambal & Sos": 1,
+   "Udang": 1,
+   "Sotong": 1,
+   "Ayam": 1
+  }
+ },
+ "tempoyak": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sambal & Sos": 1
+  }
+ },
+ "daun pucuk pisang berukuran a4 - beberapa": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "jus oren - diperah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "jus sunquick -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "500g mix fruits": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "soda bicarbonat": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "buah pala nutmeg": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "sunquick": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "keropok goreng": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "gm cornflakes": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "bubble rice - cawan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "balang kaca": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "Kuetiau": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "mee",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 2
+  }
+ },
+ "segenggam taugeh": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "hirisan daun kucai": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "buah naga pink": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "laici - ambil buahnya sahaja": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "buah mangga manis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "kiwi - ada": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "ais kiub": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "selasih": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "buah laici": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "daun kucai hiasan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "saderi - batang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "lobak - batang ikut suka": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "peket perisa maggi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "pek kulit popia": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "penambah rasa": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "tauhu goreng - nipis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "buah kana -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sambal & Sos": 1
+  }
+ },
+ "buah asam manis -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sambal & Sos": 1
+  }
+ },
+ "buah asam bulat -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sambal & Sos": 1
+  }
+ },
+ "buah asam kuning -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sambal & Sos": 1
+  }
+ },
+ "makaroni": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "cawan blueberry beku": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "blueberry segar": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "bunga boleh dimakan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "sri kaya -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "perencah hilal": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Udang": 1,
+   "Ketam": 1
+  }
+ },
+ "Lidi Sate": {
+  "mentions": 4,
+  "recipes": 4,
+  "subcategory": "packaging",
+  "kind": "packaging",
+  "recipe_cat": {
+   "Sotong": 2,
+   "Ikan": 1,
+   "Mee & Bihun": 1
+  }
+ },
+ "selasih - direndam sehingga kembang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "beef ball jenama marina satu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "daun parsley halus": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "oat - gm": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "siput": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "ekor belangkas - direbus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "batang karot dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "belangkas - rebus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "cawan sagu - dicuci rendam sebentar": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "kas - kas": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "tauhu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "isi tauhu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "bahan - bahan lain campuran isi tauhu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Sos Thai": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1,
+   "Mee & Bihun": 1
+  }
+ },
+ "ovelete": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "vanila": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 2,
+   "Kuih": 1
+  }
+ },
+ "cawan labu manis - direbus dilenyekkan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "pisang nangka": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "250gr white choc compound": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "- zaitun": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "kerang - cengkerangnya hingga betul - betul": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "buah keras - diketuk": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "seasoning": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "nasi impit": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "toge kobis - nipis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "bergedil": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "ovalett - 5g": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "kulit popia": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Udang": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "bahan perap": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "mi maggi thai - peket": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "lobak -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "ubi kayu rebus dilenyek": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "timun": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "belacan dibakar": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "jus lemon -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "daun pisang membungkus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "batang timun": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Udang": 1
+  }
+ },
+ "oat -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "kiub tomyam -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "kobis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Bubur": 1
+  }
+ },
+ "nasi putih": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "lada kering": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ketam": 1
+  }
+ },
+ "parsley hiasan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "mangkuk daun kesum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "buah keras halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "nenas segi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "timun - nipis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "daun kuchai": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "instant lasagna": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "mozarella": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "maple syrup contoh jenama pillsbury": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "ketulan ais": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "daun bay -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "paru - paru": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "ikat soo hoon rice vermicelli - direndam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "mangkuk gajus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "secubit buah pala": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Udang": 1
+  }
+ },
+ "secubit daun thyme": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Udang": 1
+  }
+ },
+ "secubit daun herba dill": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Udang": 1
+  }
+ },
+ "fettucine": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "batang smoked frankfurter": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "basil": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "daun parsley": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "blackpepper": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Udang": 1,
+   "Daging": 1
+  }
+ },
+ "kari -": {
+  "mentions": 4,
+  "recipes": 4,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1,
+   "Biskut & Biskut Raya": 1,
+   "Kuih": 1,
+   "Sambal & Sos": 1
+  }
+ },
+ "perencah sup -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "cawan alat menekap": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "garfu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "meatball - sebungkus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "capsicum - sebiji dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "tempoyak - hingga": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "bunga kantan - hingga kuntum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "belimbing buluh -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "daun kesum -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "mix herb -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1,
+   "Daging": 1
+  }
+ },
+ "lasagna sheet": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "buah zaitun": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "cawan lada": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "brown sugar": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "oregano": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 2
+  }
+ },
+ "Ragi (Yeast)": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "baking",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "kobis beijing": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "sardin": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "lada merah": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1,
+   "Daging": 2
+  }
+ },
+ "planta": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1,
+   "Sambal & Sos": 1
+  }
+ },
+ "Pemanggang / Grill Pan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "appliance",
+  "kind": "appliance",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "salad": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 2
+  }
+ },
+ "pencungkil gigi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "asam jawa - sebesar bola pingpong": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "kuay teow - agak - agak mengikut selera": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "bunga kubis - ikut suka": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "mixed herbs": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1,
+   "Roti & Pastri": 1
+  }
+ },
+ "secekak daun kesum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "sardin -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "majerin - sapuan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "kobis bunga": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sup & Bening": 1
+  }
+ },
+ "kiub tomyam maggie - kiub": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sup & Bening": 1
+  }
+ },
+ "pisang -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "ovalett -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "pisang - sebiji nipis hiasan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "ovallet -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "Kertas Pembakar (Baking Paper)": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "packaging",
+  "kind": "packaging",
+  "recipe_cat": {
+   "Kek": 2
+  }
+ },
+ "perut -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Perut & Organ": 1
+  }
+ },
+ "agedama tenkasu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 1
+  }
+ },
+ "Acuan Takoyaki": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "appliance",
+  "kind": "appliance",
+  "recipe_cat": {
+   "Sotong": 1
+  }
+ },
+ "aonori seaweed": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 1
+  }
+ },
+ "bonito flakes katsuo bushi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 1
+  }
+ },
+ "dashi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 1
+  }
+ },
+ "daun pisang": {
+  "mentions": 3,
+  "recipes": 3,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 1,
+   "Ikan": 1,
+   "Nasi": 1
+  }
+ },
+ "chicken mushroom soup": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "slice mushrooms": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "mix herbs": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "ajinomoto -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1,
+   "Sotong": 1
+  }
+ },
+ "Pengukus (Steamer)": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "appliance",
+  "kind": "appliance",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "paprika": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "perisa": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "35gm shortening": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "daun kesum - daripada seikat": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "bendi -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1,
+   "Sotong": 1
+  }
+ },
+ "Aluminium Foil": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "packaging",
+  "kind": "packaging",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "suun - direndam awal": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "bahan perasa - guna": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "akar batang saderi batang sup -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "sup bunjut sup tulang adabi -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "maggi ikut suka letak tak": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "knorr pasti sedap -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "asam -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1,
+   "Sayur": 1
+  }
+ },
+ "kulit puff pastri - jenama kawan 40g x 10pcs": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "cukup rasa maggi -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "lada kering -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "kerang ada": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "lada hijau - sebiji": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "soda bicarbonate": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "cawan margerin planta": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "seaweed -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "timun jepun - memanjang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "mayones -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "wasabi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "daun bay": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "tangkai daun thyme tiada boleh guna kering": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "batang daun celery medium -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "nestum - golekan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "perasa ros": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "esen vanila - tsp": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "oat - cawan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "cornflakes - topping": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "suhun": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "fishball": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "fishcake -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 1
+  }
+ },
+ "fishball -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 1
+  }
+ },
+ "bahan tumis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "fries": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "pisang tanduk": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "pasti sedap": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "buah berry": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "- asam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "taucu -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sambal & Sos": 1
+  }
+ },
+ "bijan sangai -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sambal & Sos": 1
+  }
+ },
+ "rebung": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "daun selasih": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "chinese five spice mccormick": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "chicken seasoning mccormick": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "saleri - batang kerat": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "capsicum hijau": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "nenas dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "Pisau Dapur": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "pisau",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "- buah keras - lumat": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "batang mentimun": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 2
+  }
+ },
+ "lada hijau": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 2
+  }
+ },
+ "150g dark compound": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "150g white compound": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "300g dark compound": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "asam jawa -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 2
+  }
+ },
+ "paprika -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "majerin - g": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "lada benggala merah -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "fish kek - tebal 5mm": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "asam gelugor asam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sambal & Sos": 1
+  }
+ },
+ "perasa suka": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sambal & Sos": 1
+  }
+ },
+ "kailan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "bunga kobis -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "taugeh ekor dicelur": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "lada hijau lada merah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "Tahu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "protein",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "belimbing buluh rebus - cawan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sambal & Sos": 1
+  }
+ },
+ "daun pisang - membungkus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 1
+  }
+ },
+ "daun kemangi hiasan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "peria katak - dibelah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "bahan perasa - suka": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "batang bunga kantan -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "bahan": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1,
+   "Ayam": 1
+  }
+ },
+ "asam jawa - diambil jusnya": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "tauchu - dibasuh sekejap ditoskan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "cukup rasa knorr": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "perasa knorr": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "kiub nanas dalam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "tangkai lada merah -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "nenas - didadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "batang bendi -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "daun pisang kerajang aluminium": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "nata de coco - bekas": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "laici dalam -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "Plastik Pembalut / Cling Wrap": {
+  "mentions": 6,
+  "recipes": 5,
+  "subcategory": "packaging",
+  "kind": "packaging",
+  "recipe_cat": {
+   "Minuman": 1,
+   "Roti & Pastri": 1,
+   "Puding & Pencuci Mulut": 4
+  }
+ },
+ "buah - buahan - mahu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Minuman": 1
+  }
+ },
+ "hot dog": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "nanas": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "seafood": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1,
+   "Sambal & Sos": 1
+  }
+ },
+ "kulit popia - pek": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "salad eropah campuran": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "batang baby timun bulat": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "daun kesum - halus tak ada tak apa": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "pasley flakes": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sup & Bening": 1
+  }
+ },
+ "- tangkai daun kesum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "kuntum bunga kantan - dibelah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "adunan asas kek": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "bahan - bahan lain mengikut resepi asal sukatan tidak dinyatakan dalam teks": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "isi kerang direbus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kerang & Siput": 1
+  }
+ },
+ "seleri - batang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sup & Bening": 1
+  }
+ },
+ "fucuk - direndam dicarik": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sup & Bening": 1
+  }
+ },
+ "tauhu kering -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sup & Bening": 1
+  }
+ },
+ "mangga manis harumanis chokanan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "250g nasi putih sebaiknya nasi sejuk": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "papadum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "hirisan timun segar": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "tangkai lada hijau": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Udang": 1
+  }
+ },
+ "bunga kobis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "betik muda - kulit disagat halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "6g yis segera": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "batang petola ular anggaran setiap satu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "belacan bakar aroma": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "ikat pucuk paku - diambil bahagian muda": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "belacan - dibakar aroma padu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "terung - memanjang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "chili flakes": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "batang lada merah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "hirisan daun kobis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "terung bulat - belah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "halba -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "daun kucai halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "daun selasih halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "terung - ikut kesesuaian": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "yis - 11g": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 2
+  }
+ },
+ "Serbuk Penaik": {
+  "mentions": 5,
+  "recipes": 5,
+  "subcategory": "baking",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 2,
+   "Kek": 1,
+   "Kuih": 2
+  }
+ },
+ "yis - peket": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "bread improver -": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 2
+  }
+ },
+ "dough softener -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "ais -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "yis - peket 11g": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "bread softener -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "lobak - halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "timun - halus": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 2
+  }
+ },
+ "aji shio black pepper": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "tangkai lada hijau serong": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "daun pisang dilayur": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "yis -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "bun softener -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "crabstick disiat halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sup & Bening": 1
+  }
+ },
+ "asam boi jenis putih": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "belimbing buluh": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sotong": 1
+  }
+ },
+ "snow sugar salutan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "kubis - dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "perahan lemon": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "timun jepun": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Mee & Bihun": 1
+  }
+ },
+ "esen vanila aroma wangi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "choki - choki": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "kordial asam masin - pilih warna merah": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "cawan nasi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "lada merah - diracik halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "daun kucai - batang": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "cukup rasa -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "mi maggi perencah kari -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "daun parsley kering": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "jus oren - cawan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "bunjut sup adabi": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ayam": 1
+  }
+ },
+ "labu direbus dilenyek halus - cawan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "bijan - taburan": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "Kuali": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "kuali",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Kek": 1,
+   "Kuih": 1
+  }
+ },
+ "bicarbonate of soda": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "cawan sagu putih": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "Sos Lada Hitam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "sos",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Udang": 1
+  }
+ },
+ "11g yis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "kuaci labu hijau": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "bijan hitam": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "secekak bendi - ikut saiz kegemaran": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "maggi cukuprasa": {
+  "mentions": 2,
+  "recipes": 2,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1,
+   "Udang": 1
+  }
+ },
+ "belacan - dibakar aroma": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "asparagus - mengikut kesesuaian": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Udang": 1
+  }
+ },
+ "secekak pucuk paku -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "peria mengikut kesesuaian": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "belacan dibakar terlebih dahulu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "Piping Bag + Nozel": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "equipment",
+  "kind": "equipment",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "daun pisang - dilayur": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "kulit popia -": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "nenas mengikut kesesuaian": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Ikan": 1
+  }
+ },
+ "cawan pisang dadu dilecek": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kuih": 1
+  }
+ },
+ "pisang pisang berangan pisang raja sangat sesuai": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Puding & Pencuci Mulut": 1
+  }
+ },
+ "bunga kantan - kuntum": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Daging": 1
+  }
+ },
+ "200g cornflakes": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Biskut & Biskut Raya": 1
+  }
+ },
+ "cawan menekap": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "kubis - halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "srikaya": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "nestum original": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "crab stick - bulat": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "capsicum - dadu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "black pepper": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "chicken stock": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Roti & Pastri": 1
+  }
+ },
+ "halba - sesudu": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Nasi": 1
+  }
+ },
+ "Oven": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "appliance",
+  "kind": "appliance",
+  "recipe_cat": {
+   "Kek": 1
+  }
+ },
+ "sengkuang saiz - seperti batang mancis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "tangkai daun kesum - halus": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ },
+ "belacan bakar boleh ganti kiub bilis": {
+  "mentions": 1,
+  "recipes": 1,
+  "subcategory": "lain",
+  "kind": "ingredient",
+  "recipe_cat": {
+   "Sayur": 1
+  }
+ }
+}

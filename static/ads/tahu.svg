@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Tahu" width="96" height="96">
+<path d="M22 40 L48 28 L74 40 L48 54 Z" fill="#FDF6F0"/>
+<path d="M22 40 v22 l26 13 v-21 z" fill="#F5E8DC"/>
+<path d="M48 54 v21 l26-13 V40 z" fill="#E8DCCB"/>
+<path d="M34 46 l10-5" stroke="#A34A2C" stroke-width="1.6" opacity=".4"/>
+</svg>

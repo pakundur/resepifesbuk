@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Cendawan" width="96" height="96">
+<path d="M20 50 q0-26 28-26 q28 0 28 26 z" fill="#A34A2C"/>
+<path d="M38 50 h20 v20 q0 6-10 6 q-10 0-10-6 z" fill="#F5E8DC"/>
+<circle cx="36" cy="40" r="3" fill="#FDF6F0" opacity=".6"/>
+<circle cx="56" cy="36" r="2.6" fill="#FDF6F0" opacity=".6"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Sos tomato" width="96" height="96">
+<rect x="40" y="16" width="16" height="8" rx="3" fill="#A34A2C"/>
+<path d="M40 24 h16 v10 q10 6 10 20 v24 q0 6-6 6 H36 q-6 0-6-6 V54 q0-14 10-20 z" fill="#D9533B" stroke="#A34A2C" stroke-width="2" stroke-opacity=".45"/>
+<rect x="30" y="54" width="36" height="18" rx="3" fill="#FDF6F0" opacity=".92"/>
+<path d="M36 60 h24 M36 66 h16" stroke="#A34A2C" stroke-width="2" stroke-linecap="round"/>
+</svg>

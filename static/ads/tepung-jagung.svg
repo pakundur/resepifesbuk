@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Tepung jagung" width="96" height="96">
+<path d="M28 28 h40 l-3 52 q-1 6-7 6 H38 q-6 0-7-6 z" fill="#F3EEDC" stroke="#A34A2C" stroke-width="2" stroke-opacity=".4"/>
+<path d="M28 28 q20-8 40 0 v5 q-20-6-40 0 z" fill="#A34A2C"/>
+<rect x="36" y="44" width="24" height="22" rx="3" fill="#FDF6F0" opacity=".9"/>
+<path d="M40 51 h16 M40 58 h10" stroke="#A34A2C" stroke-width="2" stroke-linecap="round"/>
+<path d="M31 36 v42" stroke="#FDF6F0" stroke-width="1.6" opacity=".35"/>
+</svg>

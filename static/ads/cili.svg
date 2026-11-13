@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Cili" width="96" height="96">
+<rect x="30" y="16" width="36" height="8" rx="4" fill="#A34A2C"/>
+<rect x="28" y="24" width="40" height="56" rx="8" fill="#D9533B" stroke="#A34A2C" stroke-width="2" stroke-opacity=".4"/>
+<rect x="33" y="44" width="30" height="20" rx="3" fill="#FDF6F0" opacity=".94"/>
+<path d="M40 52 q8-10 16 0 q-8 10-16 0 z" fill="#A34A2C"/><path d="M56 52 q6-4 8 0" stroke="#A34A2C" stroke-width="1.8" fill="none"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Tepung kastard" width="96" height="96">
+<path d="M28 30 h40 l-3 50 q-1 6-7 6 H38 q-6 0-7-6 z" fill="#F0E2A8"/>
+<path d="M28 30 q20-8 40 0 v5 q-20-6-40 0 z" fill="#A34A2C"/>
+<rect x="36" y="46" width="24" height="20" rx="3" fill="#FDF6F0" opacity=".9"/>
+<path d="M40 53 h16 M40 60 h10" stroke="#C9A94A" stroke-width="2" stroke-linecap="round"/>
+</svg>

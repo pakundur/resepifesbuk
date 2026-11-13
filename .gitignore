@@ -4,6 +4,13 @@ node_modules/
 .env
 .env.*
 
+# python bytecode
+__pycache__/
+*.pyc
+
+# local ad previews (mocks, not shipped)
+ad_preview/
+
 # scratch
 *.json.tmp
 ghi.json

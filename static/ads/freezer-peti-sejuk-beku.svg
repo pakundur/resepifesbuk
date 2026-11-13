@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Peti sejuk beku" width="96" height="96">
+<rect x="24" y="16" width="48" height="66" rx="6" fill="#CFE3EC"/>
+<rect x="24" y="16" width="48" height="22" rx="6" fill="#A9C9D9"/>
+<path d="M48 48 v22 M40 53 L56 65 M56 53 L40 65" stroke="#FDF6F0" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="62" y="24" width="4" height="10" rx="2" fill="#FDF6F0"/>
+</svg>

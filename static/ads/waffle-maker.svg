@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Acuan waffle" width="96" height="96">
+<path d="M16 40 h64 v12 H16 z" fill="#A34A2C"/>
+<path d="M18 52 h60 v18 a6 6 0 0 1 -6 6 H24 a6 6 0 0 1 -6-6 z" fill="#C25E3A"/>
+<path d="M26 58 h44 v12 H26 z" fill="#FDF6F0"/>
+<path d="M34 58 v12 M44 58 v12 M54 58 v12 M62 58 v12" stroke="#A34A2C" stroke-width="1.8" opacity=".7"/>
+<path d="M26 64 h44" stroke="#A34A2C" stroke-width="1.8" opacity=".7"/>
+<circle cx="72" cy="46" r="3" fill="#FDF6F0"/>
+</svg>

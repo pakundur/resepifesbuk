@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Pisau dapur" width="96" height="96">
+<rect x="10" y="50" width="28" height="10" rx="5" fill="#2B2320"/>
+<circle cx="18" cy="55" r="1.8" fill="#FDF6F0" opacity=".8"/>
+<circle cx="26" cy="55" r="1.8" fill="#FDF6F0" opacity=".8"/>
+<rect x="38" y="48" width="6" height="14" rx="2" fill="#A34A2C"/>
+<path d="M44 50 L84 38 L86 45 Q64 58 44 59 Z" fill="#C25E3A"/>
+<path d="M47 55 L80 45" stroke="#FDF6F0" stroke-width="1.8" opacity=".75"/>
+</svg>

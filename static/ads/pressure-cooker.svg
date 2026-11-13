@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Periuk tekanan" width="96" height="96">
+<rect x="20" y="44" width="56" height="32" rx="7" fill="#C25E3A"/>
+<rect x="14" y="38" width="68" height="9" rx="4.5" fill="#A34A2C"/>
+<path d="M14 46 q-7 2 0 12" stroke="#2B2320" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M82 46 q7 2 0 12" stroke="#2B2320" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<circle cx="48" cy="36" r="4" fill="#2B2320"/>
+<path d="M24 60 q24 8 48 0" stroke="#FDF6F0" stroke-width="2.5" fill="none" opacity=".35"/>
+</svg>

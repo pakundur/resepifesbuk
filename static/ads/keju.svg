@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Keju" width="96" height="96">
+<path d="M18 58 L48 26 L84 44 L84 58 Z" fill="#EFC96A"/>
+<path d="M18 58 h66 v14 H18 z" fill="#DDB347"/>
+<g fill="#A34A2C" opacity=".45">
+<circle cx="46" cy="48" r="4"/><circle cx="64" cy="52" r="3.2"/><circle cx="34" cy="62" r="3"/>
+</g>
+</svg>

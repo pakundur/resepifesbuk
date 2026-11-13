@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Pemanggang" width="96" height="96">
+<path d="M14 36 h56 a6 6 0 0 1 6 6 v18 a6 6 0 0 1 -6 6 H14 a6 6 0 0 1 -6-6 V42 a6 6 0 0 1 6-6 z" fill="#C25E3A"/>
+<path d="M18 40 v22 M28 40 v22 M38 40 v22 M48 40 v22 M58 40 v22" stroke="#2B2320" stroke-width="3" opacity=".55" stroke-linecap="round"/>
+<rect x="76" y="44" width="14" height="7" rx="3.5" fill="#2B2320"/>
+<path d="M26 28 q5-5 0-11 M44 28 q5-5 0-11" stroke="#A9C9D9" stroke-width="2.5" fill="none" opacity=".65" stroke-linecap="round"/>
+</svg>

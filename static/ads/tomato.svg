@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Tomato" width="96" height="96">
+<circle cx="48" cy="54" r="26" fill="#C94A3A"/>
+<circle cx="40" cy="46" r="6" fill="#FDF6F0" opacity=".28"/>
+<path d="M48 30 q-8-6-14-2 q6 0 8 6 q-8-2-10 4 q8-2 12 2 q4-4 12-2 q-2-6-10-4 q2-6 8-6 q-6-4-14 2 z" fill="#B9CDB4"/>
+<path d="M48 28 v6" stroke="#B9CDB4" stroke-width="3" stroke-linecap="round"/>
+</svg>

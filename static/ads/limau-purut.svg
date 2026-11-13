@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Limau purut" width="96" height="96">
+<circle cx="46" cy="48" r="26" fill="#8FAE87"/>
+<circle cx="46" cy="48" r="20" fill="#F5E8DC"/>
+<g stroke="#C6CE9E" stroke-width="2.4" fill="none">
+<path d="M46 28 v40 M26 48 h40 M32 34 L60 62 M60 34 L32 62"/>
+</g>
+<circle cx="46" cy="48" r="4" fill="#FDF6F0"/>
+<path d="M72 26 q8 4 8 12" stroke="#B9CDB4" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

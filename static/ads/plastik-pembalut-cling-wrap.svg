@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Plastik pembalut" width="96" height="96">
+<rect x="16" y="30" width="52" height="20" rx="10" fill="#A9C9D9"/>
+<circle cx="58" cy="40" r="9" fill="#FDF6F0"/>
+<path d="M16 50 v18 q0 4 4 4 h34 v-22" fill="#F5E8DC" opacity=".85"/>
+<path d="M20 20 h48" stroke="#A34A2C" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+</svg>

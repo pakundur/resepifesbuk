@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Periuk nasi" width="96" height="96">
+<path d="M20 48 q0-18 28-18 q28 0 28 18 v14 a8 8 0 0 1 -8 8 H28 a8 8 0 0 1 -8-8 z" fill="#C25E3A"/>
+<path d="M20 48 q0-16 28-16 q28 0 28 16 z" fill="#F5E8DC"/>
+<rect x="40" y="20" width="16" height="8" rx="4" fill="#2B2320"/>
+<circle cx="66" cy="52" r="4" fill="#FDF6F0"/>
+<rect x="34" y="56" width="28" height="8" rx="2" fill="#FDF6F0" opacity=".6"/>
+</svg>

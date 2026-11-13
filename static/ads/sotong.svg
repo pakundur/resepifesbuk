@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Sotong" width="96" height="96">
+<path d="M48 16 q16 0 16 24 q0 16-16 22 q-16-6-16-22 q0-24 16-24 z" fill="#C25E3A"/>
+<path d="M36 62 q-4 12-10 16 M44 64 q-2 14-6 18 M52 64 q2 14 6 18 M60 62 q4 12 10 16"
+      stroke="#A34A2C" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+<circle cx="42" cy="34" r="2.4" fill="#2B2320"/>
+<circle cx="54" cy="34" r="2.4" fill="#2B2320"/>
+</svg>
