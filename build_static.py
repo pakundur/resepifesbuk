@@ -840,8 +840,6 @@ for idx, r in enumerate(recipes):
     <p class="byline">
       <img src="{r['author']['avatar']}" width="32" height="32" alt="" aria-hidden="true" loading="lazy">
       <span>Oleh <a href="/penulis/{r['author_key']}/">{esc(r['author']['name'])}</a></span>
-      <span class="byline-sep" aria-hidden="true">&middot;</span>
-      <span>Dikemas kini <time datetime="{r['updated_d']}">{esc(_human_date(r['updated_d']))}</time></span>
     </p>
     <div class="recipe-facts">{facts_html}</div>
 
@@ -1501,13 +1499,28 @@ for c in CATS:
 for canon, mod, _t in RECIPE_URLS:
     urls.append((canon, mod, "0.8", "monthly"))
 
+# Per-slug publish dates, so the sitemap can carry a real publication date
+# alongside lastmod. Google's documented sitemap schema only defines <lastmod>,
+# but many crawlers/aggregators read <news:publication_date>; we emit it in the
+# news namespace (valid, ignored by crawlers that don't use it) plus a full
+# W3C-datetime lastmod so intra-day ordering is expressible.
+_PUB_OF = {r["slug"]: r["published_d"] for r in recipes}
+
 sm = ['<?xml version="1.0" encoding="UTF-8"?>',
-      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+      '        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">']
 for loc, mod, pri, freq in urls:
-    sm.append(f"  <url>\n    <loc>{esc(loc)}</loc>\n"
-              f"    <lastmod>{mod}</lastmod>\n"
-              f"    <changefreq>{freq}</changefreq>\n"
+    slug = loc.rstrip("/").rsplit("/resepi/", 1)[-1] if "/resepi/" in loc else None
+    pub = _PUB_OF.get(slug) if slug else None
+    chunk = f"  <url>\n    <loc>{esc(loc)}</loc>\n"
+    # Full W3C datetime, +08:00 (Malaysia). A bare date cannot express ordering
+    # within the same day; the time component makes lastmod unambiguous.
+    chunk += f"    <lastmod>{mod}T00:00:00+08:00</lastmod>\n"
+    if pub:
+        chunk += f"    <news:publication_date>{pub}T00:00:00+08:00</news:publication_date>\n"
+    chunk += (f"    <changefreq>{freq}</changefreq>\n"
               f"    <priority>{pri}</priority>\n  </url>")
+    sm.append(chunk)
 sm.append("</urlset>")
 write("sitemap.xml", "\n".join(sm))
 print(f"sitemap ok: {len(urls)} urls")
@@ -1551,13 +1564,25 @@ write(f"{INDEXNOW_KEY}.txt", INDEXNOW_KEY + "\n")
 print("indexnow key written")
 
 # ---- RSS feed ----
+# RSS 2.0 REQUIRES RFC-822/RFC-1123 for <pubDate> and <lastBuildDate>.
+# ISO-8601 ("2026-01-28T00:00:00+08:00") is NOT valid RSS and readers drop it.
+MONTHS = ("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+DAYNAMES = ("Mon","Tue","Wed","Thu","Fri","Sat","Sun")
+
+def rfc822(iso_date):
+    """'2026-01-28' -> 'Wed, 28 Jan 2026 00:00:00 +0800' (RFC-1123, required by RSS 2.0)."""
+    y, m, d = (int(x) for x in iso_date.split("-"))
+    wd = DAYNAMES[datetime.date(y, m, d).weekday()]
+    return f"{wd}, {d:02d} {MONTHS[m-1]} {y} 00:00:00 +0800"
+
 items = []
 for r in recipes[:50]:
     items.append(f"""    <item>
       <title>{esc(headline_of(r))}</title>
       <link>{esc(SITE_URL)}/resepi/{r['slug']}/</link>
       <guid isPermaLink="true">{esc(SITE_URL)}/resepi/{r['slug']}/</guid>
-      <pubDate>{r['published_d']}T00:00:00+08:00</pubDate>
+      <pubDate>{rfc822(r['published_d'])}</pubDate>
+      <atom:updated>{r['updated_d']}T00:00:00+08:00</atom:updated>
       <category>{esc(r['cat1'])}</category>
       <description>{esc(r['meta_desc'])}</description>
     </item>""")
@@ -1568,7 +1593,7 @@ write("feed.xml", f"""<?xml version="1.0" encoding="UTF-8"?>
     <link>{SITE_URL}/</link>
     <description>{esc(SITE_DESC)}</description>
     <language>ms-MY</language>
-    <lastBuildDate>{TODAY}T00:00:00+08:00</lastBuildDate>
+    <lastBuildDate>{rfc822(TODAY)}</lastBuildDate>
     <atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
 {chr(10).join(items)}
   </channel>

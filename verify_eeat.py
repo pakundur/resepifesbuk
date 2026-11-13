@@ -139,18 +139,22 @@ gate(43, "Author bios contain no fabricated credentials",
      not bad43, "; ".join(bad43[:4]))
 
 # ---------------------------------------------------------------- gate 44
-# Byline must be visible in the HTML body (not only in schema) and must carry
-# a machine-readable <time datetime> for the update date.
+# The byline (author) must be visible in the HTML body, not only in schema.
+# The modification date is deliberately NOT shown to readers (owner decision
+# 2026-11-14): dates live in schema, sitemap and feed only. Gate 47 covers
+# the machine-readable side, so this gate must NOT require a visible <time>.
 bad44 = []
 for p in recipe_pages:
     h = rd(p)
     rel = str(p.relative_to(DIST))
     if 'class="byline"' not in h:
         bad44.append(f"{rel}: no visible byline")
-    elif not re.search(r'<time datetime="\d{4}-\d{2}-\d{2}">', h):
-        bad44.append(f"{rel}: byline date not machine-readable")
+    elif "Oleh" not in h:
+        bad44.append(f"{rel}: byline has no author name")
+    elif "Dikemas kini" in h:
+        bad44.append(f"{rel}: hidden modification date is still rendered")
 
-gate(44, "Visible byline with <time datetime> on every recipe",
+gate(44, "Visible author byline; 'Dikemas kini' date suppressed from page",
      not bad44, f"{len(bad44)} bad: {bad44[:3]}")
 
 # ---------------------------------------------------------------- gate 45
