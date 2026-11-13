@@ -202,6 +202,14 @@ for rel, p in pages.items():
 chk(19, "images served same-origin (no img. subdomain)", imgsub_hits == 0,
     "0 subdomain refs" if imgsub_hits == 0 else f"{imgsub_hits} refs on {len(imgsub_pages)} pages")
 
+# 20. Cloudflare Web Analytics beacon present on every page (real-user CWV)
+noanalytics = []
+for rel, p in pages.items():
+    if "static.cloudflareinsights.com/beacon.min.js" not in read(p):
+        noanalytics.append(rel)
+chk(20, "web analytics beacon on all pages", len(noanalytics) == 0,
+    f"{len(pages)}/{len(pages)}" if not noanalytics else f"{len(noanalytics)} missing")
+
 # 16. aggregate
 ok = all(r[2] for r in res)
 print(f"{'#':>3}  {'CHECK':<42} RESULT")

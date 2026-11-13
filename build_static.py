@@ -230,6 +230,13 @@ def alt_text(r):
 
 IMG_BASE = "https://resepifesbuk.com/img"
 
+# Cloudflare Web Analytics — free, cookie-free, real-user Core Web Vitals.
+# Injected once via footer_html() so it lands on every generated page.
+CF_ANALYTICS = (
+    "<script defer src='https://static.cloudflareinsights.com/beacon.min.js' "
+    "data-cf-beacon='{\"token\": \"fee36023b04d44c1812b25ad01f3787d\"}'></script>"
+)
+
 # slug -> R2 object key (SEO filename). Produced by mk_imgmap.py.
 IMG_KEY_OF = {}
 _img_map_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "img_map.json")
@@ -458,6 +465,7 @@ def footer_html():
     </div>
   </div>
 </footer>
+{CF_ANALYTICS}
 """
 
 
@@ -992,6 +1000,7 @@ const params = new URLSearchParams(location.search);
 if (params.get('q')) {{ inp.value = params.get('q'); }}
 inp.addEventListener('input', run); run();
 </script>
+{CF_ANALYTICS}
 </body>
 </html>
 """
