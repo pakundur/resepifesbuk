@@ -158,7 +158,7 @@ def fit_desc(s, lo=120, hi=158):
     return s
 
 
-def scrub(s):
+def scrub(s, keep_period=False):
     """Remove auto-blog boilerplate and AI tells from any body string.
 
     The legacy Blogger posts ended with "Selamat mencuba..", "Jangan lupa
@@ -166,6 +166,7 @@ def scrub(s):
     ingredient lists rather than the tips. Cleaning at render time catches
     every field at once instead of patching each one separately.
     """
+    orig = s
     s = str(s or "")
     s = re.sub(r"#[\w\u00C0-\u024F]{2,}", " ", s)          # hashtags
     s = re.sub(r"(?i)\bselamat\s+mencuba+\w*\b[!.]*", " ", s)
@@ -175,7 +176,11 @@ def scrub(s):
     s = re.sub(r"(?i)\bhashtags?\s*:.*$", " ", s)
     s = re.sub(r"[—–]", ", ", s)
     s = re.sub(r"\s*\.\s*\.+\s*$", "", s)                 # trailing dot runs
-    s = re.sub(r"\s+", " ", s).strip(" ,.;:-")
+    s = re.sub(r"\s+", " ", s).strip(" ,;:-")
+    # keep a single terminal period if the original had one -- tips read as
+    # sentences, and stripping the full stop leaves them dangling.
+    if keep_period and s and not s.endswith((".", "!", "?")) and re.search(r"[.!?]\s*$", str(orig or "")):
+        s += "."
     return s
 
 
@@ -600,7 +605,7 @@ for idx, r in enumerate(recipes):
     # These are AI/auto-blog tells and they were never cleaned in the base data.
     _tips = []
     for t in r["tips"]:
-        t = scrub(t)
+        t = scrub(t, keep_period=True)
         if len(t) >= 25:
             _tips.append(t)
     if _tips:
