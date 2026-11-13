@@ -370,6 +370,88 @@ section { padding: 72px 0; }
 .empty { text-align: center; padding: 60px 20px; color: var(--ink-mute); }
 
 /* ---------- Reduced motion ---------- */
+/* ---------- Share bar ---------- */
+.share-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 26px 0 34px;
+  padding: 16px 0;
+  border-top: 1px solid var(--rule, #e7e1d8);
+  border-bottom: 1px solid var(--rule, #e7e1d8);
+}
+.share-label {
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-mute, #8a8175);
+  margin-right: 4px;
+}
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--rule, #e7e1d8);
+  background: #fff;
+  color: var(--ink, #2c2723);
+  font-size: .82rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background .18s ease, border-color .18s ease, transform .18s ease;
+}
+.share-btn:hover { background: var(--cream-deep, #f6f1e8); transform: translateY(-1px); }
+.share-btn:focus-visible { outline: 2px solid var(--accent, #C25E3A); outline-offset: 2px; }
+.share-btn svg { flex: 0 0 auto; }
+.share-whatsapp:hover { color: #128C7E; border-color: #25D366; }
+.share-telegram:hover { color: #229ED9; border-color: #229ED9; }
+.share-facebook:hover { color: #1877F2; border-color: #1877F2; }
+.share-x:hover { color: #000; border-color: #000; }
+.share-pinterest:hover { color: #E60023; border-color: #E60023; }
+.share-email:hover { color: var(--accent, #C25E3A); border-color: var(--accent, #C25E3A); }
+.share-copy:hover { color: var(--accent, #C25E3A); border-color: var(--accent, #C25E3A); }
+
+@media (max-width: 560px) {
+  .share-btn span { display: none; }
+  .share-btn { padding: 9px; }
+  .share-copy span { display: inline; }
+}
+
+/* ---------- Related recipes ---------- */
+.related-block {
+  margin: 44px 0 20px;
+  padding-top: 28px;
+  border-top: 2px solid var(--rule, #e7e1d8);
+}
+.related-block h2 { font-size: 1.12rem; margin: 0 0 16px; }
+.related-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px 22px;
+}
+.related-list li { margin: 0; }
+.related-list a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--cream-deep, #f6f1e8);
+  font-size: .9rem;
+  line-height: 1.35;
+  text-decoration: none;
+  color: var(--ink, #2c2723);
+  transition: background .18s ease, color .18s ease;
+}
+.related-list a:hover { background: var(--accent, #C25E3A); color: #fff; }
+
+/* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: .01ms !important;

@@ -17,6 +17,8 @@ Output layout (Cloudflare Pages friendly):
 import json, os, re, html, shutil, hashlib, datetime
 from urllib.parse import quote
 
+from share import share_html
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, "src", "recipes_clean.json")
 DIST = os.path.join(ROOT, "dist")
@@ -32,6 +34,22 @@ PER_PAGE = 24
 TODAY = datetime.date.today().isoformat()
 
 recipes = json.load(open(SRC))
+
+# ---- LLM rewrite layer (optional; falls back to source copy) ----
+# src/rewrite.json is produced by rewrite.py: {slug: {headline, meta_desc,
+# intro, steps}}. Missing slugs keep their original copy so a partial run
+# still builds a complete site.
+RW_PATH = os.path.join(ROOT, "src", "rewrite.json")
+REWRITE = json.load(open(RW_PATH, encoding="utf-8")) if os.path.exists(RW_PATH) else {}
+REWRITE = {k: v for k, v in REWRITE.items() if "error" not in v}
+
+# ---- internal link graph ----
+LINKS_PATH = os.path.join(ROOT, "src", "links.json")
+LINKS = json.load(open(LINKS_PATH, encoding="utf-8")) if os.path.exists(LINKS_PATH) else {}
+BY_SLUG = {r["slug"]: r for r in recipes}
+
+print(f"rewrites loaded: {len(REWRITE)}/{len(recipes)}")
+print(f"link graph loaded: {len(LINKS)} pages")
 
 
 # ---------------------------------------------------------------- helpers
@@ -141,11 +159,16 @@ def head(title, desc, canonical, og_type="website", og_img="", published=None,
             "query-input": "required name=search_term_string",
         },
     }
-    ld += json.dumps(website_ld, ensure_ascii=False)
-
+    # Emit each schema object in its OWN <script> block. Concatenating them into
+    # one block produces invalid JSON (multiple root objects) and Google then
+    # discards ALL structured data on the page.
+    ld_objs = [website_ld]
     if extra_ld:
-        for obj in (extra_ld if isinstance(extra_ld, list) else [extra_ld]):
-            ld += "\n" + json.dumps(obj, ensure_ascii=False)
+        ld_objs += (extra_ld if isinstance(extra_ld, list) else [extra_ld])
+    ld = "\n".join(
+        '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False) + "</script>"
+        for obj in ld_objs if obj
+    )
 
     robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     return f"""<!doctype html>
@@ -192,9 +215,7 @@ def head(title, desc, canonical, og_type="website", og_img="", published=None,
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/icon-512.png">
 
-<script type="application/ld+json">
 {ld}
-</script>
 </head>
 <body>
 """
@@ -370,6 +391,17 @@ for idx, r in enumerate(recipes):
     canon = SITE_URL + url
     RECIPE_URLS.append((canon, r["updated_d"], r["title"]))
 
+    # ---- apply LLM rewrite if present ----
+    rw = REWRITE.get(r["slug"])
+    headline = rw["headline"] if rw else r["title"]
+    meta_desc = rw["meta_desc"] if rw else r["meta_desc"]
+    intro_txt = rw["intro"] if rw else r["intro"]
+
+    # rewritten steps replace the parsed ones when the LLM produced a usable list
+    page_steps = r["steps"]
+    if rw and len(rw.get("steps", [])) >= 2:
+        page_steps = [{"t": s} for s in rw["steps"]]
+
     # ingredients
     if r["ingredients"]:
         ing_html = "\n".join(f"<li>{esc(i)}</li>" for i in r["ingredients"])
@@ -383,7 +415,7 @@ for idx, r in enumerate(recipes):
     # steps
     step_items = []
     n = 0
-    for s in r["steps"]:
+    for s in page_steps:
         if "h" in s:
             step_items.append(f'<li><span class="substep">{esc(s["h"])}</span></li>')
         else:
@@ -407,7 +439,7 @@ for idx, r in enumerate(recipes):
             {"@type": "ListItem", "position": 1, "name": "Utama", "item": SITE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "Resepi", "item": SITE_URL + "/resepi/"},
             {"@type": "ListItem", "position": 3, "name": r["cat1"], "item": f"{SITE_URL}/kategori/{r['cat_slug']}/"},
-            {"@type": "ListItem", "position": 4, "name": r["title"], "item": canon},
+            {"@type": "ListItem", "position": 4, "name": headline, "item": canon},
         ],
     }
 
@@ -415,9 +447,9 @@ for idx, r in enumerate(recipes):
     recipe_ld = {
         "@context": "https://schema.org",
         "@type": "Recipe",
-        "name": r["title"],
-        "headline": r["title"][:110],
-        "description": r["meta_desc"],
+        "name": headline,
+        "headline": headline[:110],
+        "description": meta_desc,
         "url": canon,
         "image": [big(r["img"]), thumb(r["img"], 1200), thumb(r["img"], 800)],
         "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
@@ -436,18 +468,18 @@ for idx, r in enumerate(recipes):
     }
     if r["ingredients"]:
         recipe_ld["recipeIngredient"] = r["ingredients"][:60]
-    plain_steps = [s["t"] for s in r["steps"] if "t" in s]
+    plain_steps = [s["t"] for s in page_steps if "t" in s]
     if plain_steps:
         recipe_ld["recipeInstructions"] = [
             {"@type": "HowToStep", "position": i + 1, "text": t}
             for i, t in enumerate(plain_steps[:40])
         ]
-    if r["n_ing"] and r["n_steps"]:
+    if r["n_ing"] and len(plain_steps) >= 2:
         agg = {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": r["title"][:110],
-            "description": r["meta_desc"],
+            "headline": headline[:110],
+            "description": meta_desc,
             "datePublished": r["published_d"],
             "dateModified": r["updated_d"],
             "author": {"@type": "Organization", "name": SITE_NAME},
@@ -470,8 +502,8 @@ for idx, r in enumerate(recipes):
     facts_html = "".join(f'<span class="fact">{esc(f)}</span>' for f in facts)
 
     page = head(
-        f"{r['title']} | {SITE_NAME}",
-        r["meta_desc"],
+        f"{headline} | {SITE_NAME}",
+        meta_desc,
         canon,
         og_type="article",
         og_img=big(r["img"]),
@@ -481,6 +513,20 @@ for idx, r in enumerate(recipes):
         is_recipe=True,
     )
     page += header_html()
+    # related links (internal link graph) — rendered before footer so the
+    # crawl path sits inside the article body, not in boilerplate
+    rel = LINKS.get(r["slug"], [])
+    rel_html = ""
+    if rel:
+        items = "\n".join(
+            f'<li><a href="/resepi/{esc(l["slug"])}/">{esc(l["anchor"])}</a></li>'
+            for l in rel if l["slug"] in BY_SLUG
+        )
+        rel_html = f"""<section class="related-block">
+  <h2>Resepi lain yang anda boleh cuba</h2>
+  <ul class="related-list">{items}</ul>
+</section>"""
+
     page += f"""<main>
 <article>
   <div class="wrap-narrow recipe-head">
@@ -488,17 +534,18 @@ for idx, r in enumerate(recipes):
       <a href="/">Utama</a><span aria-hidden="true">/</span>
       <a href="/resepi/">Resepi</a><span aria-hidden="true">/</span>
       <a href="/kategori/{r['cat_slug']}/">{esc(r['cat1'])}</a><span aria-hidden="true">/</span>
-      <span aria-current="page">{esc(r['title'][:52])}{'…' if len(r['title'])>52 else ''}</span>
+      <span aria-current="page">{esc(headline[:52])}{'…' if len(headline)>52 else ''}</span>
     </nav>
 
-    <h1 class="display">{esc(r['title'])}</h1>
+    <h1 class="display">{esc(headline)}</h1>
     <div class="recipe-facts">{facts_html}</div>
 
     <img class="recipe-hero-img" src="{esc(big(r['img']))}" alt="{esc(r['title'])}" width="1200" height="800" fetchpriority="high" decoding="async">
   </div>
 
   <div class="wrap-narrow">
-    <p class="recipe-intro">{esc(r['intro'])}</p>
+    <p class="recipe-intro">{esc(intro_txt)}</p>
+    {share_html(headline, canon)}
 
     <div class="recipe-cols">
       {ing_block}
@@ -514,6 +561,7 @@ for idx, r in enumerate(recipes):
     <div class="source-note">
       <p>Resepi ini diterbitkan untuk pembaca {SITE_NAME}. Kongsi dengan keluarga dan rakan — selamat memasak!</p>
     </div>
+    {rel_html}
   </div>
 </article>
 </main>
