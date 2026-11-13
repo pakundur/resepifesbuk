@@ -11,8 +11,9 @@ short length. This is format-agnostic and survives all three.
 """
 import json, re, html, os
 
-SRC = os.path.expanduser("~/resepifesbuk/src/posts_full.json")
-OUT = os.path.expanduser("~/resepifesbuk/src/recipes_clean.json")
+ROOT = os.path.dirname(os.path.abspath(__file__))
+SRC = os.path.join(ROOT, "src", "posts_full.json")
+OUT = os.path.join(ROOT, "src", "recipes_clean.json")
 
 posts = json.load(open(SRC))
 

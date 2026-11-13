@@ -1,24 +1,30 @@
 #!/usr/bin/env bash
 # Cloudflare Pages build script.
-# Regenerates the static site from the committed recipe data.
-# No npm, no Node — pure Python 3 so the build is fast and dependency-free.
+# Regenerates the static site from committed recipe data.
+# Pure Python 3 — no Node/npm dependency for the generator itself.
 set -euo pipefail
 
+# Always build from the repository root, regardless of where the CI runner starts.
+cd "$(dirname "$0")"
+
 echo "== Resepi Fesbuk static build =="
+echo "pwd: $(pwd)"
 python3 --version
 
-# 1. Parse raw Blogger posts -> clean recipe records
-if [ -f "src/posts_full.json" ]; then
-  python3 parse.py
-else
-  echo "src/posts_full.json missing — using committed src/recipes_clean.json"
+if [ ! -f "src/posts_full.json" ]; then
+  echo "ERROR: src/posts_full.json not found — the scraped source data is missing."
+  echo "       Run scrape.py locally, then commit src/posts_full.json."
+  exit 1
 fi
+
+# 1. Raw Blogger posts -> structured recipe records
+python3 parse.py
 
 # 2. Generate the static site into dist/
 rm -rf dist
 python3 build_static.py
 
-# 3. Verify SEO integrity — fail the build rather than publish broken pages
+# 3. Verify SEO integrity — fail rather than publish broken pages
 python3 verify_static.py
 
 echo "== build complete: $(find dist -name '*.html' | wc -l) pages =="

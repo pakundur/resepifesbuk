@@ -1,7 +1,7 @@
-# Cloudflare Pages configuration
-# Build command runs the pure-Python static generator (no npm required).
-# Publish directory is dist/.
-
-[build]
-command = "bash build.sh"
-publish = "dist"
+# Cloudflare Pages configuration.
+# For Pages, wrangler.toml only needs the output directory. The build command
+# and root directory are set in the Pages project settings, NOT here — putting a
+# [build] table in this file makes Pages reject the whole file as invalid.
+name = "resepifesbuk-git"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-01"
