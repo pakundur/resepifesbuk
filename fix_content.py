@@ -171,7 +171,10 @@ async def main():
     res = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
     res = {k: v for k, v in res.items() if "error" not in v}
 
-    todo = [r for r in recs if r["slug"] not in res and needs_fix(r)]
+    # Process every recipe not yet repaired. needs_fix() alone left 127 clean-
+    # looking recipes with unexpanded shortforms, so language quality was
+    # uneven across the corpus. Cheaper to repair all than to explain the gaps.
+    todo = [r for r in recs if r["slug"] not in res]
     if "--limit" in sys.argv:
         todo = todo[: int(sys.argv[sys.argv.index("--limit") + 1])]
     print(f"fixing {len(todo)} of {len(recs)} (done: {len(res)})", flush=True)
