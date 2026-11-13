@@ -20,11 +20,21 @@ fi
 # 1. Raw Blogger posts -> structured recipe records
 python3 parse.py
 
-# 2. Generate the static site into dist/
+# 2. Clean SEO slugs. parse.py regenerates src/recipes_clean.json from the raw
+#    Blogger data every build, which restores the year-month slug prefix. This
+#    migration is idempotent: it strips the prefix if present and leaves clean
+#    slugs untouched, so the committed slug_map.json keeps the 301s stable.
+python3 migrate_slugs.py
+
+# 3. Re-key the LLM layers onto the (possibly new) slugs. classify/rewrite/links
+#    are generated artifacts keyed by slug, so they must follow the migration.
+python3 remap_slug_keys.py
+
+# 4. Generate the static site into dist/
 rm -rf dist
 python3 build_static.py
 
-# 3. Verify SEO integrity — fail rather than publish broken pages
-python3 verify_static.py
+# 5. Verify Google compliance and SEO integrity — fail rather than publish
+python3 verify_google.py
 
 echo "== build complete: $(find dist -name '*.html' | wc -l) pages =="
