@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /halaman/
+
+# Crawl-delay is advisory; the site is fully static and cheap to serve.
+Sitemap: https://resepifesbuk.com/sitemap.xml

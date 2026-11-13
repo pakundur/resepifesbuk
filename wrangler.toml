@@ -1,0 +1,7 @@
+# Cloudflare Pages configuration
+# Build command runs the pure-Python static generator (no npm required).
+# Publish directory is dist/.
+
+[build]
+command = "bash build.sh"
+publish = "dist"
