@@ -1,0 +1,15 @@
+# Security policy for Resepi Fesbuk
+#
+# Contact: report vulnerabilities to the address below.
+# We welcome good-faith security research and will not pursue legal action
+# against researchers who follow responsible disclosure.
+
+Contact: mailto:hello@resepifesbuk.com
+Expires: 2027-12-31T23:59:00.000Z
+Preferred-Languages: ms, en
+Canonical: https://resepifesbuk.com/.well-known/security.txt
+
+# Scope: this is a static content site. There is no login, no database and no
+# user input processed server-side. Please report anything that contradicts
+# that assumption, or any header/CSP weakness, with steps to reproduce.
+Policy: https://resepifesbuk.com/tentang/

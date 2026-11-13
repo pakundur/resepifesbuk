@@ -1,0 +1,42 @@
+# Resepi Fesbuk
+
+> Koleksi 748 resepi Malaysia dalam Bahasa Melayu, dengan bahan penuh, cara penyediaan langkah demi langkah dan tips masakan praktikal.
+
+Resepi Fesbuk ialah arkib resepi masakan Malaysia yang ditulis dalam Bahasa Melayu. Setiap resepi mengandungi senarai bahan dengan sukatan, arahan memasak langkah demi langkah, dan tips yang diuji. Koleksi ini merangkumi masakan harian keluarga, lauk kampung, kuih tradisional, kek, biskut raya dan minuman.
+
+## Kandungan utama
+
+- [Semua resepi](https://resepifesbuk.com/resepi/): Indeks penuh 748 resepi, disusun dari yang terbaru.
+- [Semua kategori](https://resepifesbuk.com/kategori/): 20 kategori hidangan.
+- [Cari resepi](https://resepifesbuk.com/cari/): Carian mengikut nama hidangan atau bahan.
+- [Tentang kami](https://resepifesbuk.com/tentang/): Latar belakang laman dan cara kami menulis resepi.
+
+## Kategori
+
+- [Ayam](https://resepifesbuk.com/kategori/ayam/): Masakan berasaskan ayam, dari kari sampai panggang.
+- [Daging](https://resepifesbuk.com/kategori/daging/): Rendang, sup, masak hitam dan hidangan daging lain.
+- [Ikan](https://resepifesbuk.com/kategori/ikan/): Ikan bakar, masak lemak, pindang dan goreng.
+- [Udang](https://resepifesbuk.com/kategori/udang/): Hidangan berasaskan udang.
+- [Sotong](https://resepifesbuk.com/kategori/sotong/): Sotong masak hitam, sambal dan goreng.
+- [Ketam](https://resepifesbuk.com/kategori/ketam/): Ketam masak lemak, sambal dan bakar.
+- [Kerang & Siput](https://resepifesbuk.com/kategori/kerang-siput/): Kerang, lala, kupang, siput sedut dan belangkas.
+- [Perut & Organ](https://resepifesbuk.com/kategori/perut-organ/): Perut, paru, hati dan organ dalaman.
+- [Nasi](https://resepifesbuk.com/kategori/nasi/): Nasi lemak, nasi goreng, nasi arab dan biryani.
+- [Mee & Bihun](https://resepifesbuk.com/kategori/mee-bihun/): Mee, bihun, laksa, pasta dan makaroni.
+- [Roti & Pastri](https://resepifesbuk.com/kategori/roti-pastri/): Roti, murtabak, pizza dan pastri.
+- [Sayur](https://resepifesbuk.com/kategori/sayur/): Sayur tumis, kerabu dan ulam.
+- [Sup & Bening](https://resepifesbuk.com/kategori/sup-bening/): Sup sayur dan sup campur.
+- [Sambal & Sos](https://resepifesbuk.com/kategori/sambal-sos/): Sambal tumis, sos cili dan kuah.
+- [Kuih](https://resepifesbuk.com/kategori/kuih/): Kuih tradisional Melayu dan nyonya.
+- [Kek](https://resepifesbuk.com/kategori/kek/): Kek bakar, kek kukus dan kek lapis.
+- [Biskut & Biskut Raya](https://resepifesbuk.com/kategori/biskut-biskut-raya/): Biskut raya dan biskut kering.
+- [Bubur](https://resepifesbuk.com/kategori/bubur/): Bubur kacang, bubur lambuk dan bubur pulut.
+- [Puding & Pencuci Mulut](https://resepifesbuk.com/kategori/puding-pencuci-mulut/): Puding, agar-agar dan pencuci mulut sejuk.
+- [Minuman](https://resepifesbuk.com/kategori/minuman/): Jus, air dan minuman sejuk.
+
+## Nota penggunaan
+
+- Semua resepi dalam Bahasa Melayu Malaysia.
+- Teks penuh boleh dibaca terus di laman. Tiada paywall.
+- Data struktur schema.org Recipe disediakan pada setiap halaman resepi.
+- Sila rujuk [robots.txt](https://resepifesbuk.com/robots.txt) untuk peraturan crawler.

@@ -28,6 +28,8 @@ import json, os, re, hashlib, collections
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, "src", "recipes_clean.json")
 CATS = os.path.join(ROOT, "src", "cats.json")
+RW_PATH = os.path.join(ROOT, "src", "rewrite.json")
+REWRITE = json.load(open(RW_PATH, encoding="utf-8")) if os.path.exists(RW_PATH) else {}
 OUT = os.path.join(ROOT, "src", "links.json")
 
 MIN_LINKS = 3          # hard floor per page
@@ -39,11 +41,23 @@ def rng(slug):
 
 
 def anchor_of(r):
-    t = r["title"]
+    """Anchor text = the dish name a reader would recognise.
+
+    Uses the LLM headline when available because it is cleaner and shorter than
+    the legacy Blogger title, then falls back to the title. Multi-dish posts
+    ("Set Resepi Lengkap: ...") need the part after the colon, otherwise every
+    such link reads "Set Resepi Lengkap" and tells the reader nothing.
+    """
+    h = (REWRITE.get(r["slug"]) or {}).get("headline") or ""
+    t = h or r["title"]
     t = re.sub(r"\s*[-–—]\s*Resepi Mudah.*$", "", t, flags=re.I)
-    t = t.split(":")[0].strip()
-    t = re.sub(r"^resepi\s+", "", t, flags=re.I)
-    return t[:70]
+    # for "Set Resepi Lengkap: A, B & C" prefer the concrete dishes after ':'
+    if re.match(r"(?i)^(set|koleksi|pelbagai|macam-macam)\b", t) and ":" in t:
+        t = t.split(":", 1)[1]
+    else:
+        t = t.split(":")[0]
+    t = re.sub(r"^resepi\s+|^resipi\s+", "", t.strip(), flags=re.I)
+    return t.strip()[:70]
 
 
 def core_dish(title):

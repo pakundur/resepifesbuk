@@ -1,8 +1,22 @@
+# Security + performance headers.
+#
+# Threat model: this is a static site with no server-side code, no login, no
+# forms and no database. The realistic attack surface is (a) injected third
+# party scripts, (b) clickjacking of the share buttons, (c) MIME confusion,
+# and (d) referrer leakage. The CSP below allows only what the pages actually
+# use: self-hosted CSS, inline JSON-LD and the one inline copy-to-clipboard
+# handler, and images from the Blogger CDN where the photos live.
+
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-site
+  X-XSS-Protection: 0
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' https://blogger.googleusercontent.com https://lh3.googleusercontent.com data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; manifest-src 'self'; upgrade-insecure-requests
 
 /style.css
   Cache-Control: public, max-age=31536000, immutable
@@ -19,8 +33,31 @@
 /sitemap.xml
   Cache-Control: public, max-age=3600
 
+/search-index.json
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=86400
+
 /robots.txt
   Cache-Control: public, max-age=3600
 
 /feed.xml
   Cache-Control: public, max-age=3600
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/.well-known/security.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/security.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+# Never let a crawler index infrastructure files
+/_headers
+  X-Robots-Tag: noindex
+
+/_redirects
+  X-Robots-Tag: noindex

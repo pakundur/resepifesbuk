@@ -37,4 +37,7 @@ python3 build_static.py
 # 5. Verify Google compliance and SEO integrity — fail rather than publish
 python3 verify_google.py
 
+# 6. Assert all 16 audit requirements before the artifact is considered shippable
+python3 verify_all.py
+
 echo "== build complete: $(find dist -name '*.html' | wc -l) pages =="

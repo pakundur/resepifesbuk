@@ -50,6 +50,14 @@ REWRITE = {k: v for k, v in REWRITE.items() if "error" not in v}
 CATS_PATH = os.path.join(ROOT, "src", "cats.json")
 CAT_OF = json.load(open(CATS_PATH, encoding="utf-8")) if os.path.exists(CATS_PATH) else {}
 
+# ---- LLM content repair (ingredient/step split + tips) ----
+# src/content_fix.json is produced by fix_content.py. It supersedes the parsed
+# ingredients/steps/tips wherever the parser had leaked method text into the
+# ingredient list, or the ingredient list into the steps, or tips were missing.
+FIX_PATH = os.path.join(ROOT, "src", "content_fix.json")
+CONTENT_FIX = json.load(open(FIX_PATH, encoding="utf-8")) if os.path.exists(FIX_PATH) else {}
+CONTENT_FIX = {k: v for k, v in CONTENT_FIX.items() if "error" not in v}
+
 # ---- internal link graph ----
 LINKS_PATH = os.path.join(ROOT, "src", "links.json")
 LINKS = json.load(open(LINKS_PATH, encoding="utf-8")) if os.path.exists(LINKS_PATH) else {}
@@ -62,6 +70,7 @@ CAT_COPY = json.load(open(CAT_COPY_PATH, encoding="utf-8")) if os.path.exists(CA
 print(f"rewrites loaded: {len(REWRITE)}/{len(recipes)}")
 print(f"link graph loaded: {len(LINKS)} pages")
 print(f"category copy loaded: {len(CAT_COPY)}")
+print(f"content repairs loaded: {len(CONTENT_FIX)}")
 _missing_cat = [r["slug"] for r in recipes if not (CAT_OF.get(r["slug"]) or {}).get("cat")]
 print(f"single-category assignments: {len(recipes)-len(_missing_cat)}/{len(recipes)}")
 
@@ -175,6 +184,45 @@ def iso_date(s):
     return m.group(0) if m else TODAY
 
 
+def derive_time(steps):
+    """Sum only durations the recipe actually states. Returns ISO-8601 or None.
+
+    Google treats prepTime/cookTime as optional. Inventing a fixed "PT15M" for
+    a rendang and a salad alike is inaccurate markup, so we publish a duration
+    only when the source text gives one. Multiple mentions are summed, capped at
+    12 hours to ignore obvious outliers.
+    """
+    txt = " ".join(str(s.get("t", "")) if isinstance(s, dict) else str(s) for s in steps)
+    total = 0
+    for n, unit in re.findall(r"(\d{1,3})\s*(minit|min|jam|hour|hrs?)\b", txt, re.I):
+        v = int(n)
+        total += v * 60 if unit.lower().startswith(("jam", "hour", "hr")) else v
+    if total <= 0 or total > 720:
+        return None
+    h, m = divmod(total, 60)
+    return f"PT{h}H{m}M" if h and m else (f"PT{h}H" if h else f"PT{m}M")
+
+
+def headline_of(r):
+    """The one headline used everywhere: rewritten copy when available."""
+    return (REWRITE.get(r["slug"]) or {}).get("headline") or r["title"]
+
+
+def alt_text(r):
+    """Descriptive, non-duplicative alt text.
+
+    Repeating <title> verbatim as alt adds nothing for screen readers or image
+    search. Compose "<dish> - <category> Malaysia" from the clean headline so
+    the alt describes the photo's subject without echoing the page title.
+    """
+    h = (REWRITE.get(r["slug"]) or {}).get("headline") or r["title"]
+    dish = re.split(r"[:,(]", h)[0].strip()
+    dish = re.sub(r"\s*[-–—]\s*Resepi Mudah.*$", "", dish, flags=re.I)
+    cat = r.get("cat1") or ""
+    alt = f"{dish}, resepi {cat} Malaysia" if cat else dish
+    return re.sub(r"\s+", " ", alt).strip()[:125]
+
+
 def thumb(url, w=600):
     """Blogger CDN size param -> width variant for cards."""
     if not url:
@@ -201,6 +249,18 @@ for r in recipes:
             "Resepi " + re.sub(r"^Resepi\s+", "", r["title"], flags=re.I)
             + ". Bahan-bahan lengkap dan cara penyediaan langkah demi langkah.", 240)
     r["meta_desc"] = clean_meta(r["intro"], 158)
+    # apply the LLM content repair: clean ingredient/step split + guaranteed tips
+    _fx = CONTENT_FIX.get(r["slug"])
+    if _fx:
+        if _fx.get("ingredients"):
+            r["ingredients"] = _fx["ingredients"]
+        if len(_fx.get("steps") or []) >= 2:
+            r["steps"] = [{"t": s} for s in _fx["steps"]]
+        if _fx.get("tips"):
+            r["tips"] = _fx["tips"]
+        # counts must follow the repaired lists, or the cards and schema lie
+        r["n_ing"] = len(r["ingredients"])
+        r["n_steps"] = len([s for s in r["steps"] if s.get("t")])
 
 recipes.sort(key=lambda x: (x["published_d"], x["title"]), reverse=True)
 
@@ -244,10 +304,29 @@ def head(title, desc, canonical, og_type="website", og_img="", published=None,
             "query-input": "required name=search_term_string",
         },
     }
+    # Organization as its own object: Google reads this for the logo and for
+    # publisher attribution. Nesting it inside WebSite is legal but weaker.
+    org_ld = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": f"{SITE_URL}/#organization",
+        "name": SITE_NAME,
+        "alternateName": "Resepi Fesbuk Malaysia",
+        "url": SITE_URL,
+        "logo": {
+            "@type": "ImageObject",
+            "url": f"{SITE_URL}/icon-512.png",
+            "width": 512,
+            "height": 512,
+        },
+        "description": SITE_DESC,
+        "foundingLocation": {"@type": "Place", "name": "Malaysia"},
+        "knowsLanguage": "ms-MY",
+    }
     # Emit each schema object in its OWN <script> block. Concatenating them into
     # one block produces invalid JSON (multiple root objects) and Google then
     # discards ALL structured data on the page.
-    ld_objs = [website_ld]
+    ld_objs = [website_ld, org_ld]
     if extra_ld:
         ld_objs += (extra_ld if isinstance(extra_ld, list) else [extra_ld])
     ld = "\n".join(
@@ -372,11 +451,11 @@ def card(r, eager=False):
     fetch = ' fetchpriority="high"' if eager else ""
     return f"""<a class="rcard" href="/resepi/{r['slug']}/">
   <div class="rcard-img">
-    <img src="{esc(thumb(r['img']))}" alt="{esc(r['title'])}" width="600" height="450"{loading}{fetch} decoding="async">
+    <img src="{esc(thumb(r['img']))}" alt="{esc(alt_text(r))}" width="600" height="450"{loading}{fetch} decoding="async">
   </div>
   <div class="rcard-body">
     <span class="rcard-cat">{esc(r['cat1'])}</span>
-    <h3>{esc(r['title'])}</h3>
+    <h3>{esc(headline_of(r))}</h3>
     <p>{esc(clean_meta(r['intro'], 120))}</p>
     <div class="rcard-foot">{meta}</div>
   </div>
@@ -560,12 +639,12 @@ for idx, r in enumerate(recipes):
         "inLanguage": "ms-MY",
         "recipeCategory": r["cat1"],
         "recipeCuisine": "Malaysian",
-        "keywords": ", ".join([r["cat1"], "resepi Malaysia", "masakan Malaysia"] + r["cats"][:3]),
-        "recipeYield": "4 hidangan",
-        "prepTime": "PT15M",
-        "cookTime": "PT30M",
-        "totalTime": "PT45M",
+        "keywords": ", ".join([r["cat1"], "resepi Malaysia", "masakan Malaysia"]),
     }
+    # only publish a duration when the recipe states one (no fabricated times)
+    _t = derive_time(page_steps)
+    if _t:
+        recipe_ld["totalTime"] = _t
     if r["ingredients"]:
         recipe_ld["recipeIngredient"] = r["ingredients"][:60]
     plain_steps = [s["t"] for s in page_steps if "t" in s]
@@ -640,7 +719,7 @@ for idx, r in enumerate(recipes):
     <h1 class="display">{esc(headline)}</h1>
     <div class="recipe-facts">{facts_html}</div>
 
-    <img class="recipe-hero-img" src="{esc(big(r['img']))}" alt="{esc(r['title'])}" width="1200" height="800" fetchpriority="high" decoding="async">
+    <img class="recipe-hero-img" src="{esc(big(r['img']))}" alt="{esc(alt_text(r))}" width="1200" height="800" fetchpriority="high" decoding="async">
   </div>
 
   <div class="wrap-narrow">
@@ -754,11 +833,27 @@ for c, items in CATS.items():
     cat_intro = cc.get("intro") or (
         f"Semua resepi {c} dalam koleksi {SITE_NAME}, disusun supaya senang dicari.")
 
+    # ItemList: tells Google this page is an ordered collection of recipes and
+    # which URLs belong to it. Without it a category page is just a link dump.
+    _items = [{
+        "@type": "ListItem",
+        "position": i + 1,
+        "url": f"{SITE_URL}/resepi/{r['slug']}/",
+        "name": (REWRITE.get(r["slug"]) or {}).get("headline") or r["title"],
+    } for i, r in enumerate(items[:60])]
+
     ld = [{
         "@context": "https://schema.org", "@type": "CollectionPage",
+        "@id": canon + "#collection",
         "name": cat_title, "url": canon, "inLanguage": "ms-MY",
         "description": cat_desc,
         "isPartOf": {"@type": "WebSite", "url": SITE_URL},
+        "numberOfItems": len(items),
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": len(items),
+            "itemListElement": _items,
+        },
     }, {
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
@@ -853,11 +948,20 @@ page += header_html() + f"""<main>
 </section>
 </main>
 <script>
-const IDX = {json.dumps([{"t": r["title"], "s": r["slug"], "c": r["cat1"], "i": thumb(r["img"]), "d": clean_meta(r["intro"], 110)} for r in recipes], ensure_ascii=False)};
+/* Index is fetched on first keystroke, not inlined: keeping it out of the HTML
+   cuts the page from 356KB to ~6KB and it is cached separately for a year. */
+let IDX = null;
 const inp = document.getElementById('q'), out = document.getElementById('out');
-function run() {{
+async function ensureIdx() {{
+  if (IDX) return IDX;
+  const r = await fetch('/search-index.json', {{ cache: 'force-cache' }});
+  IDX = await r.json();
+  return IDX;
+}}
+async function run() {{
   const q = (inp.value || '').toLowerCase().trim();
   if (!q) {{ out.innerHTML = ''; return; }}
+  await ensureIdx();
   const hits = IDX.filter(x => x.t.toLowerCase().includes(q) || x.d.toLowerCase().includes(q) || x.c.toLowerCase().includes(q)).slice(0, 48);
   out.innerHTML = hits.length ? hits.map(x => `<a class="rcard" href="` + '/resepi/' + x.s + '/' + `"><div class="rcard-img"><img src="${{x.i}}" alt="${{x.t.replace(/"/g,'&quot;')}}" loading="lazy" width="600" height="450"></div><div class="rcard-body"><span class="rcard-cat">${{x.c}}</span><h3>${{x.t}}</h3><p>${{x.d}}</p></div></a>`).join('') : '<p class="empty">Tiada resepi dijumpai. Cuba kata kunci lain.</p>';
 }}
@@ -958,15 +1062,43 @@ write("robots.txt", f"""User-agent: *
 Allow: /
 Disallow: /halaman/
 
-# Crawl-delay is advisory; the site is fully static and cheap to serve.
+# Paginated index pages duplicate the /resepi/ listing and are kept out of the
+# index to avoid thin near-duplicate pages, but they stay crawlable so link
+# equity flows through the pagination chain.
+
+# AI / LLM crawlers: allowed. The content is original editorial work and we
+# want it quotable with attribution back to the page.
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 Sitemap: {SITE_URL}/sitemap.xml
 """)
+
+# ---- IndexNow key ----
+# IndexNow lets Bing/Yandex/Naver re-crawl instantly on change instead of
+# waiting for the next scheduled crawl. The key file must be served from the
+# root and contain exactly the key.
+INDEXNOW_KEY = "8f3a2b6c9d4e5f7a1b3c8d6e9f2a4b7c"
+write(f"{INDEXNOW_KEY}.txt", INDEXNOW_KEY + "\n")
+print("indexnow key written")
 
 # ---- RSS feed ----
 items = []
 for r in recipes[:50]:
     items.append(f"""    <item>
-      <title>{esc(r['title'])}</title>
+      <title>{esc(headline_of(r))}</title>
       <link>{esc(SITE_URL)}/resepi/{r['slug']}/</link>
       <guid isPermaLink="true">{esc(SITE_URL)}/resepi/{r['slug']}/</guid>
       <pubDate>{r['published_d']}T00:00:00+08:00</pubDate>
@@ -990,11 +1122,33 @@ write("feed.xml", f"""<?xml version="1.0" encoding="UTF-8"?>
 # ---- assets ----
 shutil.copy2(css_path, os.path.join(DIST, "style.css"))
 
+# Search index as a separate, long-cacheable asset.
+write("search-index.json", json.dumps(
+    [{"t": headline_of(r), "s": r["slug"], "c": r["cat1"],
+      "i": thumb(r["img"]), "d": clean_meta(r["intro"], 110)} for r in recipes],
+    ensure_ascii=False, separators=(",", ":")))
+print("search-index.json written")
+
 # Cloudflare Pages control files must live in the publish directory
 for cf_file in ("_headers", "_redirects"):
     src_cf = os.path.join(ROOT, cf_file)
     if os.path.exists(src_cf):
         shutil.copy2(src_cf, os.path.join(DIST, cf_file))
+
+# ---- crawler / AI-discovery essentials ----
+# llms.txt: how an LLM should read this site. security.txt: responsible
+# disclosure. Served at both /security.txt and /.well-known/security.txt
+# because the RFC 9116 canonical location is the .well-known path but older
+# scanners still probe the root.
+for _name, _dest in (("llms.txt", "llms.txt"),
+                     ("security.txt", "security.txt"),
+                     ("security.txt", ".well-known/security.txt")):
+    _s = os.path.join(STATIC, _name)
+    if os.path.exists(_s):
+        _d = os.path.join(DIST, _dest)
+        os.makedirs(os.path.dirname(_d), exist_ok=True)
+        shutil.copy2(_s, _d)
+        print(f"essentials: {_dest}")
 
 # ---- 301 redirects: old dated URLs -> clean SEO URLs ----
 # Slugs used to carry the Blogger year-month prefix (2020-04-resepi-...). That

@@ -2,5 +2,25 @@ User-agent: *
 Allow: /
 Disallow: /halaman/
 
-# Crawl-delay is advisory; the site is fully static and cheap to serve.
+# Paginated index pages duplicate the /resepi/ listing and are kept out of the
+# index to avoid thin near-duplicate pages, but they stay crawlable so link
+# equity flows through the pagination chain.
+
+# AI / LLM crawlers: allowed. The content is original editorial work and we
+# want it quotable with attribution back to the page.
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://resepifesbuk.com/sitemap.xml
