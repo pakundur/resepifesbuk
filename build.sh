@@ -51,4 +51,7 @@ python3 verify_fab.py
 # 8. EEAT gates (person authors, contact route, no fabricated credentials)
 python3 verify_eeat.py
 
+# 9. Truthful modification dates (schema == visible, published stays varied)
+python3 verify_dates.py
+
 echo "== build complete: $(find dist -name '*.html' | wc -l) pages =="

@@ -300,10 +300,20 @@ def img_url(r):
     return big(r.get("img") or "")
 
 
+# Date the recipe TEXT last changed. Blogger's `updated` field reflects the
+# original blog edit, not our work: the localisation passes (Indonesian->BM,
+# produce terms, punctuation repair, step fixes) rewrote content_fix.json,
+# which feeds every recipe. 2026-11-13 is the last real content commit.
+# Keep this distinct from datePublished (genuinely from Blogger) — collapsing
+# the two is the signature of date manipulation.
+CONTENT_REVISED = "2026-11-13"
+
 # normalise recipe fields
 for r in recipes:
     r["published_d"] = iso_date(r.get("published"))
-    r["updated_d"] = iso_date(r.get("updated")) or r["published_d"]
+    # Blogger's own edit date, retained for audit only — never emitted.
+    r["blogger_updated_d"] = iso_date(r.get("updated"))
+    r["updated_d"] = CONTENT_REVISED
     llm_cat = (CAT_OF.get(r["slug"]) or {}).get("cat")
     r["cat1"] = llm_cat or (r["cats"][0] if r["cats"] else "Lain-lain")
     r["cats"] = [r["cat1"]]          # single category, everywhere
