@@ -11,6 +11,11 @@ echo "== Resepi Fesbuk static build =="
 echo "pwd: $(pwd)"
 python3 --version
 
+# GA4 Measurement ID. Committed here so the Pages build inherits it without
+# dashboard env config. This file is the source of truth.
+export GA4_ID="${GA4_ID:-$(cat ga4_id.txt 2>/dev/null || echo '')}"
+echo "GA4_ID: $GA4_ID"
+
 if [ ! -f "src/posts_full.json" ]; then
   echo "ERROR: src/posts_full.json not found — the scraped source data is missing."
   echo "       Run scrape.py locally, then commit src/posts_full.json."
