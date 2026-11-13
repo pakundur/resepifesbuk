@@ -657,7 +657,7 @@ for idx, r in enumerate(recipes):
   <ul>{tl}</ul>
 </div>"""
 
-    # breadcrumb
+    # breadcrumb — ends at category; post title intentionally excluded
     bc_ld = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -665,7 +665,6 @@ for idx, r in enumerate(recipes):
             {"@type": "ListItem", "position": 1, "name": "Utama", "item": SITE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "Resepi", "item": SITE_URL + "/resepi/"},
             {"@type": "ListItem", "position": 3, "name": r["cat1"], "item": f"{SITE_URL}/kategori/{r['cat_slug']}/"},
-            {"@type": "ListItem", "position": 4, "name": headline, "item": canon},
         ],
     }
 
@@ -759,8 +758,7 @@ for idx, r in enumerate(recipes):
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Utama</a><span aria-hidden="true">/</span>
       <a href="/resepi/">Resepi</a><span aria-hidden="true">/</span>
-      <a href="/kategori/{r['cat_slug']}/">{esc(r['cat1'])}</a><span aria-hidden="true">/</span>
-      <span aria-current="page">{esc(headline[:52])}{'…' if len(headline)>52 else ''}</span>
+      <span aria-current="page">{esc(r['cat1'])}</span>
     </nav>
 
     <h1 class="display">{esc(headline)}</h1>
