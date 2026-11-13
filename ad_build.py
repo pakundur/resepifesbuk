@@ -13,7 +13,7 @@ Design constraints honoured:
   - only the 16 wired products can ever render (enforced in ads_wired2)
 """
 from pathlib import Path
-import json, sys
+import json, sys, hashlib
 
 BASE = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE))
@@ -41,15 +41,41 @@ def slot_ad(recipe, slug, slot, variant):
     if not c:
         return ""
     html = AR.render(c, variant)
-    return f'<div class="ad-slot ad-slot--{slot}" data-slot="{slot}">{html}</div>'
+    return _wrap_slot(html, slot)
+
+
+def _wrap_slot(inner, slot):
+    """
+    Wrap a rendered card in its slot container plus a CSS-only close control.
+
+    No JS: a hidden checkbox + sibling selector removes the card when ticked.
+    Real click behaviour, keyboard-accessible (it is a real <input>), works
+    with JS disabled, and needs nothing from the CSP.
+
+    The label is not focusable noise for crawlers: it carries aria-label and
+    the input carries a screen-reader label, so the ad can be dismissed by
+    keyboard and understood by assistive tech.
+    """
+    # Deterministic id: hash() is salted per process, which would give the
+    # same slot a different id on every build and break browser caching.
+    cid = "adx-%s-%s" % (slot, hashlib.sha1(inner.encode()).hexdigest()[:10])
+    return (
+        f'<div class="ad-slot ad-slot--{slot}" data-slot="{slot}">'
+        f'<input type="checkbox" id="{cid}" class="ad-x" '
+        f'aria-label="Tutup iklan">'
+        f'<label for="{cid}" class="ad-x__btn" title="Tutup iklan" '
+        f'aria-label="Tutup iklan"><span aria-hidden="true">&times;</span></label>'
+        f'<div class="ad-x__body">{inner}</div>'
+        f'<p class="ad-x__closed">Iklan ditutup. Muat semula halaman untuk lihat semula.</p>'
+        f"</div>"
+    )
 
 
 def page_ads(recipe, slug, variant_map):
     """All ads for a page, honouring the one-ad-per-page rule."""
     out = []
     for slot, c in AW.page_ads(recipe, slug, variant_map):
-        out.append((slot, f'<div class="ad-slot ad-slot--{slot}" data-slot="{slot}">'
-                          + AR.render(c, variant_map[slot]) + "</div>"))
+        out.append((slot, _wrap_slot(AR.render(c, variant_map[slot]), slot)))
     return out
 
 
@@ -84,6 +110,40 @@ AD_CSS = """
   min-height: 0;
 }
 .ad-slot--R3, .ad-slot--K1, .ad-slot--S1 { margin: 26px 0; }
+
+/* ---------- dismiss control (CSS-only, no JS) ----------
+   The checkbox is visually hidden but still a real focusable input, so the
+   close control works with keyboard, screen readers and JS disabled.
+   Ticking it hides the card via the sibling selector below. */
+.ad-slot { position: relative; }
+.ad-x {
+  position: absolute; width: 1px; height: 1px;
+  margin: -1px; padding: 0; border: 0; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+.ad-x__btn {
+  position: absolute; top: 6px; right: 6px; z-index: 4;
+  /* 44x44 touch target per WCAG 2.5.5, visually small via the glyph */
+  width: 44px; height: 44px; display: grid; place-items: center;
+  cursor: pointer; border-radius: 10px;
+  color: var(--ink-mute, #7d736a); background: transparent;
+  font-size: 20px; line-height: 1; font-weight: 400;
+  -webkit-user-select: none; user-select: none;
+  transition: background .15s ease, color .15s ease;
+}
+.ad-x__btn:hover { background: rgba(26, 24, 21, .07); color: var(--ink, #1a1815); }
+.ad-x:focus-visible + .ad-x__btn {
+  outline: 3px solid var(--terracotta, #c2542a); outline-offset: 2px;
+  background: rgba(26, 24, 21, .07);
+}
+/* dismissed */
+.ad-x:checked ~ .ad-x__body { display: none; }
+.ad-x:checked + .ad-x__btn { display: none; }
+.ad-x:checked ~ .ad-x__closed { display: block; }
+.ad-x__closed {
+  display: none; padding: 10px 0; font-size: 12px;
+  color: var(--ink-mute, #7d736a);
+}
 
 .adw {
   background: var(--cream, #faf7f2);
@@ -154,6 +214,13 @@ AD_CSS = """
   font-size: 10px; color: var(--ink-mute, #7d736a);
   margin: 11px 0 0; padding: 0 18px 14px; line-height: 1.45;
 }
+/* Internal disclosure link — NOT an affiliate link, so it carries no
+   sponsored/nofollow rel and is allowed to pass link equity. */
+.adw__note a {
+  color: var(--ink-mute, #7d736a); text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.adw__note a:hover { color: var(--terracotta, #c2542a); }
 
 /* compact: rows 2-3 as one-liners, hook text becomes the label */
 .adw__mini {

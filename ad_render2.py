@@ -123,8 +123,9 @@ CSS = """
 }
 """
 
-DISCLOSURE = '<span class="adw__disc" title="Iklan berbayar">Ditaja</span>'
-NOTE = "Pautan rakan kongsi. Harga dan stok boleh berubah."
+DISCLOSURE = '<span class="adw__disc" title="Iklan berbayar">Iklan</span>'
+NOTE = ('Pautan rakan kongsi. Harga dan stok boleh berubah. '
+        '<a href="/pendedahan-affiliate/">Maklumat lanjut</a>')
 
 
 def _art(key, size):

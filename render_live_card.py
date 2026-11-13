@@ -163,10 +163,10 @@ d.text((pad + 38 * S + 11 * S, 19 * S), "SHOPEE MALAYSIA", font=fkick, fill=TERR
 d.text((pad + 38 * S + 11 * S, 33 * S), name, font=fname, fill=INK)
 
 # disclosure chip
-lbl = "DIT AJA".replace(" ", "")
+lbl = "IKLAN"
 tw = d.textlength(lbl, font=fchip)
 bw, bh = tw + 16 * S, 17 * S
-x2, y2 = W - 12 * S, 11 * S
+x2, y2 = W - 58 * S, 11 * S
 d.rounded_rectangle([x2 - bw, y2, x2, y2 + bh], radius=5 * S, fill=CHIP,
                     outline=(230, 210, 189), width=max(1, S))
 d.text((x2 - bw + 8 * S, y2 + 4 * S), lbl, font=fchip, fill=CHIPINK)
@@ -199,8 +199,24 @@ for i, (a, hk, pr, bt) in enumerate(rows):
     d.line([ax + 5 * S, ay + 4 * S, ax + 11 * S, ay], fill=WHITE, width=max(2, int(1.4 * S)))
     y += row_h[i]
 
-d.text((pad, y + 11 * S), "Pautan rakan kongsi. Harga dan stok boleh berubah.",
-       font=fnote, fill=INK_MUTE)
+# close button (top-right, 44x44 target, glyph centred)
+xb, yb = W - 6 * S - 44 * S, 6 * S
+d.rounded_rectangle([xb, yb, xb + 44 * S, yb + 44 * S], radius=10 * S,
+                    fill=(246, 240, 233))
+gx, gy = xb + 22 * S, yb + 21 * S
+for dx in (-5 * S, 5 * S):
+    d.line([gx - 5 * S, gy + dx * 0.0 + (-5 * S if dx < 0 else 5 * S) * 0,
+            gx + 5 * S, gy], fill=INK_MUTE, width=0)  # placeholder, replaced below
+d.line([gx - 6 * S, gy - 6 * S, gx + 6 * S, gy + 6 * S], fill=INK_MUTE, width=max(2, int(1.8 * S)))
+d.line([gx - 6 * S, gy + 6 * S, gx + 6 * S, gy - 6 * S], fill=INK_MUTE, width=max(2, int(1.8 * S)))
+
+note = "Pautan rakan kongsi. Harga dan stok boleh berubah. Maklumat lanjut"
+d.text((pad, y + 11 * S), note, font=fnote, fill=INK_MUTE)
+nw = d.textlength("Pautan rakan kongsi. Harga dan stok boleh berubah. ", font=fnote)
+# underline the "Maklumat lanjut" link
+lw = d.textlength("Maklumat lanjut", font=fnote)
+d.line([pad + nw, y + 11 * S + 13 * S, pad + nw + lw, y + 11 * S + 13 * S],
+       fill=INK_MUTE, width=max(1, S))
 
 p = OUT / "live_card.png"
 img.save(p)

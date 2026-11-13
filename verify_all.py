@@ -281,8 +281,14 @@ for _rel, _p in pages.items():
     if _ad_links and not set(_hrefs) <= _ad_links:
         _ad_bad.append(f"{_rel}: unknown link")
     # mandatory disclosure on every card
-    if _s.count("Ditaja") < len(_slots):
-        _ad_bad.append(f"{_rel}: missing Ditaja")
+    if _s.count(">Iklan<") < len(_slots):
+        _ad_bad.append(f"{_rel}: missing Iklan disclosure")
+    # every card must link to the affiliate disclosure page
+    if _s.count('href="/pendedahan-affiliate/"') < len(_slots):
+        _ad_bad.append(f"{_rel}: missing disclosure link")
+    # every card must have a dismiss control
+    if _s.count('class="ad-x__btn"') != len(_slots):
+        _ad_bad.append(f"{_rel}: close-button count mismatch")
     # hard-sell / exclamation check inside hooks
     for _h in re.findall(r'adw__hook">([^<]*)', _s):
         if "!" in _h:
@@ -303,9 +309,19 @@ chk(25, "all ad links distinct + rel=sponsored",
     not any("rel mismatch" in b or "duplicate href" in b for b in _ad_bad),
     "; ".join(_ad_bad[:3]) if _ad_bad else "clean")
 
-chk(26, "DITAJA disclosure on every ad card",
-    not any("missing Ditaja" in b for b in _ad_bad),
-    "; ".join([b for b in _ad_bad if "Ditaja" in b][:3]) or "all cards disclosed")
+chk(26, "IKLAN disclosure on every ad card",
+    not any("missing Iklan" in b for b in _ad_bad),
+    "; ".join([b for b in _ad_bad if "Iklan" in b][:3]) or "all cards disclosed")
+
+chk(29, "every ad card links to the disclosure page",
+    not any("disclosure link" in b for b in _ad_bad),
+    "all cards linked" if not any("disclosure link" in b for b in _ad_bad)
+    else f"{sum('disclosure link' in b for b in _ad_bad)} pages missing")
+
+chk(30, "every ad card has a dismiss control",
+    not any("close-button" in b for b in _ad_bad),
+    "all cards closable" if not any("close-button" in b for b in _ad_bad)
+    else f"{sum('close-button' in b for b in _ad_bad)} pages broken")
 
 chk(27, "no exclamation marks in ad hooks",
     not any("exclamation" in b for b in _ad_bad),

@@ -489,6 +489,7 @@ def footer_html():
           <li><a href="/kategori/">Semua Kategori</a></li>
           <li><a href="/cari/">Cari Resepi</a></li>
           <li><a href="/tentang/">Tentang Kami</a></li>
+          <li><a href="/pendedahan-affiliate/">Pendedahan Affiliate</a></li>
           <li><a href="/feed.xml">RSS Feed</a></li>
         </ul>
       </div>
@@ -1122,6 +1123,90 @@ write("tentang/index.html", page)
 print("about ok")
 
 
+# ---- affiliate disclosure / terms page ----
+# Separate from /tentang/ on purpose: an affiliate disclosure buried in an
+# "About" page is weak. This page is the single canonical destination for the
+# "Pautan rakan kongsi" note printed under every ad card.
+_disc_desc = (f"Pendedahan affiliate {SITE_NAME}: kami mungkin menerima komisen "
+              f"daripada pautan Shopee, tanpa kos tambahan kepada anda.")
+page = head(f"Pendedahan Affiliate & Terma | {SITE_NAME}",
+            _disc_desc,
+            SITE_URL + "/pendedahan-affiliate/",
+            extra_ld={"@context": "https://schema.org", "@type": "WebPage",
+                      "name": "Pendedahan Affiliate dan Terma",
+                      "url": SITE_URL + "/pendedahan-affiliate/",
+                      "inLanguage": "ms-MY"})
+page += header_html() + f"""<main>
+<article class="wrap-narrow" style="padding:64px 20px">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Utama</a><span aria-hidden="true">/</span>
+    <span aria-current="page">Pendedahan Affiliate</span>
+  </nav>
+  <h1 class="display">Pendedahan <em>affiliate</em></h1>
+  <p class="recipe-intro">{SITE_NAME} ialah laman resepi yang percuma untuk dibaca.
+  Untuk menampung kos hosting dan penyelenggaraan, sesetengah pautan di laman ini
+  ialah pautan affiliate. Halaman ini menerangkan dengan jelas bagaimana ia berfungsi.</p>
+
+  <h2>1. Kami menerima komisen</h2>
+  <p>Apabila anda klik pautan yang ditanda <strong>Iklan</strong> dan membuat pembelian
+  di Shopee, kami mungkin menerima komisen daripada Shopee atau penjual. Jumlah komisen
+  ini dibayar oleh pihak Shopee, <strong>bukan oleh anda</strong>. Harga yang anda bayar
+  adalah sama sama ada anda menggunakan pautan kami atau pergi terus ke Shopee.</p>
+
+  <h2>2. Bagaimana anda mengenal pasti iklan</h2>
+  <p>Setiap blok iklan di laman ini mempunyai tanda <strong>Iklan</strong> di penjuru
+  kanan atas, dan nota <em>"Pautan rakan kongsi. Harga dan stok boleh berubah."</em>
+  di bawahnya. Semua pautan affiliate juga ditanda dengan atribut
+  <code>rel="sponsored nofollow"</code> supaya enjin carian tahu ia adalah pautan
+  berbayar.</p>
+  <p>Kandungan resepi itu sendiri — bahan, langkah dan tips — <strong>tidak</strong>
+  dipengaruhi oleh pengiklan. Kami tidak menulis resepi untuk menjual produk.</p>
+
+  <h2>3. Harga dan ketersediaan</h2>
+  <p>Harga, stok dan promosi di Shopee boleh berubah pada bila-bila masa dan
+  dikawal sepenuhnya oleh Shopee dan penjual masing-masing. Kami tidak menetapkan
+  harga, tidak memproses pesanan, dan tidak menerima pembayaran daripada anda.
+  Sebarang isu berkaitan pesanan, penghantaran, pemulangan atau jaminan hendaklah
+  diselesaikan terus dengan Shopee atau penjual berkenaan.</p>
+
+  <h2>4. Tiada jaminan prestasi produk</h2>
+  <p>Penerangan produk dalam iklan menerangkan ciri umum produk (contohnya "haba
+  sekata" atau "lapisan tidak melekat") berdasarkan maklumat yang biasa digunakan
+  untuk kategori produk tersebut. Ia <strong>bukan</strong> jaminan bahawa produk
+  tertentu akan memberikan hasil tertentu di dapur anda. Hasil masakan bergantung
+  pada bahan, suhu, peralatan dan teknik masing-masing.</p>
+
+  <h2>5. Kami tidak menyimpan data pembayaran anda</h2>
+  <p>Kami tidak meminta, menyimpan atau memproses maklumat kad kredit, kata laluan
+  Shopee atau butiran pembayaran anda. Apabila anda klik pautan iklan, anda akan
+  dibawa ke laman Shopee dan tertakluk kepada terma serta dasar privasi Shopee.</p>
+
+  <h2>6. Mengapa kami memilih produk ini</h2>
+  <p>Kami hanya memaparkan sebilangan kecil produk yang benar-benar disebut dalam
+  arahan memasak resepi kami — contohnya kuali yang disebut dalam langkah menumis,
+  atau pengukus yang disebut dalam langkah mengukus. Jika sesebuah resepi tidak
+  memerlukan peralatan tersebut, tiada iklan dipaparkan pada halaman itu.</p>
+
+  <h2>7. Anda boleh menutup iklan</h2>
+  <p>Setiap iklan mempunyai butang tutup (<strong>&times;</strong>) di penjuru kanan
+  atas. Klik untuk menyembunyikannya. Iklan akan muncul semula jika anda memuat
+  semula halaman. Kami tidak menggunakan pop-up, tidak menyekat kandungan, dan
+  tidak meminta anda mematikan penyekat iklan.</p>
+
+  <h2>8. Soalan</h2>
+  <p>Jika ada apa-apa yang tidak jelas tentang pendedahan ini, atau jika anda
+  merasakan sesuatu pautan tidak sepatutnya berada di laman ini, sila hubungi kami.
+  Maklum balas anda membantu kami mengekalkan kepercayaan pembaca.</p>
+
+  <p class="source-note" style="margin-top:34px">Kemas kini terakhir:
+  {TODAY}. Halaman ini boleh berubah jika cara kami memaparkan iklan berubah.</p>
+</article>
+</main>
+""" + footer_html() + "</body>\n</html>\n"
+write("pendedahan-affiliate/index.html", page)
+print("affiliate disclosure ok")
+
+
 # ---- 404 ----
 page = head(f"Halaman Tidak Dijumpai | Resepi Fesbuk",
             "Halaman yang anda cari tidak wujud atau telah dipindahkan. Kembali ke senarai "
@@ -1150,7 +1235,8 @@ urls = [(SITE_URL + "/", TODAY, "1.0", "daily"),
         (SITE_URL + "/resepi/", TODAY, "0.9", "daily"),
         (SITE_URL + "/kategori/", TODAY, "0.8", "weekly"),
         (SITE_URL + "/cari/", TODAY, "0.4", "monthly"),
-        (SITE_URL + "/tentang/", TODAY, "0.4", "monthly")]
+        (SITE_URL + "/tentang/", TODAY, "0.4", "monthly"),
+        (SITE_URL + "/pendedahan-affiliate/", TODAY, "0.4", "yearly")]
 for c in CATS:
     urls.append((f"{SITE_URL}/kategori/{cat_slug(c)}/", TODAY, "0.7", "weekly"))
 # NOTE: paginated /halaman/N/ pages are deliberately EXCLUDED from the sitemap.
