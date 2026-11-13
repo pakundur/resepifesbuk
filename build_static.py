@@ -48,8 +48,13 @@ LINKS_PATH = os.path.join(ROOT, "src", "links.json")
 LINKS = json.load(open(LINKS_PATH, encoding="utf-8")) if os.path.exists(LINKS_PATH) else {}
 BY_SLUG = {r["slug"]: r for r in recipes}
 
+# ---- category page copy (unique per category, not boilerplate) ----
+CAT_COPY_PATH = os.path.join(ROOT, "src", "cat_copy.json")
+CAT_COPY = json.load(open(CAT_COPY_PATH, encoding="utf-8")) if os.path.exists(CAT_COPY_PATH) else {}
+
 print(f"rewrites loaded: {len(REWRITE)}/{len(recipes)}")
 print(f"link graph loaded: {len(LINKS)} pages")
+print(f"category copy loaded: {len(CAT_COPY)}")
 
 
 # ---------------------------------------------------------------- helpers
@@ -643,10 +648,18 @@ for c, items in CATS.items():
     cs = cat_slug(c)
     canon = f"{SITE_URL}/kategori/{cs}/"
     cards = "\n".join(card(r) for r in items)
+    cc = CAT_COPY.get(c, {})
+    cat_title = cc.get("title") or f"Resepi {c}: {len(items)} Pilihan Mudah"
+    cat_desc = cc.get("meta_desc") or (
+        f"Koleksi {len(items)} resepi {c} Malaysia dengan bahan lengkap, "
+        f"langkah jelas dan tips masakan.")
+    cat_intro = cc.get("intro") or (
+        f"Semua resepi {c} dalam koleksi {SITE_NAME}, disusun supaya senang dicari.")
+
     ld = [{
         "@context": "https://schema.org", "@type": "CollectionPage",
-        "name": f"Resepi {c}", "url": canon, "inLanguage": "ms-MY",
-        "description": f"Koleksi {len(items)} resepi {c} Malaysia.",
+        "name": cat_title, "url": canon, "inLanguage": "ms-MY",
+        "description": cat_desc,
         "isPartOf": {"@type": "WebSite", "url": SITE_URL},
     }, {
         "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -656,8 +669,8 @@ for c, items in CATS.items():
             {"@type": "ListItem", "position": 3, "name": c, "item": canon},
         ],
     }]
-    page = head(f"Resepi {c} — {len(items)} Resepi Sedap | {SITE_NAME}",
-                f"Koleksi {len(items)} resepi {c} Malaysia yang mudah diikuti — bahan lengkap, langkah jelas dan tips masakan.",
+    page = head(f"{cat_title} | {SITE_NAME}",
+                cat_desc,
                 canon, og_img=big(items[0]["img"]), extra_ld=ld)
     page += header_html() + f"""<main>
 <section style="padding-bottom:30px">
@@ -669,7 +682,7 @@ for c, items in CATS.items():
     </nav>
     <span class="eyebrow">{len(items)} Resepi</span>
     <h1 class="display">Resepi <em>{esc(c)}</em></h1>
-    <p class="lede" style="max-width:60ch">Semua resepi {esc(c)} dalam koleksi {SITE_NAME} — dikumpul dan disusun supaya senang dicari.</p>
+    <p class="lede" style="max-width:68ch">{esc(cat_intro)}</p>
   </div>
 </section>
 <section style="padding-top:0">
